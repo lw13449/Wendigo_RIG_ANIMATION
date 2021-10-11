@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: Jeremy Rig 06.ma
-//Last modified: Mon, Oct 11, 2021 03:18:57 PM
+//Last modified: Mon, Oct 11, 2021 03:21:57 PM
 //Codeset: 1252
 requires maya "2020";
 requires "stereoCamera" "10.0";
@@ -13,17 +13,17 @@ fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 19042)\n";
 fileInfo "license" "student";
-fileInfo "UUID" "BE02FB62-4671-5BF0-2BAD-438426250270";
+fileInfo "UUID" "243C22B6-4E5A-DE85-95E5-4ABBB0DF2104";
 createNode transform -s -n "persp";
 	rename -uid "7CBA289B-4931-D95B-9D95-82BE041B9C6C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 38.948144865398241 36.59253281208845 90.198632483417185 ;
-	setAttr ".r" -type "double3" 11155.461645790831 -3218.1999999989798 0 ;
+	setAttr ".t" -type "double3" 8.4208914360553262 44.827156392184037 20.323512261456614 ;
+	setAttr ".r" -type "double3" 11153.061645790664 -3217.7999999989702 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "27708C3D-4D22-9B5C-1A31-D8B305C73196";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 95.954564715545644;
+	setAttr ".coi" 22.282436106590115;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -46938,9 +46938,9 @@ createNode scaleConstraint -n "Neck_002_Ctrl_Grp_scaleConstraint1" -p "Neck_002_
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -k on ".w0";
-createNode transform -n "Face_Ctrl_Mastger_Grp" -p "Controls";
+createNode transform -n "Face_Ctrl_Master_Grp" -p "Controls";
 	rename -uid "D1221DE8-458C-0955-0EBD-7A87D2DC0183";
-createNode transform -n "R_Eye_Ctrl_Grp" -p "Face_Ctrl_Mastger_Grp";
+createNode transform -n "R_Eye_Ctrl_Grp" -p "Face_Ctrl_Master_Grp";
 	rename -uid "2F36CD5C-47E1-2D9B-3DDC-17BFB839EAE7";
 	setAttr ".rp" -type "double3" 0 5.417277447031168 8.6042284408449632e-16 ;
 	setAttr ".rpt" -type "double3" 8.6042284408449632e-16 -5.417277447031168 5.4172774470311671 ;
@@ -47006,7 +47006,7 @@ createNode scaleConstraint -n "R_Eye_Ctrl_Grp_scaleConstraint1" -p "R_Eye_Ctrl_G
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -k on ".w0";
-createNode transform -n "L_Eye_Ctrl_Grp" -p "Face_Ctrl_Mastger_Grp";
+createNode transform -n "L_Eye_Ctrl_Grp" -p "Face_Ctrl_Master_Grp";
 	rename -uid "8FF4A165-4BCE-2A6C-AB27-9B8146A71115";
 	setAttr ".rp" -type "double3" 0 5.417277447031168 8.6042284408449632e-16 ;
 	setAttr ".rpt" -type "double3" 8.6042284408449632e-16 -5.417277447031168 5.4172774470311671 ;
@@ -47072,7 +47072,7 @@ createNode scaleConstraint -n "L_Eye_Ctrl_Grp_scaleConstraint1" -p "L_Eye_Ctrl_G
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -k on ".w0";
-createNode transform -n "Jaw_Ctrl_Grp" -p "Face_Ctrl_Mastger_Grp";
+createNode transform -n "Jaw_Ctrl_Grp" -p "Face_Ctrl_Master_Grp";
 	rename -uid "2F68012A-4B3A-86EC-F8BC-849407322BAE";
 createNode transform -n "Jaw_Ctrl" -p "Jaw_Ctrl_Grp";
 	rename -uid "38129ADC-464F-8DD2-2F9D-32B9CBC373B6";
@@ -47111,6 +47111,369 @@ createNode parentConstraint -n "Jaw_Ctrl_Grp_parentConstraint1" -p "Jaw_Ctrl_Grp
 	setAttr -k on ".w0";
 createNode scaleConstraint -n "Jaw_Ctrl_Grp_scaleConstraint1" -p "Jaw_Ctrl_Grp";
 	rename -uid "D4726A40-462C-01FE-56CE-1E9C6EFDFDFF";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Neck_002_CtrlW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode transform -n "EyeBrow_Ctrl_Master_Grp" -p "Face_Ctrl_Master_Grp";
+	rename -uid "6FF88D70-462E-0963-8150-ADB773AF0160";
+createNode transform -n "L_EyeBrow_01_Ctrl_Grp" -p "EyeBrow_Ctrl_Master_Grp";
+	rename -uid "1D6E1A14-4B66-3F7E-A9B2-EE85071E742C";
+createNode transform -n "L_EyeBrow_01_Ctrl" -p "L_EyeBrow_01_Ctrl_Grp";
+	rename -uid "9B70A43A-432C-F52D-4AE6-F5BEF3E2AC4B";
+createNode nurbsCurve -n "L_EyeBrow_01_CtrlShape" -p "L_EyeBrow_01_Ctrl";
+	rename -uid "745CE329-4DA8-59BE-6922-8FBDA6F8E72C";
+	setAttr -k off ".v";
+	setAttr ".ove" yes;
+	setAttr ".ovc" 22;
+	setAttr ".tw" yes;
+	setAttr -s 11 ".cp[0:10]" -type "double3" -0.52655209973742623 0.19457551745864263 
+		0.7836116248912246 0.062484007695154234 0.27517133569577545 1.1081941875543877 0.65152011512773456 
+		0.19457551745864257 0.78361162489122438 0.89550685955376585 -1.2835264669061122e-15 
+		6.4080528721364622e-17 0.65152011512773456 -0.19457551745864513 -0.78361162489122449 
+		0.062484007695154373 -0.27517133569577823 -1.1081941875543881 -0.52655209973742623 
+		-0.19457551745864504 -0.78361162489122438 -0.77053884416345686 -1.3353164154321337e-15 
+		-1.4449250373187964e-16 0 0 0 0 0 0 0 0 0;
+createNode parentConstraint -n "L_EyeBrow_01_Ctrl_Grp_parentConstraint1" -p "L_EyeBrow_01_Ctrl_Grp";
+	rename -uid "EBEECA29-4336-6658-028E-8E94ECE78BAB";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Neck_002_CtrlW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 2.5236912476025779 2.6505269110202789 0.11575160920619963 ;
+	setAttr ".lr" -type "double3" 90 0 90 ;
+	setAttr ".rst" -type "double3" 0.17205755412578583 43.655128479003906 3.5718479156494141 ;
+	setAttr ".rsrr" -type "double3" 90 0 90 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "L_EyeBrow_01_Ctrl_Grp_scaleConstraint1" -p "L_EyeBrow_01_Ctrl_Grp";
+	rename -uid "5006AB71-40C2-1185-EDA9-59A511BB361D";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Neck_002_CtrlW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode transform -n "L_EyeBrow_02_Ctrl_Grp" -p "EyeBrow_Ctrl_Master_Grp";
+	rename -uid "C5A1B914-4D30-7BE7-BC5C-A2AFE8E3A04F";
+createNode transform -n "L_EyeBrow_02_Ctrl" -p "L_EyeBrow_02_Ctrl_Grp";
+	rename -uid "5191D060-49D9-68CB-D32A-61BF1E6F2F35";
+createNode nurbsCurve -n "L_EyeBrow_02_CtrlShape" -p "L_EyeBrow_02_Ctrl";
+	rename -uid "F84AD9A4-4420-D8B2-175E-2086E0B2799F";
+	setAttr -k off ".v";
+	setAttr ".ove" yes;
+	setAttr ".ovc" 17;
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.25705952515379826 0.19457551745864268 0
+		0.062484007695154303 0.27517133569577551 0
+		-0.13209150976348993 0.19457551745864263 0
+		-0.21268732800062229 -1.2835264669061122e-15 6.6315463461163179e-18
+		-0.13209150976348993 -0.19457551745864518 0
+		0.062484007695154262 -0.27517133569577829 2.2204460492503131e-16
+		0.25705952515379826 -0.1945755174586451 0
+		0.33765534339093128 -1.3353164154321337e-15 6.6315463461162562e-18
+		0.25705952515379826 0.19457551745864268 0
+		0.062484007695154303 0.27517133569577551 0
+		-0.13209150976348993 0.19457551745864263 0
+		;
+createNode parentConstraint -n "L_EyeBrow_02_Ctrl_Grp_parentConstraint1" -p "L_EyeBrow_02_Ctrl_Grp";
+	rename -uid "2966A6AF-40F8-9B8B-A7B3-8A83A9CBB1B5";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Neck_002_CtrlW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 2.6604214416943748 2.6447845995426174 0.58700913190841686 ;
+	setAttr ".lr" -type "double3" 90 0 90 ;
+	setAttr ".rst" -type "double3" 0.64331507682800304 43.791858673095703 3.5661056041717525 ;
+	setAttr ".rsrr" -type "double3" 90 0 90 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "L_EyeBrow_02_Ctrl_Grp_scaleConstraint1" -p "L_EyeBrow_02_Ctrl_Grp";
+	rename -uid "6FCA8216-442A-2D6F-7406-6BAB88C130B3";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Neck_002_CtrlW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode transform -n "L_EyeBrow_03_Ctrl_Grp" -p "EyeBrow_Ctrl_Master_Grp";
+	rename -uid "FD048424-4360-AC31-1F51-A0A87E00FDB0";
+createNode transform -n "L_EyeBrow_03_Ctrl" -p "L_EyeBrow_03_Ctrl_Grp";
+	rename -uid "55587697-469C-F780-B533-C1A631DE14DD";
+createNode nurbsCurve -n "L_EyeBrow_03_CtrlShape" -p "L_EyeBrow_03_Ctrl";
+	rename -uid "A4C6F957-4B6A-C6FF-DDE6-C3AAD2CF0A85";
+	setAttr -k off ".v";
+	setAttr ".ove" yes;
+	setAttr ".ovc" 17;
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.25705952515379826 0.19457551745864268 0
+		0.062484007695154303 0.27517133569577551 0
+		-0.13209150976348993 0.19457551745864263 0
+		-0.21268732800062229 -1.2835264669061122e-15 6.6315463461163179e-18
+		-0.13209150976348993 -0.19457551745864518 0
+		0.062484007695154262 -0.27517133569577829 2.2204460492503131e-16
+		0.25705952515379826 -0.1945755174586451 0
+		0.33765534339093128 -1.3353164154321337e-15 6.6315463461162562e-18
+		0.25705952515379826 0.19457551745864268 0
+		0.062484007695154303 0.27517133569577551 0
+		-0.13209150976348993 0.19457551745864263 0
+		;
+createNode parentConstraint -n "L_EyeBrow_03_Ctrl_Grp_parentConstraint1" -p "L_EyeBrow_03_Ctrl_Grp";
+	rename -uid "9CA6E4E4-4114-810C-341C-0D8799A66262";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Neck_002_CtrlW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 2.5838680969678123 2.2245225012302399 1.2300447821617126 ;
+	setAttr ".lr" -type "double3" 90 0 90 ;
+	setAttr ".rst" -type "double3" 1.2863507270812988 43.715305328369141 3.145843505859375 ;
+	setAttr ".rsrr" -type "double3" 90 0 90 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "L_EyeBrow_03_Ctrl_Grp_scaleConstraint1" -p "L_EyeBrow_03_Ctrl_Grp";
+	rename -uid "CBA96F9D-46CA-EFDB-AD2B-9B966C38F04F";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Neck_002_CtrlW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode transform -n "R_EyeBrow_01_Ctrl_Grp" -p "EyeBrow_Ctrl_Master_Grp";
+	rename -uid "F9083666-4C4F-8B9B-C45C-0DBBA6B7A4CC";
+createNode transform -n "R_EyeBrow_01_Ctrl" -p "R_EyeBrow_01_Ctrl_Grp";
+	rename -uid "4A8B3288-4A59-2040-6FB5-3DA56BE8382D";
+createNode nurbsCurve -n "R_EyeBrow_01_CtrlShape" -p "R_EyeBrow_01_Ctrl";
+	rename -uid "0BA8245A-4EA0-42A0-029E-099B3161300F";
+	setAttr -k off ".v";
+	setAttr ".ove" yes;
+	setAttr ".ovc" 17;
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.12620710774248656 0.19457551745864313 0
+		-0.068368409716157402 0.27517133569577595 0
+		-0.26294392717480164 0.19457551745864307 0
+		-0.34353974541193399 -8.3943725705604958e-16 6.6315463461163179e-18
+		-0.26294392717480164 -0.19457551745864474 0
+		-0.068368409716157444 -0.27517133569577784 2.2204460492503131e-16
+		0.12620710774248656 -0.19457551745864465 0
+		0.20680292597961958 -8.9122720558207108e-16 6.6315463461162562e-18
+		0.12620710774248656 0.19457551745864313 0
+		-0.068368409716157402 0.27517133569577595 0
+		-0.26294392717480164 0.19457551745864307 0
+		;
+createNode parentConstraint -n "R_EyeBrow_01_Ctrl_Grp_parentConstraint1" -p "R_EyeBrow_01_Ctrl_Grp";
+	rename -uid "D66C68B7-4E6F-3773-D1D7-8280804DA7D2";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Neck_002_CtrlW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 2.523662768598669 2.6505289953708648 -0.23064882448165663 ;
+	setAttr ".tg[0].tor" -type "double3" 0 0 180 ;
+	setAttr ".lr" -type "double3" -90 0 -90 ;
+	setAttr ".rst" -type "double3" -0.17434287956207045 43.6551 3.57185 ;
+	setAttr ".rsrr" -type "double3" -90 0 -90 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "R_EyeBrow_01_Ctrl_Grp_scaleConstraint1" -p "R_EyeBrow_01_Ctrl_Grp";
+	rename -uid "C5E1A3FD-4249-B60F-32C0-248A681FE6B6";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Neck_002_CtrlW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode transform -n "R_EyeBrow_02_Ctrl_Grp" -p "EyeBrow_Ctrl_Master_Grp";
+	rename -uid "D89A3A43-445C-D278-1752-9C921FA5B920";
+createNode transform -n "R_EyeBrow_02_Ctrl" -p "R_EyeBrow_02_Ctrl_Grp";
+	rename -uid "BEC0112F-4BF9-75BC-C693-D2B87EE60B21";
+createNode nurbsCurve -n "R_EyeBrow_02_CtrlShape" -p "R_EyeBrow_02_Ctrl";
+	rename -uid "19F09504-4983-DF2B-EB5E-ED89836368A5";
+	setAttr -k off ".v";
+	setAttr ".ove" yes;
+	setAttr ".ovc" 17;
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.12620710774248656 0.19457551745864313 0
+		-0.068368409716157402 0.27517133569577595 0
+		-0.26294392717480164 0.19457551745864307 0
+		-0.34353974541193399 -8.3943725705604958e-16 6.6315463461163179e-18
+		-0.26294392717480164 -0.19457551745864474 0
+		-0.068368409716157444 -0.27517133569577784 2.2204460492503131e-16
+		0.12620710774248656 -0.19457551745864465 0
+		0.20680292597961958 -8.9122720558207108e-16 6.6315463461162562e-18
+		0.12620710774248656 0.19457551745864313 0
+		-0.068368409716157402 0.27517133569577595 0
+		-0.26294392717480164 0.19457551745864307 0
+		;
+createNode parentConstraint -n "R_EyeBrow_02_Ctrl_Grp_parentConstraint1" -p "R_EyeBrow_02_Ctrl_Grp";
+	rename -uid "FD287435-4362-9DCA-6711-8591DEC04397";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Neck_002_CtrlW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 2.6604627685986699 2.6447889953708645 -0.7274388310510056 ;
+	setAttr ".tg[0].tor" -type "double3" 0 0 180 ;
+	setAttr ".lr" -type "double3" -90 0 -90 ;
+	setAttr ".rst" -type "double3" -0.67113288613141941 43.7919 3.5661099999999997 ;
+	setAttr ".rsrr" -type "double3" -90 0 -90 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "R_EyeBrow_02_Ctrl_Grp_scaleConstraint1" -p "R_EyeBrow_02_Ctrl_Grp";
+	rename -uid "FE478617-4023-A789-72C0-5CBC137937A5";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Neck_002_CtrlW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode transform -n "R_EyeBrow_03_Ctrl_Grp" -p "EyeBrow_Ctrl_Master_Grp";
+	rename -uid "FD715326-421F-B0C3-0A36-99BA54105999";
+createNode transform -n "R_EyeBrow_03_Ctrl" -p "R_EyeBrow_03_Ctrl_Grp";
+	rename -uid "A2A7DF34-4663-9683-A11B-3C9B366CE2AB";
+createNode nurbsCurve -n "R_EyeBrow_03_CtrlShape" -p "R_EyeBrow_03_Ctrl";
+	rename -uid "FDB94F3F-4D1B-A363-F62C-CC99B4E444EB";
+	setAttr -k off ".v";
+	setAttr ".ove" yes;
+	setAttr ".ovc" 22;
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.12620710774248656 0.19457551745864313 0
+		-0.068368409716157402 0.27517133569577595 0
+		-0.26294392717480164 0.19457551745864307 0
+		-0.34353974541193399 -8.3943725705604958e-16 6.6315463461163179e-18
+		-0.26294392717480164 -0.19457551745864474 0
+		-0.068368409716157444 -0.27517133569577784 2.2204460492503131e-16
+		0.12620710774248656 -0.19457551745864465 0
+		0.20680292597961958 -8.9122720558207108e-16 6.6315463461162562e-18
+		0.12620710774248656 0.19457551745864313 0
+		-0.068368409716157402 0.27517133569577595 0
+		-0.26294392717480164 0.19457551745864307 0
+		;
+createNode parentConstraint -n "R_EyeBrow_03_Ctrl_Grp_parentConstraint1" -p "R_EyeBrow_03_Ctrl_Grp";
+	rename -uid "A681381E-4DF1-8DCE-AA4C-138A4592AC79";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Neck_002_CtrlW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 2.5838627685986708 2.2245189953708646 -1.3423898538247219 ;
+	setAttr ".tg[0].tor" -type "double3" 0 0 180 ;
+	setAttr ".lr" -type "double3" -90 0 -90 ;
+	setAttr ".rst" -type "double3" -1.2860839089051357 43.7153 3.1458399999999997 ;
+	setAttr ".rsrr" -type "double3" -90 0 -90 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "R_EyeBrow_03_Ctrl_Grp_scaleConstraint1" -p "R_EyeBrow_03_Ctrl_Grp";
+	rename -uid "6B0DCE8E-4A2C-C566-FE63-3B89645BB164";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Neck_002_CtrlW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -52414,367 +52777,6 @@ createNode nurbsCurve -n "L_Leg_001_PV_Line_CRVShapeOrig" -p "L_Leg_001_PV_Line_
 		3.0304055213928223 13.764633178710938 0.63746768236160278
 		3.0302400588989258 13.764618873596191 10.618511199951172
 		;
-createNode transform -n "L_EyeBrow_01_Ctrl_Grp";
-	rename -uid "1D6E1A14-4B66-3F7E-A9B2-EE85071E742C";
-createNode transform -n "L_EyeBrow_01_Ctrl" -p "L_EyeBrow_01_Ctrl_Grp";
-	rename -uid "9B70A43A-432C-F52D-4AE6-F5BEF3E2AC4B";
-createNode nurbsCurve -n "L_EyeBrow_01_CtrlShape" -p "L_EyeBrow_01_Ctrl";
-	rename -uid "745CE329-4DA8-59BE-6922-8FBDA6F8E72C";
-	setAttr -k off ".v";
-	setAttr ".ove" yes;
-	setAttr ".ovc" 22;
-	setAttr ".tw" yes;
-	setAttr -s 11 ".cp[0:10]" -type "double3" -0.52655209973742623 0.19457551745864263 
-		0.7836116248912246 0.062484007695154234 0.27517133569577545 1.1081941875543877 0.65152011512773456 
-		0.19457551745864257 0.78361162489122438 0.89550685955376585 -1.2835264669061122e-15 
-		6.4080528721364622e-17 0.65152011512773456 -0.19457551745864513 -0.78361162489122449 
-		0.062484007695154373 -0.27517133569577823 -1.1081941875543881 -0.52655209973742623 
-		-0.19457551745864504 -0.78361162489122438 -0.77053884416345686 -1.3353164154321337e-15 
-		-1.4449250373187964e-16 0 0 0 0 0 0 0 0 0;
-createNode parentConstraint -n "L_EyeBrow_01_Ctrl_Grp_parentConstraint1" -p "L_EyeBrow_01_Ctrl_Grp";
-	rename -uid "EBEECA29-4336-6658-028E-8E94ECE78BAB";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Neck_002_CtrlW0" -dv 1 -min 0 -at "double";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".tg[0].tot" -type "double3" 2.5236912476025779 2.6505269110202789 0.11575160920619963 ;
-	setAttr ".lr" -type "double3" 90 0 90 ;
-	setAttr ".rst" -type "double3" 0.17205755412578583 43.655128479003906 3.5718479156494141 ;
-	setAttr ".rsrr" -type "double3" 90 0 90 ;
-	setAttr -k on ".w0";
-createNode scaleConstraint -n "L_EyeBrow_01_Ctrl_Grp_scaleConstraint1" -p "L_EyeBrow_01_Ctrl_Grp";
-	rename -uid "5006AB71-40C2-1185-EDA9-59A511BB361D";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Neck_002_CtrlW0" -dv 1 -min 0 -at "double";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr -k on ".w0";
-createNode transform -n "L_EyeBrow_02_Ctrl_Grp";
-	rename -uid "C5A1B914-4D30-7BE7-BC5C-A2AFE8E3A04F";
-createNode transform -n "L_EyeBrow_02_Ctrl" -p "L_EyeBrow_02_Ctrl_Grp";
-	rename -uid "5191D060-49D9-68CB-D32A-61BF1E6F2F35";
-createNode nurbsCurve -n "L_EyeBrow_02_CtrlShape" -p "L_EyeBrow_02_Ctrl";
-	rename -uid "F84AD9A4-4420-D8B2-175E-2086E0B2799F";
-	setAttr -k off ".v";
-	setAttr ".ove" yes;
-	setAttr ".ovc" 17;
-	setAttr ".cc" -type "nurbsCurve" 
-		3 8 2 no 3
-		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
-		11
-		0.25705952515379826 0.19457551745864268 0
-		0.062484007695154303 0.27517133569577551 0
-		-0.13209150976348993 0.19457551745864263 0
-		-0.21268732800062229 -1.2835264669061122e-15 6.6315463461163179e-18
-		-0.13209150976348993 -0.19457551745864518 0
-		0.062484007695154262 -0.27517133569577829 2.2204460492503131e-16
-		0.25705952515379826 -0.1945755174586451 0
-		0.33765534339093128 -1.3353164154321337e-15 6.6315463461162562e-18
-		0.25705952515379826 0.19457551745864268 0
-		0.062484007695154303 0.27517133569577551 0
-		-0.13209150976348993 0.19457551745864263 0
-		;
-createNode parentConstraint -n "L_EyeBrow_02_Ctrl_Grp_parentConstraint1" -p "L_EyeBrow_02_Ctrl_Grp";
-	rename -uid "2966A6AF-40F8-9B8B-A7B3-8A83A9CBB1B5";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Neck_002_CtrlW0" -dv 1 -min 0 -at "double";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".tg[0].tot" -type "double3" 2.6604214416943748 2.6447845995426174 0.58700913190841686 ;
-	setAttr ".lr" -type "double3" 90 0 90 ;
-	setAttr ".rst" -type "double3" 0.64331507682800304 43.791858673095703 3.5661056041717525 ;
-	setAttr ".rsrr" -type "double3" 90 0 90 ;
-	setAttr -k on ".w0";
-createNode scaleConstraint -n "L_EyeBrow_02_Ctrl_Grp_scaleConstraint1" -p "L_EyeBrow_02_Ctrl_Grp";
-	rename -uid "6FCA8216-442A-2D6F-7406-6BAB88C130B3";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Neck_002_CtrlW0" -dv 1 -min 0 -at "double";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr -k on ".w0";
-createNode transform -n "L_EyeBrow_03_Ctrl_Grp";
-	rename -uid "FD048424-4360-AC31-1F51-A0A87E00FDB0";
-createNode transform -n "L_EyeBrow_03_Ctrl" -p "L_EyeBrow_03_Ctrl_Grp";
-	rename -uid "55587697-469C-F780-B533-C1A631DE14DD";
-createNode nurbsCurve -n "L_EyeBrow_03_CtrlShape" -p "L_EyeBrow_03_Ctrl";
-	rename -uid "A4C6F957-4B6A-C6FF-DDE6-C3AAD2CF0A85";
-	setAttr -k off ".v";
-	setAttr ".ove" yes;
-	setAttr ".ovc" 17;
-	setAttr ".cc" -type "nurbsCurve" 
-		3 8 2 no 3
-		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
-		11
-		0.25705952515379826 0.19457551745864268 0
-		0.062484007695154303 0.27517133569577551 0
-		-0.13209150976348993 0.19457551745864263 0
-		-0.21268732800062229 -1.2835264669061122e-15 6.6315463461163179e-18
-		-0.13209150976348993 -0.19457551745864518 0
-		0.062484007695154262 -0.27517133569577829 2.2204460492503131e-16
-		0.25705952515379826 -0.1945755174586451 0
-		0.33765534339093128 -1.3353164154321337e-15 6.6315463461162562e-18
-		0.25705952515379826 0.19457551745864268 0
-		0.062484007695154303 0.27517133569577551 0
-		-0.13209150976348993 0.19457551745864263 0
-		;
-createNode parentConstraint -n "L_EyeBrow_03_Ctrl_Grp_parentConstraint1" -p "L_EyeBrow_03_Ctrl_Grp";
-	rename -uid "9CA6E4E4-4114-810C-341C-0D8799A66262";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Neck_002_CtrlW0" -dv 1 -min 0 -at "double";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".tg[0].tot" -type "double3" 2.5838680969678123 2.2245225012302399 1.2300447821617126 ;
-	setAttr ".lr" -type "double3" 90 0 90 ;
-	setAttr ".rst" -type "double3" 1.2863507270812988 43.715305328369141 3.145843505859375 ;
-	setAttr ".rsrr" -type "double3" 90 0 90 ;
-	setAttr -k on ".w0";
-createNode scaleConstraint -n "L_EyeBrow_03_Ctrl_Grp_scaleConstraint1" -p "L_EyeBrow_03_Ctrl_Grp";
-	rename -uid "CBA96F9D-46CA-EFDB-AD2B-9B966C38F04F";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Neck_002_CtrlW0" -dv 1 -min 0 -at "double";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr -k on ".w0";
-createNode transform -n "R_EyeBrow_01_Ctrl_Grp";
-	rename -uid "F9083666-4C4F-8B9B-C45C-0DBBA6B7A4CC";
-createNode transform -n "R_EyeBrow_01_Ctrl" -p "R_EyeBrow_01_Ctrl_Grp";
-	rename -uid "4A8B3288-4A59-2040-6FB5-3DA56BE8382D";
-createNode nurbsCurve -n "R_EyeBrow_01_CtrlShape" -p "R_EyeBrow_01_Ctrl";
-	rename -uid "0BA8245A-4EA0-42A0-029E-099B3161300F";
-	setAttr -k off ".v";
-	setAttr ".ove" yes;
-	setAttr ".ovc" 17;
-	setAttr ".cc" -type "nurbsCurve" 
-		3 8 2 no 3
-		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
-		11
-		0.12620710774248656 0.19457551745864313 0
-		-0.068368409716157402 0.27517133569577595 0
-		-0.26294392717480164 0.19457551745864307 0
-		-0.34353974541193399 -8.3943725705604958e-16 6.6315463461163179e-18
-		-0.26294392717480164 -0.19457551745864474 0
-		-0.068368409716157444 -0.27517133569577784 2.2204460492503131e-16
-		0.12620710774248656 -0.19457551745864465 0
-		0.20680292597961958 -8.9122720558207108e-16 6.6315463461162562e-18
-		0.12620710774248656 0.19457551745864313 0
-		-0.068368409716157402 0.27517133569577595 0
-		-0.26294392717480164 0.19457551745864307 0
-		;
-createNode parentConstraint -n "R_EyeBrow_01_Ctrl_Grp_parentConstraint1" -p "R_EyeBrow_01_Ctrl_Grp";
-	rename -uid "D66C68B7-4E6F-3773-D1D7-8280804DA7D2";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Neck_002_CtrlW0" -dv 1 -min 0 -at "double";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".tg[0].tot" -type "double3" 2.523662768598669 2.6505289953708648 -0.23064882448165663 ;
-	setAttr ".tg[0].tor" -type "double3" 0 0 180 ;
-	setAttr ".lr" -type "double3" -90 0 -90 ;
-	setAttr ".rst" -type "double3" -0.17434287956207045 43.6551 3.57185 ;
-	setAttr ".rsrr" -type "double3" -90 0 -90 ;
-	setAttr -k on ".w0";
-createNode scaleConstraint -n "R_EyeBrow_01_Ctrl_Grp_scaleConstraint1" -p "R_EyeBrow_01_Ctrl_Grp";
-	rename -uid "C5E1A3FD-4249-B60F-32C0-248A681FE6B6";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Neck_002_CtrlW0" -dv 1 -min 0 -at "double";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr -k on ".w0";
-createNode transform -n "R_EyeBrow_02_Ctrl_Grp";
-	rename -uid "D89A3A43-445C-D278-1752-9C921FA5B920";
-createNode transform -n "R_EyeBrow_02_Ctrl" -p "R_EyeBrow_02_Ctrl_Grp";
-	rename -uid "BEC0112F-4BF9-75BC-C693-D2B87EE60B21";
-createNode nurbsCurve -n "R_EyeBrow_02_CtrlShape" -p "R_EyeBrow_02_Ctrl";
-	rename -uid "19F09504-4983-DF2B-EB5E-ED89836368A5";
-	setAttr -k off ".v";
-	setAttr ".ove" yes;
-	setAttr ".ovc" 17;
-	setAttr ".cc" -type "nurbsCurve" 
-		3 8 2 no 3
-		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
-		11
-		0.12620710774248656 0.19457551745864313 0
-		-0.068368409716157402 0.27517133569577595 0
-		-0.26294392717480164 0.19457551745864307 0
-		-0.34353974541193399 -8.3943725705604958e-16 6.6315463461163179e-18
-		-0.26294392717480164 -0.19457551745864474 0
-		-0.068368409716157444 -0.27517133569577784 2.2204460492503131e-16
-		0.12620710774248656 -0.19457551745864465 0
-		0.20680292597961958 -8.9122720558207108e-16 6.6315463461162562e-18
-		0.12620710774248656 0.19457551745864313 0
-		-0.068368409716157402 0.27517133569577595 0
-		-0.26294392717480164 0.19457551745864307 0
-		;
-createNode parentConstraint -n "R_EyeBrow_02_Ctrl_Grp_parentConstraint1" -p "R_EyeBrow_02_Ctrl_Grp";
-	rename -uid "FD287435-4362-9DCA-6711-8591DEC04397";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Neck_002_CtrlW0" -dv 1 -min 0 -at "double";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".tg[0].tot" -type "double3" 2.6604627685986699 2.6447889953708645 -0.7274388310510056 ;
-	setAttr ".tg[0].tor" -type "double3" 0 0 180 ;
-	setAttr ".lr" -type "double3" -90 0 -90 ;
-	setAttr ".rst" -type "double3" -0.67113288613141941 43.7919 3.5661099999999997 ;
-	setAttr ".rsrr" -type "double3" -90 0 -90 ;
-	setAttr -k on ".w0";
-createNode scaleConstraint -n "R_EyeBrow_02_Ctrl_Grp_scaleConstraint1" -p "R_EyeBrow_02_Ctrl_Grp";
-	rename -uid "FE478617-4023-A789-72C0-5CBC137937A5";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Neck_002_CtrlW0" -dv 1 -min 0 -at "double";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr -k on ".w0";
-createNode transform -n "R_EyeBrow_03_Ctrl_Grp";
-	rename -uid "FD715326-421F-B0C3-0A36-99BA54105999";
-createNode transform -n "R_EyeBrow_03_Ctrl" -p "R_EyeBrow_03_Ctrl_Grp";
-	rename -uid "A2A7DF34-4663-9683-A11B-3C9B366CE2AB";
-createNode nurbsCurve -n "R_EyeBrow_03_CtrlShape" -p "R_EyeBrow_03_Ctrl";
-	rename -uid "FDB94F3F-4D1B-A363-F62C-CC99B4E444EB";
-	setAttr -k off ".v";
-	setAttr ".ove" yes;
-	setAttr ".ovc" 22;
-	setAttr ".cc" -type "nurbsCurve" 
-		3 8 2 no 3
-		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
-		11
-		0.12620710774248656 0.19457551745864313 0
-		-0.068368409716157402 0.27517133569577595 0
-		-0.26294392717480164 0.19457551745864307 0
-		-0.34353974541193399 -8.3943725705604958e-16 6.6315463461163179e-18
-		-0.26294392717480164 -0.19457551745864474 0
-		-0.068368409716157444 -0.27517133569577784 2.2204460492503131e-16
-		0.12620710774248656 -0.19457551745864465 0
-		0.20680292597961958 -8.9122720558207108e-16 6.6315463461162562e-18
-		0.12620710774248656 0.19457551745864313 0
-		-0.068368409716157402 0.27517133569577595 0
-		-0.26294392717480164 0.19457551745864307 0
-		;
-createNode parentConstraint -n "R_EyeBrow_03_Ctrl_Grp_parentConstraint1" -p "R_EyeBrow_03_Ctrl_Grp";
-	rename -uid "A681381E-4DF1-8DCE-AA4C-138A4592AC79";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Neck_002_CtrlW0" -dv 1 -min 0 -at "double";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".tg[0].tot" -type "double3" 2.5838627685986708 2.2245189953708646 -1.3423898538247219 ;
-	setAttr ".tg[0].tor" -type "double3" 0 0 180 ;
-	setAttr ".lr" -type "double3" -90 0 -90 ;
-	setAttr ".rst" -type "double3" -1.2860839089051357 43.7153 3.1458399999999997 ;
-	setAttr ".rsrr" -type "double3" -90 0 -90 ;
-	setAttr -k on ".w0";
-createNode scaleConstraint -n "R_EyeBrow_03_Ctrl_Grp_scaleConstraint1" -p "R_EyeBrow_03_Ctrl_Grp";
-	rename -uid "6B0DCE8E-4A2C-C566-FE63-3B89645BB164";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Neck_002_CtrlW0" -dv 1 -min 0 -at "double";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr -k on ".w0";
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "EE8B4A62-4EF9-1F17-3B3E-0BB4E22A1DF9";
 	setAttr -s 7 ".lnk";
@@ -74440,6 +74442,301 @@ connectAttr "Neck_002_Ctrl.s" "Jaw_Ctrl_Grp_scaleConstraint1.tg[0].ts";
 connectAttr "Neck_002_Ctrl.pm" "Jaw_Ctrl_Grp_scaleConstraint1.tg[0].tpm";
 connectAttr "Jaw_Ctrl_Grp_scaleConstraint1.w0" "Jaw_Ctrl_Grp_scaleConstraint1.tg[0].tw"
 		;
+connectAttr "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.ctx" "L_EyeBrow_01_Ctrl_Grp.tx"
+		;
+connectAttr "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.cty" "L_EyeBrow_01_Ctrl_Grp.ty"
+		;
+connectAttr "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.ctz" "L_EyeBrow_01_Ctrl_Grp.tz"
+		;
+connectAttr "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.crx" "L_EyeBrow_01_Ctrl_Grp.rx"
+		;
+connectAttr "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.cry" "L_EyeBrow_01_Ctrl_Grp.ry"
+		;
+connectAttr "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.crz" "L_EyeBrow_01_Ctrl_Grp.rz"
+		;
+connectAttr "L_EyeBrow_01_Ctrl_Grp_scaleConstraint1.csx" "L_EyeBrow_01_Ctrl_Grp.sx"
+		;
+connectAttr "L_EyeBrow_01_Ctrl_Grp_scaleConstraint1.csy" "L_EyeBrow_01_Ctrl_Grp.sy"
+		;
+connectAttr "L_EyeBrow_01_Ctrl_Grp_scaleConstraint1.csz" "L_EyeBrow_01_Ctrl_Grp.sz"
+		;
+connectAttr "makeNurbCircle2.oc" "L_EyeBrow_01_CtrlShape.cr";
+connectAttr "L_EyeBrow_01_Ctrl_Grp.ro" "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.cro"
+		;
+connectAttr "L_EyeBrow_01_Ctrl_Grp.pim" "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.cpim"
+		;
+connectAttr "L_EyeBrow_01_Ctrl_Grp.rp" "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.crp"
+		;
+connectAttr "L_EyeBrow_01_Ctrl_Grp.rpt" "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.crt"
+		;
+connectAttr "Neck_002_Ctrl.t" "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].tt"
+		;
+connectAttr "Neck_002_Ctrl.rp" "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].trp"
+		;
+connectAttr "Neck_002_Ctrl.rpt" "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].trt"
+		;
+connectAttr "Neck_002_Ctrl.r" "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].tr"
+		;
+connectAttr "Neck_002_Ctrl.ro" "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].tro"
+		;
+connectAttr "Neck_002_Ctrl.s" "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].ts"
+		;
+connectAttr "Neck_002_Ctrl.pm" "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.w0" "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].tw"
+		;
+connectAttr "L_EyeBrow_01_Ctrl_Grp.pim" "L_EyeBrow_01_Ctrl_Grp_scaleConstraint1.cpim"
+		;
+connectAttr "Neck_002_Ctrl.s" "L_EyeBrow_01_Ctrl_Grp_scaleConstraint1.tg[0].ts";
+connectAttr "Neck_002_Ctrl.pm" "L_EyeBrow_01_Ctrl_Grp_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "L_EyeBrow_01_Ctrl_Grp_scaleConstraint1.w0" "L_EyeBrow_01_Ctrl_Grp_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.ctx" "L_EyeBrow_02_Ctrl_Grp.tx"
+		;
+connectAttr "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.cty" "L_EyeBrow_02_Ctrl_Grp.ty"
+		;
+connectAttr "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.ctz" "L_EyeBrow_02_Ctrl_Grp.tz"
+		;
+connectAttr "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.crx" "L_EyeBrow_02_Ctrl_Grp.rx"
+		;
+connectAttr "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.cry" "L_EyeBrow_02_Ctrl_Grp.ry"
+		;
+connectAttr "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.crz" "L_EyeBrow_02_Ctrl_Grp.rz"
+		;
+connectAttr "L_EyeBrow_02_Ctrl_Grp_scaleConstraint1.csx" "L_EyeBrow_02_Ctrl_Grp.sx"
+		;
+connectAttr "L_EyeBrow_02_Ctrl_Grp_scaleConstraint1.csy" "L_EyeBrow_02_Ctrl_Grp.sy"
+		;
+connectAttr "L_EyeBrow_02_Ctrl_Grp_scaleConstraint1.csz" "L_EyeBrow_02_Ctrl_Grp.sz"
+		;
+connectAttr "L_EyeBrow_02_Ctrl_Grp.ro" "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.cro"
+		;
+connectAttr "L_EyeBrow_02_Ctrl_Grp.pim" "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.cpim"
+		;
+connectAttr "L_EyeBrow_02_Ctrl_Grp.rp" "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.crp"
+		;
+connectAttr "L_EyeBrow_02_Ctrl_Grp.rpt" "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.crt"
+		;
+connectAttr "Neck_002_Ctrl.t" "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].tt"
+		;
+connectAttr "Neck_002_Ctrl.rp" "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].trp"
+		;
+connectAttr "Neck_002_Ctrl.rpt" "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].trt"
+		;
+connectAttr "Neck_002_Ctrl.r" "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].tr"
+		;
+connectAttr "Neck_002_Ctrl.ro" "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].tro"
+		;
+connectAttr "Neck_002_Ctrl.s" "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].ts"
+		;
+connectAttr "Neck_002_Ctrl.pm" "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.w0" "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].tw"
+		;
+connectAttr "L_EyeBrow_02_Ctrl_Grp.pim" "L_EyeBrow_02_Ctrl_Grp_scaleConstraint1.cpim"
+		;
+connectAttr "Neck_002_Ctrl.s" "L_EyeBrow_02_Ctrl_Grp_scaleConstraint1.tg[0].ts";
+connectAttr "Neck_002_Ctrl.pm" "L_EyeBrow_02_Ctrl_Grp_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "L_EyeBrow_02_Ctrl_Grp_scaleConstraint1.w0" "L_EyeBrow_02_Ctrl_Grp_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.ctx" "L_EyeBrow_03_Ctrl_Grp.tx"
+		;
+connectAttr "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.cty" "L_EyeBrow_03_Ctrl_Grp.ty"
+		;
+connectAttr "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.ctz" "L_EyeBrow_03_Ctrl_Grp.tz"
+		;
+connectAttr "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.crx" "L_EyeBrow_03_Ctrl_Grp.rx"
+		;
+connectAttr "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.cry" "L_EyeBrow_03_Ctrl_Grp.ry"
+		;
+connectAttr "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.crz" "L_EyeBrow_03_Ctrl_Grp.rz"
+		;
+connectAttr "L_EyeBrow_03_Ctrl_Grp_scaleConstraint1.csx" "L_EyeBrow_03_Ctrl_Grp.sx"
+		;
+connectAttr "L_EyeBrow_03_Ctrl_Grp_scaleConstraint1.csy" "L_EyeBrow_03_Ctrl_Grp.sy"
+		;
+connectAttr "L_EyeBrow_03_Ctrl_Grp_scaleConstraint1.csz" "L_EyeBrow_03_Ctrl_Grp.sz"
+		;
+connectAttr "L_EyeBrow_03_Ctrl_Grp.ro" "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.cro"
+		;
+connectAttr "L_EyeBrow_03_Ctrl_Grp.pim" "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.cpim"
+		;
+connectAttr "L_EyeBrow_03_Ctrl_Grp.rp" "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.crp"
+		;
+connectAttr "L_EyeBrow_03_Ctrl_Grp.rpt" "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.crt"
+		;
+connectAttr "Neck_002_Ctrl.t" "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].tt"
+		;
+connectAttr "Neck_002_Ctrl.rp" "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].trp"
+		;
+connectAttr "Neck_002_Ctrl.rpt" "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].trt"
+		;
+connectAttr "Neck_002_Ctrl.r" "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].tr"
+		;
+connectAttr "Neck_002_Ctrl.ro" "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].tro"
+		;
+connectAttr "Neck_002_Ctrl.s" "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].ts"
+		;
+connectAttr "Neck_002_Ctrl.pm" "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.w0" "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].tw"
+		;
+connectAttr "L_EyeBrow_03_Ctrl_Grp.pim" "L_EyeBrow_03_Ctrl_Grp_scaleConstraint1.cpim"
+		;
+connectAttr "Neck_002_Ctrl.s" "L_EyeBrow_03_Ctrl_Grp_scaleConstraint1.tg[0].ts";
+connectAttr "Neck_002_Ctrl.pm" "L_EyeBrow_03_Ctrl_Grp_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "L_EyeBrow_03_Ctrl_Grp_scaleConstraint1.w0" "L_EyeBrow_03_Ctrl_Grp_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.ctx" "R_EyeBrow_01_Ctrl_Grp.tx"
+		;
+connectAttr "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.cty" "R_EyeBrow_01_Ctrl_Grp.ty"
+		;
+connectAttr "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.ctz" "R_EyeBrow_01_Ctrl_Grp.tz"
+		;
+connectAttr "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.crx" "R_EyeBrow_01_Ctrl_Grp.rx"
+		;
+connectAttr "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.cry" "R_EyeBrow_01_Ctrl_Grp.ry"
+		;
+connectAttr "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.crz" "R_EyeBrow_01_Ctrl_Grp.rz"
+		;
+connectAttr "R_EyeBrow_01_Ctrl_Grp_scaleConstraint1.csx" "R_EyeBrow_01_Ctrl_Grp.sx"
+		;
+connectAttr "R_EyeBrow_01_Ctrl_Grp_scaleConstraint1.csy" "R_EyeBrow_01_Ctrl_Grp.sy"
+		;
+connectAttr "R_EyeBrow_01_Ctrl_Grp_scaleConstraint1.csz" "R_EyeBrow_01_Ctrl_Grp.sz"
+		;
+connectAttr "R_EyeBrow_01_Ctrl_Grp.ro" "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.cro"
+		;
+connectAttr "R_EyeBrow_01_Ctrl_Grp.pim" "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.cpim"
+		;
+connectAttr "R_EyeBrow_01_Ctrl_Grp.rp" "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.crp"
+		;
+connectAttr "R_EyeBrow_01_Ctrl_Grp.rpt" "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.crt"
+		;
+connectAttr "Neck_002_Ctrl.t" "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].tt"
+		;
+connectAttr "Neck_002_Ctrl.rp" "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].trp"
+		;
+connectAttr "Neck_002_Ctrl.rpt" "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].trt"
+		;
+connectAttr "Neck_002_Ctrl.r" "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].tr"
+		;
+connectAttr "Neck_002_Ctrl.ro" "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].tro"
+		;
+connectAttr "Neck_002_Ctrl.s" "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].ts"
+		;
+connectAttr "Neck_002_Ctrl.pm" "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.w0" "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].tw"
+		;
+connectAttr "R_EyeBrow_01_Ctrl_Grp.pim" "R_EyeBrow_01_Ctrl_Grp_scaleConstraint1.cpim"
+		;
+connectAttr "Neck_002_Ctrl.s" "R_EyeBrow_01_Ctrl_Grp_scaleConstraint1.tg[0].ts";
+connectAttr "Neck_002_Ctrl.pm" "R_EyeBrow_01_Ctrl_Grp_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "R_EyeBrow_01_Ctrl_Grp_scaleConstraint1.w0" "R_EyeBrow_01_Ctrl_Grp_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.ctx" "R_EyeBrow_02_Ctrl_Grp.tx"
+		;
+connectAttr "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.cty" "R_EyeBrow_02_Ctrl_Grp.ty"
+		;
+connectAttr "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.ctz" "R_EyeBrow_02_Ctrl_Grp.tz"
+		;
+connectAttr "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.crx" "R_EyeBrow_02_Ctrl_Grp.rx"
+		;
+connectAttr "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.cry" "R_EyeBrow_02_Ctrl_Grp.ry"
+		;
+connectAttr "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.crz" "R_EyeBrow_02_Ctrl_Grp.rz"
+		;
+connectAttr "R_EyeBrow_02_Ctrl_Grp_scaleConstraint1.csx" "R_EyeBrow_02_Ctrl_Grp.sx"
+		;
+connectAttr "R_EyeBrow_02_Ctrl_Grp_scaleConstraint1.csy" "R_EyeBrow_02_Ctrl_Grp.sy"
+		;
+connectAttr "R_EyeBrow_02_Ctrl_Grp_scaleConstraint1.csz" "R_EyeBrow_02_Ctrl_Grp.sz"
+		;
+connectAttr "R_EyeBrow_02_Ctrl_Grp.ro" "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.cro"
+		;
+connectAttr "R_EyeBrow_02_Ctrl_Grp.pim" "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.cpim"
+		;
+connectAttr "R_EyeBrow_02_Ctrl_Grp.rp" "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.crp"
+		;
+connectAttr "R_EyeBrow_02_Ctrl_Grp.rpt" "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.crt"
+		;
+connectAttr "Neck_002_Ctrl.t" "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].tt"
+		;
+connectAttr "Neck_002_Ctrl.rp" "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].trp"
+		;
+connectAttr "Neck_002_Ctrl.rpt" "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].trt"
+		;
+connectAttr "Neck_002_Ctrl.r" "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].tr"
+		;
+connectAttr "Neck_002_Ctrl.ro" "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].tro"
+		;
+connectAttr "Neck_002_Ctrl.s" "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].ts"
+		;
+connectAttr "Neck_002_Ctrl.pm" "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.w0" "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].tw"
+		;
+connectAttr "R_EyeBrow_02_Ctrl_Grp.pim" "R_EyeBrow_02_Ctrl_Grp_scaleConstraint1.cpim"
+		;
+connectAttr "Neck_002_Ctrl.s" "R_EyeBrow_02_Ctrl_Grp_scaleConstraint1.tg[0].ts";
+connectAttr "Neck_002_Ctrl.pm" "R_EyeBrow_02_Ctrl_Grp_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "R_EyeBrow_02_Ctrl_Grp_scaleConstraint1.w0" "R_EyeBrow_02_Ctrl_Grp_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.ctx" "R_EyeBrow_03_Ctrl_Grp.tx"
+		;
+connectAttr "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.cty" "R_EyeBrow_03_Ctrl_Grp.ty"
+		;
+connectAttr "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.ctz" "R_EyeBrow_03_Ctrl_Grp.tz"
+		;
+connectAttr "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.crx" "R_EyeBrow_03_Ctrl_Grp.rx"
+		;
+connectAttr "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.cry" "R_EyeBrow_03_Ctrl_Grp.ry"
+		;
+connectAttr "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.crz" "R_EyeBrow_03_Ctrl_Grp.rz"
+		;
+connectAttr "R_EyeBrow_03_Ctrl_Grp_scaleConstraint1.csx" "R_EyeBrow_03_Ctrl_Grp.sx"
+		;
+connectAttr "R_EyeBrow_03_Ctrl_Grp_scaleConstraint1.csy" "R_EyeBrow_03_Ctrl_Grp.sy"
+		;
+connectAttr "R_EyeBrow_03_Ctrl_Grp_scaleConstraint1.csz" "R_EyeBrow_03_Ctrl_Grp.sz"
+		;
+connectAttr "R_EyeBrow_03_Ctrl_Grp.ro" "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.cro"
+		;
+connectAttr "R_EyeBrow_03_Ctrl_Grp.pim" "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.cpim"
+		;
+connectAttr "R_EyeBrow_03_Ctrl_Grp.rp" "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.crp"
+		;
+connectAttr "R_EyeBrow_03_Ctrl_Grp.rpt" "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.crt"
+		;
+connectAttr "Neck_002_Ctrl.t" "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].tt"
+		;
+connectAttr "Neck_002_Ctrl.rp" "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].trp"
+		;
+connectAttr "Neck_002_Ctrl.rpt" "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].trt"
+		;
+connectAttr "Neck_002_Ctrl.r" "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].tr"
+		;
+connectAttr "Neck_002_Ctrl.ro" "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].tro"
+		;
+connectAttr "Neck_002_Ctrl.s" "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].ts"
+		;
+connectAttr "Neck_002_Ctrl.pm" "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.w0" "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].tw"
+		;
+connectAttr "R_EyeBrow_03_Ctrl_Grp.pim" "R_EyeBrow_03_Ctrl_Grp_scaleConstraint1.cpim"
+		;
+connectAttr "Neck_002_Ctrl.s" "R_EyeBrow_03_Ctrl_Grp_scaleConstraint1.tg[0].ts";
+connectAttr "Neck_002_Ctrl.pm" "R_EyeBrow_03_Ctrl_Grp_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "R_EyeBrow_03_Ctrl_Grp_scaleConstraint1.w0" "R_EyeBrow_03_Ctrl_Grp_scaleConstraint1.tg[0].tw"
+		;
 connectAttr "L_Clav_001_Ctrl_Grp_parentConstraint1.ctx" "L_Clav_001_Ctrl_Grp.tx"
 		;
 connectAttr "L_Clav_001_Ctrl_Grp_parentConstraint1.cty" "L_Clav_001_Ctrl_Grp.ty"
@@ -78447,301 +78744,6 @@ connectAttr "skinCluster3GroupId.id" "L_Leg_001_PV_Line_CRVShape.iog.og[0].gid";
 connectAttr "skinCluster3Set.mwc" "L_Leg_001_PV_Line_CRVShape.iog.og[0].gco";
 connectAttr "groupId12.id" "L_Leg_001_PV_Line_CRVShape.iog.og[1].gid";
 connectAttr "tweakSet3.mwc" "L_Leg_001_PV_Line_CRVShape.iog.og[1].gco";
-connectAttr "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.ctx" "L_EyeBrow_01_Ctrl_Grp.tx"
-		;
-connectAttr "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.cty" "L_EyeBrow_01_Ctrl_Grp.ty"
-		;
-connectAttr "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.ctz" "L_EyeBrow_01_Ctrl_Grp.tz"
-		;
-connectAttr "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.crx" "L_EyeBrow_01_Ctrl_Grp.rx"
-		;
-connectAttr "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.cry" "L_EyeBrow_01_Ctrl_Grp.ry"
-		;
-connectAttr "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.crz" "L_EyeBrow_01_Ctrl_Grp.rz"
-		;
-connectAttr "L_EyeBrow_01_Ctrl_Grp_scaleConstraint1.csx" "L_EyeBrow_01_Ctrl_Grp.sx"
-		;
-connectAttr "L_EyeBrow_01_Ctrl_Grp_scaleConstraint1.csy" "L_EyeBrow_01_Ctrl_Grp.sy"
-		;
-connectAttr "L_EyeBrow_01_Ctrl_Grp_scaleConstraint1.csz" "L_EyeBrow_01_Ctrl_Grp.sz"
-		;
-connectAttr "makeNurbCircle2.oc" "L_EyeBrow_01_CtrlShape.cr";
-connectAttr "L_EyeBrow_01_Ctrl_Grp.ro" "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.cro"
-		;
-connectAttr "L_EyeBrow_01_Ctrl_Grp.pim" "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.cpim"
-		;
-connectAttr "L_EyeBrow_01_Ctrl_Grp.rp" "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.crp"
-		;
-connectAttr "L_EyeBrow_01_Ctrl_Grp.rpt" "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.crt"
-		;
-connectAttr "Neck_002_Ctrl.t" "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].tt"
-		;
-connectAttr "Neck_002_Ctrl.rp" "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].trp"
-		;
-connectAttr "Neck_002_Ctrl.rpt" "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].trt"
-		;
-connectAttr "Neck_002_Ctrl.r" "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].tr"
-		;
-connectAttr "Neck_002_Ctrl.ro" "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].tro"
-		;
-connectAttr "Neck_002_Ctrl.s" "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].ts"
-		;
-connectAttr "Neck_002_Ctrl.pm" "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].tpm"
-		;
-connectAttr "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.w0" "L_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].tw"
-		;
-connectAttr "L_EyeBrow_01_Ctrl_Grp.pim" "L_EyeBrow_01_Ctrl_Grp_scaleConstraint1.cpim"
-		;
-connectAttr "Neck_002_Ctrl.s" "L_EyeBrow_01_Ctrl_Grp_scaleConstraint1.tg[0].ts";
-connectAttr "Neck_002_Ctrl.pm" "L_EyeBrow_01_Ctrl_Grp_scaleConstraint1.tg[0].tpm"
-		;
-connectAttr "L_EyeBrow_01_Ctrl_Grp_scaleConstraint1.w0" "L_EyeBrow_01_Ctrl_Grp_scaleConstraint1.tg[0].tw"
-		;
-connectAttr "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.ctx" "L_EyeBrow_02_Ctrl_Grp.tx"
-		;
-connectAttr "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.cty" "L_EyeBrow_02_Ctrl_Grp.ty"
-		;
-connectAttr "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.ctz" "L_EyeBrow_02_Ctrl_Grp.tz"
-		;
-connectAttr "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.crx" "L_EyeBrow_02_Ctrl_Grp.rx"
-		;
-connectAttr "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.cry" "L_EyeBrow_02_Ctrl_Grp.ry"
-		;
-connectAttr "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.crz" "L_EyeBrow_02_Ctrl_Grp.rz"
-		;
-connectAttr "L_EyeBrow_02_Ctrl_Grp_scaleConstraint1.csx" "L_EyeBrow_02_Ctrl_Grp.sx"
-		;
-connectAttr "L_EyeBrow_02_Ctrl_Grp_scaleConstraint1.csy" "L_EyeBrow_02_Ctrl_Grp.sy"
-		;
-connectAttr "L_EyeBrow_02_Ctrl_Grp_scaleConstraint1.csz" "L_EyeBrow_02_Ctrl_Grp.sz"
-		;
-connectAttr "L_EyeBrow_02_Ctrl_Grp.ro" "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.cro"
-		;
-connectAttr "L_EyeBrow_02_Ctrl_Grp.pim" "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.cpim"
-		;
-connectAttr "L_EyeBrow_02_Ctrl_Grp.rp" "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.crp"
-		;
-connectAttr "L_EyeBrow_02_Ctrl_Grp.rpt" "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.crt"
-		;
-connectAttr "Neck_002_Ctrl.t" "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].tt"
-		;
-connectAttr "Neck_002_Ctrl.rp" "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].trp"
-		;
-connectAttr "Neck_002_Ctrl.rpt" "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].trt"
-		;
-connectAttr "Neck_002_Ctrl.r" "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].tr"
-		;
-connectAttr "Neck_002_Ctrl.ro" "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].tro"
-		;
-connectAttr "Neck_002_Ctrl.s" "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].ts"
-		;
-connectAttr "Neck_002_Ctrl.pm" "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].tpm"
-		;
-connectAttr "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.w0" "L_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].tw"
-		;
-connectAttr "L_EyeBrow_02_Ctrl_Grp.pim" "L_EyeBrow_02_Ctrl_Grp_scaleConstraint1.cpim"
-		;
-connectAttr "Neck_002_Ctrl.s" "L_EyeBrow_02_Ctrl_Grp_scaleConstraint1.tg[0].ts";
-connectAttr "Neck_002_Ctrl.pm" "L_EyeBrow_02_Ctrl_Grp_scaleConstraint1.tg[0].tpm"
-		;
-connectAttr "L_EyeBrow_02_Ctrl_Grp_scaleConstraint1.w0" "L_EyeBrow_02_Ctrl_Grp_scaleConstraint1.tg[0].tw"
-		;
-connectAttr "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.ctx" "L_EyeBrow_03_Ctrl_Grp.tx"
-		;
-connectAttr "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.cty" "L_EyeBrow_03_Ctrl_Grp.ty"
-		;
-connectAttr "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.ctz" "L_EyeBrow_03_Ctrl_Grp.tz"
-		;
-connectAttr "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.crx" "L_EyeBrow_03_Ctrl_Grp.rx"
-		;
-connectAttr "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.cry" "L_EyeBrow_03_Ctrl_Grp.ry"
-		;
-connectAttr "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.crz" "L_EyeBrow_03_Ctrl_Grp.rz"
-		;
-connectAttr "L_EyeBrow_03_Ctrl_Grp_scaleConstraint1.csx" "L_EyeBrow_03_Ctrl_Grp.sx"
-		;
-connectAttr "L_EyeBrow_03_Ctrl_Grp_scaleConstraint1.csy" "L_EyeBrow_03_Ctrl_Grp.sy"
-		;
-connectAttr "L_EyeBrow_03_Ctrl_Grp_scaleConstraint1.csz" "L_EyeBrow_03_Ctrl_Grp.sz"
-		;
-connectAttr "L_EyeBrow_03_Ctrl_Grp.ro" "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.cro"
-		;
-connectAttr "L_EyeBrow_03_Ctrl_Grp.pim" "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.cpim"
-		;
-connectAttr "L_EyeBrow_03_Ctrl_Grp.rp" "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.crp"
-		;
-connectAttr "L_EyeBrow_03_Ctrl_Grp.rpt" "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.crt"
-		;
-connectAttr "Neck_002_Ctrl.t" "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].tt"
-		;
-connectAttr "Neck_002_Ctrl.rp" "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].trp"
-		;
-connectAttr "Neck_002_Ctrl.rpt" "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].trt"
-		;
-connectAttr "Neck_002_Ctrl.r" "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].tr"
-		;
-connectAttr "Neck_002_Ctrl.ro" "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].tro"
-		;
-connectAttr "Neck_002_Ctrl.s" "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].ts"
-		;
-connectAttr "Neck_002_Ctrl.pm" "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].tpm"
-		;
-connectAttr "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.w0" "L_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].tw"
-		;
-connectAttr "L_EyeBrow_03_Ctrl_Grp.pim" "L_EyeBrow_03_Ctrl_Grp_scaleConstraint1.cpim"
-		;
-connectAttr "Neck_002_Ctrl.s" "L_EyeBrow_03_Ctrl_Grp_scaleConstraint1.tg[0].ts";
-connectAttr "Neck_002_Ctrl.pm" "L_EyeBrow_03_Ctrl_Grp_scaleConstraint1.tg[0].tpm"
-		;
-connectAttr "L_EyeBrow_03_Ctrl_Grp_scaleConstraint1.w0" "L_EyeBrow_03_Ctrl_Grp_scaleConstraint1.tg[0].tw"
-		;
-connectAttr "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.ctx" "R_EyeBrow_01_Ctrl_Grp.tx"
-		;
-connectAttr "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.cty" "R_EyeBrow_01_Ctrl_Grp.ty"
-		;
-connectAttr "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.ctz" "R_EyeBrow_01_Ctrl_Grp.tz"
-		;
-connectAttr "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.crx" "R_EyeBrow_01_Ctrl_Grp.rx"
-		;
-connectAttr "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.cry" "R_EyeBrow_01_Ctrl_Grp.ry"
-		;
-connectAttr "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.crz" "R_EyeBrow_01_Ctrl_Grp.rz"
-		;
-connectAttr "R_EyeBrow_01_Ctrl_Grp_scaleConstraint1.csx" "R_EyeBrow_01_Ctrl_Grp.sx"
-		;
-connectAttr "R_EyeBrow_01_Ctrl_Grp_scaleConstraint1.csy" "R_EyeBrow_01_Ctrl_Grp.sy"
-		;
-connectAttr "R_EyeBrow_01_Ctrl_Grp_scaleConstraint1.csz" "R_EyeBrow_01_Ctrl_Grp.sz"
-		;
-connectAttr "R_EyeBrow_01_Ctrl_Grp.ro" "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.cro"
-		;
-connectAttr "R_EyeBrow_01_Ctrl_Grp.pim" "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.cpim"
-		;
-connectAttr "R_EyeBrow_01_Ctrl_Grp.rp" "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.crp"
-		;
-connectAttr "R_EyeBrow_01_Ctrl_Grp.rpt" "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.crt"
-		;
-connectAttr "Neck_002_Ctrl.t" "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].tt"
-		;
-connectAttr "Neck_002_Ctrl.rp" "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].trp"
-		;
-connectAttr "Neck_002_Ctrl.rpt" "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].trt"
-		;
-connectAttr "Neck_002_Ctrl.r" "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].tr"
-		;
-connectAttr "Neck_002_Ctrl.ro" "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].tro"
-		;
-connectAttr "Neck_002_Ctrl.s" "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].ts"
-		;
-connectAttr "Neck_002_Ctrl.pm" "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].tpm"
-		;
-connectAttr "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.w0" "R_EyeBrow_01_Ctrl_Grp_parentConstraint1.tg[0].tw"
-		;
-connectAttr "R_EyeBrow_01_Ctrl_Grp.pim" "R_EyeBrow_01_Ctrl_Grp_scaleConstraint1.cpim"
-		;
-connectAttr "Neck_002_Ctrl.s" "R_EyeBrow_01_Ctrl_Grp_scaleConstraint1.tg[0].ts";
-connectAttr "Neck_002_Ctrl.pm" "R_EyeBrow_01_Ctrl_Grp_scaleConstraint1.tg[0].tpm"
-		;
-connectAttr "R_EyeBrow_01_Ctrl_Grp_scaleConstraint1.w0" "R_EyeBrow_01_Ctrl_Grp_scaleConstraint1.tg[0].tw"
-		;
-connectAttr "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.ctx" "R_EyeBrow_02_Ctrl_Grp.tx"
-		;
-connectAttr "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.cty" "R_EyeBrow_02_Ctrl_Grp.ty"
-		;
-connectAttr "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.ctz" "R_EyeBrow_02_Ctrl_Grp.tz"
-		;
-connectAttr "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.crx" "R_EyeBrow_02_Ctrl_Grp.rx"
-		;
-connectAttr "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.cry" "R_EyeBrow_02_Ctrl_Grp.ry"
-		;
-connectAttr "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.crz" "R_EyeBrow_02_Ctrl_Grp.rz"
-		;
-connectAttr "R_EyeBrow_02_Ctrl_Grp_scaleConstraint1.csx" "R_EyeBrow_02_Ctrl_Grp.sx"
-		;
-connectAttr "R_EyeBrow_02_Ctrl_Grp_scaleConstraint1.csy" "R_EyeBrow_02_Ctrl_Grp.sy"
-		;
-connectAttr "R_EyeBrow_02_Ctrl_Grp_scaleConstraint1.csz" "R_EyeBrow_02_Ctrl_Grp.sz"
-		;
-connectAttr "R_EyeBrow_02_Ctrl_Grp.ro" "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.cro"
-		;
-connectAttr "R_EyeBrow_02_Ctrl_Grp.pim" "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.cpim"
-		;
-connectAttr "R_EyeBrow_02_Ctrl_Grp.rp" "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.crp"
-		;
-connectAttr "R_EyeBrow_02_Ctrl_Grp.rpt" "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.crt"
-		;
-connectAttr "Neck_002_Ctrl.t" "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].tt"
-		;
-connectAttr "Neck_002_Ctrl.rp" "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].trp"
-		;
-connectAttr "Neck_002_Ctrl.rpt" "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].trt"
-		;
-connectAttr "Neck_002_Ctrl.r" "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].tr"
-		;
-connectAttr "Neck_002_Ctrl.ro" "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].tro"
-		;
-connectAttr "Neck_002_Ctrl.s" "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].ts"
-		;
-connectAttr "Neck_002_Ctrl.pm" "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].tpm"
-		;
-connectAttr "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.w0" "R_EyeBrow_02_Ctrl_Grp_parentConstraint1.tg[0].tw"
-		;
-connectAttr "R_EyeBrow_02_Ctrl_Grp.pim" "R_EyeBrow_02_Ctrl_Grp_scaleConstraint1.cpim"
-		;
-connectAttr "Neck_002_Ctrl.s" "R_EyeBrow_02_Ctrl_Grp_scaleConstraint1.tg[0].ts";
-connectAttr "Neck_002_Ctrl.pm" "R_EyeBrow_02_Ctrl_Grp_scaleConstraint1.tg[0].tpm"
-		;
-connectAttr "R_EyeBrow_02_Ctrl_Grp_scaleConstraint1.w0" "R_EyeBrow_02_Ctrl_Grp_scaleConstraint1.tg[0].tw"
-		;
-connectAttr "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.ctx" "R_EyeBrow_03_Ctrl_Grp.tx"
-		;
-connectAttr "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.cty" "R_EyeBrow_03_Ctrl_Grp.ty"
-		;
-connectAttr "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.ctz" "R_EyeBrow_03_Ctrl_Grp.tz"
-		;
-connectAttr "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.crx" "R_EyeBrow_03_Ctrl_Grp.rx"
-		;
-connectAttr "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.cry" "R_EyeBrow_03_Ctrl_Grp.ry"
-		;
-connectAttr "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.crz" "R_EyeBrow_03_Ctrl_Grp.rz"
-		;
-connectAttr "R_EyeBrow_03_Ctrl_Grp_scaleConstraint1.csx" "R_EyeBrow_03_Ctrl_Grp.sx"
-		;
-connectAttr "R_EyeBrow_03_Ctrl_Grp_scaleConstraint1.csy" "R_EyeBrow_03_Ctrl_Grp.sy"
-		;
-connectAttr "R_EyeBrow_03_Ctrl_Grp_scaleConstraint1.csz" "R_EyeBrow_03_Ctrl_Grp.sz"
-		;
-connectAttr "R_EyeBrow_03_Ctrl_Grp.ro" "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.cro"
-		;
-connectAttr "R_EyeBrow_03_Ctrl_Grp.pim" "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.cpim"
-		;
-connectAttr "R_EyeBrow_03_Ctrl_Grp.rp" "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.crp"
-		;
-connectAttr "R_EyeBrow_03_Ctrl_Grp.rpt" "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.crt"
-		;
-connectAttr "Neck_002_Ctrl.t" "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].tt"
-		;
-connectAttr "Neck_002_Ctrl.rp" "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].trp"
-		;
-connectAttr "Neck_002_Ctrl.rpt" "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].trt"
-		;
-connectAttr "Neck_002_Ctrl.r" "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].tr"
-		;
-connectAttr "Neck_002_Ctrl.ro" "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].tro"
-		;
-connectAttr "Neck_002_Ctrl.s" "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].ts"
-		;
-connectAttr "Neck_002_Ctrl.pm" "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].tpm"
-		;
-connectAttr "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.w0" "R_EyeBrow_03_Ctrl_Grp_parentConstraint1.tg[0].tw"
-		;
-connectAttr "R_EyeBrow_03_Ctrl_Grp.pim" "R_EyeBrow_03_Ctrl_Grp_scaleConstraint1.cpim"
-		;
-connectAttr "Neck_002_Ctrl.s" "R_EyeBrow_03_Ctrl_Grp_scaleConstraint1.tg[0].ts";
-connectAttr "Neck_002_Ctrl.pm" "R_EyeBrow_03_Ctrl_Grp_scaleConstraint1.tg[0].tpm"
-		;
-connectAttr "R_EyeBrow_03_Ctrl_Grp_scaleConstraint1.w0" "R_EyeBrow_03_Ctrl_Grp_scaleConstraint1.tg[0].tw"
-		;
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "hand1:lambert3SG.message" ":defaultLightSet.message";
