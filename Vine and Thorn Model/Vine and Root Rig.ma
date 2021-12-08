@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: Vine and Root Rig.ma
-//Last modified: Tue, Dec 07, 2021 06:48:15 PM
+//Last modified: Wed, Dec 08, 2021 08:46:39 AM
 //Codeset: 1252
 requires maya "2020";
 requires "stereoCamera" "10.0";
@@ -10,17 +10,17 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 19042)\n";
-fileInfo "UUID" "7676629F-4036-3795-A62B-83B00D576C86";
+fileInfo "UUID" "A1E9CD1F-4F0C-D813-8383-2EADD166B5F3";
 createNode transform -s -n "persp";
 	rename -uid "DC601801-47E9-AC0C-4D1A-AF85752203D4";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 183.94008728549642 18.982462671235012 119.27781207871206 ;
-	setAttr ".r" -type "double3" -5.7383527330598882 -987.39999999982842 0 ;
+	setAttr ".t" -type "double3" 419.54004741925144 72.09425726394727 21.640199997848828 ;
+	setAttr ".r" -type "double3" -7.5383527330616369 -992.59999999982631 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "27A44DA7-41AB-0E33-6061-76BE119F381E";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 226.01874864114222;
+	setAttr ".coi" 451.35790500071522;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -38012,9 +38012,9 @@ createNode transform -n "Vine_Root_Switch_Ctrl" -p "Vine_Root_Switch_Ctrl_Grp";
 	rename -uid "AA9B5A6E-41F1-65F9-2829-6B9D53052B4C";
 	addAttr -ci true -sn "GeoSwitch" -ln "GeoSwitch" -min 0 -max 1 -en "Vine:Root" 
 		-at "enum";
-	addAttr -ci true -sn "Offset" -ln "Offset" -dv 1 -min 0 -max 0 -at "double";
+	addAttr -ci true -sn "Offset" -ln "Offset" -dv 1 -at "double";
 	setAttr -k on ".GeoSwitch";
-	setAttr -k on ".Offset" -2.8000000000000003;
+	setAttr -k on ".Offset" -2.9000000000000004;
 createNode nurbsCurve -n "Vine_Root_Switch_CtrlShape" -p "Vine_Root_Switch_Ctrl";
 	rename -uid "7D01F2AE-4893-B67A-9DC4-958CC8B26764";
 	setAttr -k off ".v";
@@ -38527,7 +38527,7 @@ createNode ikHandle -n "Vine_IK_Spline_Handle";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" 0 6.6754188537597381 -151.26885503230531 ;
 	setAttr ".r" -type "double3" 0 90 0 ;
-	setAttr -av ".off" -2.8000000000000003;
+	setAttr -av ".off" -2.9000000000000004;
 	setAttr ".roc" yes;
 createNode joint -n "Vine_Ctrl_Jnt_1";
 	rename -uid "E5E94E99-4BFA-AC67-6D97-2E85361C116E";
@@ -65829,7 +65829,7 @@ createNode groupParts -n "groupParts8";
 	setAttr ".ihi" 0;
 	setAttr ".ic" -type "componentList" 1 "vtx[*]";
 createNode nodeGraphEditorInfo -n "MayaNodeEditorSavedTabsInfo";
-	rename -uid "EC024074-4D40-8D5B-D032-1D88C06D6D51";
+	rename -uid "E049B558-422C-AFBE-46D4-A0B775F56AA0";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -5075.2477256658722 -664.13796992743369 ;
 	setAttr ".tgi[0].vh" -type "double2" -3186.478617816786 154.08555864657194 ;
