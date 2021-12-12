@@ -1,6 +1,6 @@
 //Maya ASCII 2022 scene
 //Name: Scene_66 (85).ma
-//Last modified: Mon, Dec 06, 2021 05:43:57 PM
+//Last modified: Sun, Dec 12, 2021 11:40:42 AM
 //Codeset: 1252
 file -rdi 1 -ns "Jeremy_Rig_06" -rfn "Jeremy_Rig_06RN" -op "v=0;" -typ "mayaAscii"
 		 "D:/UVU/WENDIGO/Wendigo_RIG_ANIMATION/Jeremy/Jeremy Rig 06.ma";
@@ -20,12 +20,12 @@ fileInfo "product" "Maya 2022";
 fileInfo "version" "2022";
 fileInfo "cutIdentifier" "202102181415-29bfc1879c";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19042)";
-fileInfo "UUID" "2351317D-496A-ED39-48BD-C8B15F470FC3";
+fileInfo "UUID" "D1E3633A-46BE-9F34-843A-21B38F5FEEA7";
 createNode transform -s -n "persp";
 	rename -uid "BBD30A08-41A1-7999-DE68-4F8ECF92D5DF";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -120.25340190087827 34.916134577529547 2.5006946518027893 ;
-	setAttr ".r" -type "double3" -3.9383527295403224 -884.59999999971592 0 ;
+	setAttr ".t" -type "double3" -98.527640859360474 35.957234078046717 102.23461909729654 ;
+	setAttr ".r" -type "double3" 25.46164727048016 -801.3999999996438 1.0634792444670631e-14 ;
 	setAttr ".rp" -type "double3" 0 2.6645352591003757e-15 0 ;
 	setAttr ".rpt" -type "double3" -2.0307560193572596e-16 -7.4038272639390237e-17 -5.8977437213234538e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -33,11 +33,11 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 102.35239899315883;
+	setAttr ".coi" 5.682712519367441;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -65.11008611715819 29.796586475459122 98.637451393137383 ;
+	setAttr ".tp" -type "double3" -93.433621709145029 37.925630142552095 100.0944733948824 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "EA859C57-413F-9189-40DD-D4B126DC00C8";
@@ -15351,25 +15351,25 @@ createNode camera -n "AnimShape" -p "Anim";
 	setAttr ".man" -type "string" "camera1_mask";
 	setAttr ".dr" yes;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "29C0DF33-4789-7ADC-6F33-32BD73A4F304";
-	setAttr -s 31 ".lnk";
-	setAttr -s 31 ".slnk";
+	rename -uid "DDAAD061-41EB-9797-E508-7099255ABDAB";
+	setAttr -s 35 ".lnk";
+	setAttr -s 35 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "89311B85-4552-53BF-D8A9-FCB6AB006A87";
+	rename -uid "6197D565-4DEB-2357-A7D4-EAA584384E6F";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 2 0 1 ;
 	setAttr -s 2 ".bspr";
 	setAttr -s 2 ".obsv";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "B89FF7EE-4CC7-5E23-3DAA-06BD4FB685A7";
+	rename -uid "6297FFD2-4DF2-EAB2-675A-EE8972EF3C60";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "433448A5-4A03-5FD4-EE15-A28D57EBB71B";
+	rename -uid "18EEEA52-4F27-1FAB-9FD4-2E9FF0993657";
 	setAttr ".cdl" 2;
 	setAttr -s 3 ".dli[1:2]"  1 2;
 	setAttr -s 2 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "0E6EA4DC-4235-D7BB-FB0F-3D8B2A1212C1";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "4E261B84-443A-4FB2-F9A5-BFB83234E299";
+	rename -uid "80D352B6-4132-B39F-7C8E-B4A7FC30F018";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "BA1B924C-49A0-BD24-4631-AC8998E58418";
 	setAttr ".g" yes;
@@ -15379,10 +15379,10 @@ createNode script -n "uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 656\n            -height 284\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
 		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n"
 		+ "            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n"
-		+ "            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n"
+		+ "            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 656\n            -height 284\n"
 		+ "            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"Anim\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n"
 		+ "            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n"
 		+ "            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n"
@@ -15491,7 +15491,7 @@ createNode materialInfo -n "materialInfo7";
 	rename -uid "46612FCF-4990-58F7-9DF4-24B903C2C1E9";
 createNode reference -n "Jeremy_Rig_06RN";
 	rename -uid "1C41C72D-4E75-7DBC-4C28-1CB3F554F523";
-	setAttr -s 739 ".phl";
+	setAttr -s 763 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -16231,10 +16231,34 @@ createNode reference -n "Jeremy_Rig_06RN";
 	setAttr ".phl[737]" 0;
 	setAttr ".phl[738]" 0;
 	setAttr ".phl[739]" 0;
+	setAttr ".phl[740]" 0;
+	setAttr ".phl[741]" 0;
+	setAttr ".phl[742]" 0;
+	setAttr ".phl[743]" 0;
+	setAttr ".phl[744]" 0;
+	setAttr ".phl[745]" 0;
+	setAttr ".phl[746]" 0;
+	setAttr ".phl[747]" 0;
+	setAttr ".phl[748]" 0;
+	setAttr ".phl[749]" 0;
+	setAttr ".phl[750]" 0;
+	setAttr ".phl[751]" 0;
+	setAttr ".phl[752]" 0;
+	setAttr ".phl[753]" 0;
+	setAttr ".phl[754]" 0;
+	setAttr ".phl[755]" 0;
+	setAttr ".phl[756]" 0;
+	setAttr ".phl[757]" 0;
+	setAttr ".phl[758]" 0;
+	setAttr ".phl[759]" 0;
+	setAttr ".phl[760]" 0;
+	setAttr ".phl[761]" 0;
+	setAttr ".phl[762]" 0;
+	setAttr ".phl[763]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Jeremy_Rig_06RN"
 		"Jeremy_Rig_06RN" 0
-		"Jeremy_Rig_06RN" 748
+		"Jeremy_Rig_06RN" 783
 		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:TRANSFORM_Ctrl_Grp|Jeremy_Rig_06:TRANSFORM_Ctrl" 
 		"rotatePivot" " -type \"double3\" 0 0 0"
 		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:TRANSFORM_Ctrl_Grp|Jeremy_Rig_06:TRANSFORM_Ctrl" 
@@ -16243,6 +16267,28 @@ createNode reference -n "Jeremy_Rig_06RN";
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Offset|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
+		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl" 
+		"BlendShapeAh" " -k 1"
+		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl" 
+		"BlendShapeEe" " -k 1"
+		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl" 
+		"BrowTurnOut" " -k 1"
+		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl" 
+		"BrowTurnIn" " -k 1"
+		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl" 
+		"LBrowHigh" " -k 1"
+		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl" 
+		"LEyeWild" " -k 1"
+		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl" 
+		"LSmile" " -k 1"
+		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl" 
+		"MouthHOpen" " -k 1"
+		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl" 
+		"RBrowHigh" " -k 1"
+		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl" 
+		"REyeWild" " -k 1"
+		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl" 
+		"RSmile" " -k 1"
 		2 "Jeremy_Rig_06:Geo_Layer" "displayType" " 2"
 		2 "Jeremy_Rig_06:Joint_Layer" "displayOrder" " 3"
 		2 "Jeremy_Rig_06:Controls_Layer" "visibility" " 0"
@@ -17724,8 +17770,56 @@ createNode reference -n "Jeremy_Rig_06RN";
 		"Jeremy_Rig_06RN.placeHolderList[737]" ""
 		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.BlendShapeOoo" 
 		"Jeremy_Rig_06RN.placeHolderList[738]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.Breath" 
+		"Jeremy_Rig_06RN.placeHolderList[739]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.BrowTurnOut" 
+		"Jeremy_Rig_06RN.placeHolderList[740]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.BrowTurnIn" 
+		"Jeremy_Rig_06RN.placeHolderList[741]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.EyeClunched" 
+		"Jeremy_Rig_06RN.placeHolderList[742]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.LEyeBottomLid" 
+		"Jeremy_Rig_06RN.placeHolderList[743]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.LBrowHigh" 
+		"Jeremy_Rig_06RN.placeHolderList[744]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.LBrowLow" 
+		"Jeremy_Rig_06RN.placeHolderList[745]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.LEyeTopLid" 
+		"Jeremy_Rig_06RN.placeHolderList[746]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.LEyeWild" 
+		"Jeremy_Rig_06RN.placeHolderList[747]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.LHardFrown" 
+		"Jeremy_Rig_06RN.placeHolderList[748]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.LSmile" 
+		"Jeremy_Rig_06RN.placeHolderList[749]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.LSoftFrown" 
+		"Jeremy_Rig_06RN.placeHolderList[750]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.MouthHOpen" 
+		"Jeremy_Rig_06RN.placeHolderList[751]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.MouthVOpen" 
+		"Jeremy_Rig_06RN.placeHolderList[752]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.NoseFlare" 
+		"Jeremy_Rig_06RN.placeHolderList[753]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.NoseScrunch" 
+		"Jeremy_Rig_06RN.placeHolderList[754]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.REyeBottomLid" 
+		"Jeremy_Rig_06RN.placeHolderList[755]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.RBrowHigh" 
+		"Jeremy_Rig_06RN.placeHolderList[756]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.RBrowLow" 
+		"Jeremy_Rig_06RN.placeHolderList[757]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.REyeTopLid" 
+		"Jeremy_Rig_06RN.placeHolderList[758]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.REyeWild" 
+		"Jeremy_Rig_06RN.placeHolderList[759]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.RHardFrown" 
+		"Jeremy_Rig_06RN.placeHolderList[760]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.RSoftFrown" 
+		"Jeremy_Rig_06RN.placeHolderList[761]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.RSmile" 
+		"Jeremy_Rig_06RN.placeHolderList[762]" ""
 		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Blend_Shape_ctrl_grp|Jeremy_Rig_06:Blend_Shape_ctrl.visibility" 
-		"Jeremy_Rig_06RN.placeHolderList[739]" "";
+		"Jeremy_Rig_06RN.placeHolderList[763]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode displayLayer -n "Whitebox";
@@ -18838,7 +18932,7 @@ createNode animCurveTA -n "Spine_001_Ctrl_rotateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 8 ".ktv[0:7]"  0 0 1 19.735 20 4.297 25 5.0722855936347662
-		 30 8.1778217036793208 34 9.0918177362735904 37 7.0414899119171652 40 0;
+		 30 8.1778217036793208 34 9.0918177362735904 37 7.0414899119171661 40 0;
 	setAttr -s 8 ".kit[4:7]"  1 18 18 18;
 	setAttr -s 8 ".kot[4:7]"  1 18 18 18;
 	setAttr -s 8 ".kix[4:7]"  1 1 0.84428616620483288 1;
@@ -18882,7 +18976,7 @@ createNode animCurveTA -n "Spine_002_Ctrl_rotateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 8 ".ktv[0:7]"  0 0 1 19.735 20 4.297 25 5.0722855936347662
-		 30 8.1778217036793208 34 9.0918177362735904 37 7.0414899119171652 40 0;
+		 30 8.1778217036793208 34 9.0918177362735904 37 7.0414899119171661 40 0;
 	setAttr -s 8 ".kit[4:7]"  1 18 18 18;
 	setAttr -s 8 ".kot[4:7]"  1 18 18 18;
 	setAttr -s 8 ".kix[4:7]"  1 1 0.84428616620483288 1;
@@ -18926,7 +19020,7 @@ createNode animCurveTA -n "Spine_003_Ctrl_rotateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 8 ".ktv[0:7]"  0 0 1 19.735 20 4.297 25 5.0722855936347662
-		 30 8.1778217036793208 34 9.0918177362735904 37 7.0414899119171652 40 0;
+		 30 8.1778217036793208 34 9.0918177362735904 37 7.0414899119171661 40 0;
 	setAttr -s 8 ".kit[4:7]"  1 18 18 18;
 	setAttr -s 8 ".kot[4:7]"  1 18 18 18;
 	setAttr -s 8 ".kix[4:7]"  1 1 0.84428616620483288 1;
@@ -21825,89 +21919,89 @@ createNode animCurveTU -n "Blend_Shape_ctrl_visibility";
 	rename -uid "F3C2A2FF-434A-5CB8-9B89-4D9703AF0B1E";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 7 ".ktv[0:6]"  0 1 1 1 20 1 26 1 32 1 36 1 41 1;
+	setAttr -s 7 ".kot[0:6]"  5 5 5 5 5 5 5;
 createNode animCurveTU -n "Blend_Shape_ctrl_BlendShapeAh";
 	rename -uid "0FD78E0C-48E9-8B46-95EE-2B9C07FB0CA3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 7 ".ktv[0:6]"  0 0 1 0 20 0 26 0.7 32 0 36 0 41 0;
 createNode animCurveTU -n "Blend_Shape_ctrl_BlendShapeDTS";
 	rename -uid "7246C8A5-4A5B-C7D1-133A-02845B661E0B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 7 ".ktv[0:6]"  0 0 1 0 20 0 26 0 32 0 36 0 41 0;
 createNode animCurveTU -n "Blend_Shape_ctrl_BlendShapeEe";
 	rename -uid "35A377C7-4FCB-822E-7D04-13B8666AF105";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 7 ".ktv[0:6]"  0 0 1 0 20 0 26 0 32 1 36 0 41 0;
 createNode animCurveTU -n "Blend_Shape_ctrl_BlendShapeEh";
 	rename -uid "3366E7FE-498F-C5A1-1456-1D8CFFAB359C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 7 ".ktv[0:6]"  0 0 1 0 20 0 26 0 32 0 36 0 41 0;
 createNode animCurveTU -n "Blend_Shape_ctrl_BlendShapeL";
 	rename -uid "E25537A4-4D7F-3D2F-CD3E-05B81FCCFBB9";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 7 ".ktv[0:6]"  0 0 1 0 20 0 26 0 32 0 36 0 41 0;
 createNode animCurveTU -n "Blend_Shape_ctrl_BlendShapeOoo";
 	rename -uid "C0152BF3-4984-CBCD-3A97-1BBC706D8776";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 7 ".ktv[0:6]"  0 0 1 0 20 0 26 0 32 0 36 0 41 0;
 createNode animCurveTU -n "L_EyeBrow_02_Ctrl_visibility";
 	rename -uid "26AA67F3-4642-5B53-4D06-9B847B55C621";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 26 1;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
 createNode animCurveTL -n "L_EyeBrow_02_Ctrl_translateX";
 	rename -uid "FF236B89-4080-5BB8-ED82-20A6B917EC5C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 3 ".ktv[0:2]"  0 0 1 0.13350195713972859 26 0;
 createNode animCurveTL -n "L_EyeBrow_02_Ctrl_translateY";
 	rename -uid "5A22E14D-462D-CDD6-CB1B-5A84CF2F3CA8";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 3 ".ktv[0:2]"  0 0 1 -0.026151937418888598 26 0;
 createNode animCurveTL -n "L_EyeBrow_02_Ctrl_translateZ";
 	rename -uid "D8873A94-4F39-4E48-EC12-B39DD591AD6A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 3 ".ktv[0:2]"  0 0 1 -0.0093077674913803008 26 0;
 createNode animCurveTA -n "L_EyeBrow_02_Ctrl_rotateX";
 	rename -uid "9B34CA1C-45A0-B098-B3E6-E9AE1D63049E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 3 ".ktv[0:2]"  0 0 1 0 26 0;
 createNode animCurveTA -n "L_EyeBrow_02_Ctrl_rotateY";
 	rename -uid "EC068BA9-4F06-A506-0D34-D1B9EA8B45E2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 3 ".ktv[0:2]"  0 0 1 0 26 0;
 createNode animCurveTA -n "L_EyeBrow_02_Ctrl_rotateZ";
 	rename -uid "5353C8AB-4B8C-2605-509E-40A061A3C356";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 3 ".ktv[0:2]"  0 0 1 0 26 0;
 createNode animCurveTU -n "L_EyeBrow_02_Ctrl_scaleX";
 	rename -uid "339AEE67-403A-4C14-3734-629E0669B4EB";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
+	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 26 1;
 createNode animCurveTU -n "L_EyeBrow_02_Ctrl_scaleY";
 	rename -uid "1E512F90-414C-7352-ED1D-2D86694155CE";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
+	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 26 1;
 createNode animCurveTU -n "L_EyeBrow_02_Ctrl_scaleZ";
 	rename -uid "82412DE3-429E-AD47-5DC3-13A638E6E99E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
+	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 26 1;
 createNode animCurveTL -n "R_Leg_001_IK_PV_Ctrlv_translateX";
 	rename -uid "B31269B7-458C-113B-7042-49A7209C5D09";
 	setAttr ".tan" 1;
@@ -22071,53 +22165,53 @@ createNode animCurveTU -n "R_EyeBrow_02_Ctrl_visibility";
 	rename -uid "47773AC5-4742-5FEC-F3EC-F390A28E133A";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 26 1;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
 createNode animCurveTL -n "R_EyeBrow_02_Ctrl_translateX";
 	rename -uid "2FFB89E9-4C0C-567D-D6A9-568FDF93989E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 3 ".ktv[0:2]"  0 0 1 -0.13350195713972859 26 0;
 createNode animCurveTL -n "R_EyeBrow_02_Ctrl_translateY";
 	rename -uid "90934D28-4320-4972-2E64-3A8674FAAC9D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 3 ".ktv[0:2]"  0 0 1 0.026151937418888584 26 0;
 createNode animCurveTL -n "R_EyeBrow_02_Ctrl_translateZ";
 	rename -uid "690F49BF-4BA4-830B-DF63-DAAB952F4D06";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 3 ".ktv[0:2]"  0 0 1 -0.0093077674913803008 26 0;
 createNode animCurveTA -n "R_EyeBrow_02_Ctrl_rotateX";
 	rename -uid "1D4602B2-4B29-0F33-2775-628566698383";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 3 ".ktv[0:2]"  0 0 1 0 26 0;
 createNode animCurveTA -n "R_EyeBrow_02_Ctrl_rotateY";
 	rename -uid "30AEE8E2-49FC-F997-E333-1CB682DA9A89";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 3 ".ktv[0:2]"  0 0 1 0 26 0;
 createNode animCurveTA -n "R_EyeBrow_02_Ctrl_rotateZ";
 	rename -uid "41A98796-408B-865C-6861-16860C81E758";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 3 ".ktv[0:2]"  0 0 1 0 26 0;
 createNode animCurveTU -n "R_EyeBrow_02_Ctrl_scaleX";
 	rename -uid "A2949DC3-482F-87FC-2C13-F1BDE3077DD5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
+	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 26 1;
 createNode animCurveTU -n "R_EyeBrow_02_Ctrl_scaleY";
 	rename -uid "1A7DD4A8-4E54-A7CF-1732-55AB45A43B46";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
+	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 26 1;
 createNode animCurveTU -n "R_EyeBrow_02_Ctrl_scaleZ";
 	rename -uid "9BC7F81B-4C9E-C080-57C7-ECB6D59EF35C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
+	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 26 1;
 createNode animCurveTA -n "R_Foot_Rev_IK_Tip_Ctrl_rotateX";
 	rename -uid "1E6F456D-47CC-7D8A-BC82-35A2EC189756";
 	setAttr ".tan" 18;
@@ -22269,104 +22363,104 @@ createNode animCurveTU -n "L_EyeBrow_01_Ctrl_visibility";
 	rename -uid "C032305E-48F3-A205-8726-07BCA6E29721";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 26 1;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
 createNode animCurveTL -n "L_EyeBrow_01_Ctrl_translateX";
 	rename -uid "C50B016A-4D44-9305-B114-EE8920EB9739";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 3 ".ktv[0:2]"  0 0 1 0.40698390542096019 26 0;
 createNode animCurveTL -n "L_EyeBrow_01_Ctrl_translateY";
 	rename -uid "82FDCF38-4EC6-ADE6-B3E9-D98E34AD238B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 3 ".ktv[0:2]"  0 0 1 -0.079724805936164211 26 0;
 createNode animCurveTL -n "L_EyeBrow_01_Ctrl_translateZ";
 	rename -uid "FD1AAF39-43F9-2499-368F-A9BAFEFEB9B7";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 3 ".ktv[0:2]"  0 0 1 -0.02837495154038568 26 0;
 createNode animCurveTA -n "L_EyeBrow_01_Ctrl_rotateX";
 	rename -uid "B7BAFDFB-47CA-6B1F-DA7B-C28E68FD397E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 3 ".ktv[0:2]"  0 0 1 0 26 0;
 createNode animCurveTA -n "L_EyeBrow_01_Ctrl_rotateY";
 	rename -uid "78F0C288-4C05-4A3C-343B-77B7F5576C67";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 3 ".ktv[0:2]"  0 0 1 0 26 0;
 createNode animCurveTA -n "L_EyeBrow_01_Ctrl_rotateZ";
 	rename -uid "06958477-4528-1EBC-65A9-C4B5AB1EC003";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 3 ".ktv[0:2]"  0 0 1 0 26 0;
 createNode animCurveTU -n "L_EyeBrow_01_Ctrl_scaleX";
 	rename -uid "D8E38EB4-43FE-189D-D270-F88AD1F6DC50";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
+	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 26 1;
 createNode animCurveTU -n "L_EyeBrow_01_Ctrl_scaleY";
 	rename -uid "EFD42B90-4A64-F747-ADAA-C39E8E448236";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
+	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 26 1;
 createNode animCurveTU -n "L_EyeBrow_01_Ctrl_scaleZ";
 	rename -uid "37526F8C-42FB-1700-2E1C-42B71739E6FC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
+	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 26 1;
 createNode animCurveTU -n "R_EyeBrow_01_Ctrl_visibility";
 	rename -uid "DE3B9D35-4319-7595-9CB4-FAADD7BF8BD7";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 26 1;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
 createNode animCurveTL -n "R_EyeBrow_01_Ctrl_translateX";
 	rename -uid "622C602A-4CE3-DEC2-0105-B6B21EA3013B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 3 ".ktv[0:2]"  0 0 1 -0.40698390542096019 26 0;
 createNode animCurveTL -n "R_EyeBrow_01_Ctrl_translateY";
 	rename -uid "8707B357-4274-8465-DE1B-BD8C0E5CF40A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 3 ".ktv[0:2]"  0 0 1 0.07972480593616417 26 0;
 createNode animCurveTL -n "R_EyeBrow_01_Ctrl_translateZ";
 	rename -uid "F01E34AD-4036-C895-D8F0-B9B0460B918B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 3 ".ktv[0:2]"  0 0 1 -0.02837495154038568 26 0;
 createNode animCurveTA -n "R_EyeBrow_01_Ctrl_rotateX";
 	rename -uid "6439DF06-4DC0-13C9-6A1B-B3B346154C18";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 3 ".ktv[0:2]"  0 0 1 0 26 0;
 createNode animCurveTA -n "R_EyeBrow_01_Ctrl_rotateY";
 	rename -uid "92AF559B-4768-4CD5-FD3A-0684F6A648D1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 3 ".ktv[0:2]"  0 0 1 0 26 0;
 createNode animCurveTA -n "R_EyeBrow_01_Ctrl_rotateZ";
 	rename -uid "EFFF4D00-4863-3452-D14F-18AB30FBEF89";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 3 ".ktv[0:2]"  0 0 1 0 26 0;
 createNode animCurveTU -n "R_EyeBrow_01_Ctrl_scaleX";
 	rename -uid "BBB73A12-4B07-CAAD-6910-2E91F240261D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
+	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 26 1;
 createNode animCurveTU -n "R_EyeBrow_01_Ctrl_scaleY";
 	rename -uid "C6214194-4FF9-2E38-372E-5BA0EF7B6B7C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
+	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 26 1;
 createNode animCurveTU -n "R_EyeBrow_01_Ctrl_scaleZ";
 	rename -uid "E0EFB57F-414F-EA1B-C854-F5AC0011E074";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
+	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 26 1;
 createNode animCurveTA -n "L_Foot_Rev_IK_Toe_Ctrl_rotateX";
 	rename -uid "BC6F129F-4AC3-807B-D2DC-06A54ED0BC6D";
 	setAttr ".tan" 18;
@@ -23630,7 +23724,7 @@ createNode animCurveTU -n "L_Arm_001_IK_PV_Ctrl_Follow";
 	setAttr -s 2 ".kot[0:1]"  5 5;
 createNode reference -n "Jeremy_Rig_06RN1";
 	rename -uid "72958950-4121-8ABE-97D3-37A49BE303BC";
-	setAttr -s 603 ".phl";
+	setAttr -s 634 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -24234,10 +24328,51 @@ createNode reference -n "Jeremy_Rig_06RN1";
 	setAttr ".phl[601]" 0;
 	setAttr ".phl[602]" 0;
 	setAttr ".phl[603]" 0;
+	setAttr ".phl[604]" 0;
+	setAttr ".phl[605]" 0;
+	setAttr ".phl[606]" 0;
+	setAttr ".phl[607]" 0;
+	setAttr ".phl[608]" 0;
+	setAttr ".phl[609]" 0;
+	setAttr ".phl[610]" 0;
+	setAttr ".phl[611]" 0;
+	setAttr ".phl[612]" 0;
+	setAttr ".phl[613]" 0;
+	setAttr ".phl[614]" 0;
+	setAttr ".phl[615]" 0;
+	setAttr ".phl[616]" 0;
+	setAttr ".phl[617]" 0;
+	setAttr ".phl[618]" 0;
+	setAttr ".phl[619]" 0;
+	setAttr ".phl[620]" 0;
+	setAttr ".phl[621]" 0;
+	setAttr ".phl[622]" 0;
+	setAttr ".phl[623]" 0;
+	setAttr ".phl[624]" 0;
+	setAttr ".phl[625]" 0;
+	setAttr ".phl[626]" 0;
+	setAttr ".phl[627]" 0;
+	setAttr ".phl[628]" 0;
+	setAttr ".phl[629]" 0;
+	setAttr ".phl[630]" 0;
+	setAttr ".phl[631]" 0;
+	setAttr ".phl[632]" 0;
+	setAttr ".phl[633]" 0;
+	setAttr ".phl[634]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Jeremy_Rig_06RN1"
 		"Jeremy_Rig_06RN1" 0
-		"Jeremy_Rig_06RN1" 605
+		"Jeremy_Rig_06RN1" 641
+		2 "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl" 
+		"LBrowHigh" " -k 1"
+		2 "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl" 
+		"LSmile" " -k 1"
+		2 "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl" 
+		"MouthHOpen" " -k 1"
+		2 "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl" 
+		"RBrowHigh" " -k 1"
+		2 "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl" 
+		"RSmile" " -k 1"
 		2 "Jeremy_Rig_07:Geo_Layer" "displayType" " 2"
 		2 "Jeremy_Rig_07:Controls_Layer" "visibility" " 0"
 		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:TRANSFORM_Ctrl_Grp|Jeremy_Rig_07:TRANSFORM_Ctrl.LArmIKFK" 
@@ -25445,7 +25580,69 @@ createNode reference -n "Jeremy_Rig_06RN1";
 		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_07:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_07:R_Leg_002_IK_PV_Ctrl_Grp|Jeremy_Rig_07:R_Leg_001_IK_PV_Offset|Jeremy_Rig_07:R_Leg_001_IK_PV_Ctrlv.scaleY" 
 		"Jeremy_Rig_06RN1.placeHolderList[602]" ""
 		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_07:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_07:R_Leg_002_IK_PV_Ctrl_Grp|Jeremy_Rig_07:R_Leg_001_IK_PV_Offset|Jeremy_Rig_07:R_Leg_001_IK_PV_Ctrlv.scaleZ" 
-		"Jeremy_Rig_06RN1.placeHolderList[603]" "";
+		"Jeremy_Rig_06RN1.placeHolderList[603]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.BlendShapeAh" 
+		"Jeremy_Rig_06RN1.placeHolderList[604]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.BlendShapeDTS" 
+		"Jeremy_Rig_06RN1.placeHolderList[605]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.BlendShapeEe" 
+		"Jeremy_Rig_06RN1.placeHolderList[606]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.BlendShapeEh" 
+		"Jeremy_Rig_06RN1.placeHolderList[607]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.BlendShapeL" 
+		"Jeremy_Rig_06RN1.placeHolderList[608]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.BlendShapeOoo" 
+		"Jeremy_Rig_06RN1.placeHolderList[609]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.Breath" 
+		"Jeremy_Rig_06RN1.placeHolderList[610]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.BrowTurnOut" 
+		"Jeremy_Rig_06RN1.placeHolderList[611]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.BrowTurnIn" 
+		"Jeremy_Rig_06RN1.placeHolderList[612]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.EyeClunched" 
+		"Jeremy_Rig_06RN1.placeHolderList[613]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.LEyeBottomLid" 
+		"Jeremy_Rig_06RN1.placeHolderList[614]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.LBrowHigh" 
+		"Jeremy_Rig_06RN1.placeHolderList[615]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.LBrowLow" 
+		"Jeremy_Rig_06RN1.placeHolderList[616]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.LEyeTopLid" 
+		"Jeremy_Rig_06RN1.placeHolderList[617]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.LEyeWild" 
+		"Jeremy_Rig_06RN1.placeHolderList[618]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.LHardFrown" 
+		"Jeremy_Rig_06RN1.placeHolderList[619]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.LSmile" 
+		"Jeremy_Rig_06RN1.placeHolderList[620]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.LSoftFrown" 
+		"Jeremy_Rig_06RN1.placeHolderList[621]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.MouthHOpen" 
+		"Jeremy_Rig_06RN1.placeHolderList[622]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.MouthVOpen" 
+		"Jeremy_Rig_06RN1.placeHolderList[623]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.NoseFlare" 
+		"Jeremy_Rig_06RN1.placeHolderList[624]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.NoseScrunch" 
+		"Jeremy_Rig_06RN1.placeHolderList[625]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.REyeBottomLid" 
+		"Jeremy_Rig_06RN1.placeHolderList[626]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.RBrowHigh" 
+		"Jeremy_Rig_06RN1.placeHolderList[627]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.RBrowLow" 
+		"Jeremy_Rig_06RN1.placeHolderList[628]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.REyeTopLid" 
+		"Jeremy_Rig_06RN1.placeHolderList[629]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.REyeWild" 
+		"Jeremy_Rig_06RN1.placeHolderList[630]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.RHardFrown" 
+		"Jeremy_Rig_06RN1.placeHolderList[631]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.RSoftFrown" 
+		"Jeremy_Rig_06RN1.placeHolderList[632]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.RSmile" 
+		"Jeremy_Rig_06RN1.placeHolderList[633]" ""
+		5 4 "Jeremy_Rig_06RN1" "|Jeremy_Rig_07:Jeremy|Jeremy_Rig_07:Controls|Jeremy_Rig_07:Blend_Shape_ctrl_grp|Jeremy_Rig_07:Blend_Shape_ctrl.visibility" 
+		"Jeremy_Rig_06RN1.placeHolderList[634]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode animCurveTU -n "TRANSFORM_Ctrl_LArmIKFK1";
@@ -31620,9 +31817,289 @@ createNode animCurveTU -n "R_Leg_001_IK_PV_Ctrlv_scaleZ1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  0 1;
+createNode animCurveTU -n "Blend_Shape_ctrl_Breath";
+	rename -uid "C21CEAE1-498D-2686-8019-1B8BF0FC5F87";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 20 0 26 0 32 0 36 0 41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_BrowTurnOut";
+	rename -uid "76E41C97-48FB-503E-B153-FE8F68DD47B3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0.5 20 0.072575999999999918 26 0 32 0
+		 36 0 41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_BrowTurnIn";
+	rename -uid "F184CC59-4090-1D8C-6CC7-66B52D9231C8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0.5 20 0.072575999999999918 26 0 32 0
+		 36 0 41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_EyeClunched";
+	rename -uid "8D4FA634-4F50-F13D-90BA-3E95484B2E0B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 20 0 26 0 32 0 36 0 41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_LEyeBottomLid";
+	rename -uid "839706D3-4E1B-F1E1-C775-F89F93365F37";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 20 0 26 0 32 0 36 0 41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_LBrowHigh";
+	rename -uid "6D078874-4866-6741-78D1-82AFA23537D3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 20 0.85484800000000016 26 1 32 1 36 1
+		 41 1;
+createNode animCurveTU -n "Blend_Shape_ctrl_LBrowLow";
+	rename -uid "06C84AB1-44DC-1865-AC92-F498BEA7F553";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 20 0 26 0 32 0 36 0 41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_LEyeTopLid";
+	rename -uid "90E8DA1B-43E5-4EC1-AAED-D6AD16EA8B5B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 20 0 26 0 32 0 36 0 41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_LEyeWild";
+	rename -uid "8F471957-412E-CDFE-3BC3-14A6CF0A8DAE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 1 20 1 26 1 32 1 36 0 41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_LHardFrown";
+	rename -uid "F848F59C-4FCF-B572-627F-569E3E5B6AAC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 20 0 26 0 32 0 36 0 41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_LSmile";
+	rename -uid "D8812DCB-4CDB-0812-BB03-06AD38A71E5D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 20 0 26 0 32 0 36 0 41 0.1;
+createNode animCurveTU -n "Blend_Shape_ctrl_LSoftFrown";
+	rename -uid "AC631BC9-4033-8F54-BD75-FBB6FF4A2B21";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 20 0 26 0 32 0 36 0 41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_MouthHOpen";
+	rename -uid "8900000C-406D-90B9-2CFF-84B9CD0DB200";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 20 0 26 0 32 0 36 0 41 0.2;
+createNode animCurveTU -n "Blend_Shape_ctrl_MouthVOpen";
+	rename -uid "254799E0-4A59-E33F-F893-1FA279D8B617";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 20 0 26 0 32 0 36 0 41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_NoseFlare";
+	rename -uid "7864E306-42AA-2511-41F2-738F0CD336CA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 20 0 26 0 32 0 36 0 41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_NoseScrunch";
+	rename -uid "0B43E1A5-425E-1DF6-935D-099D949C6FCA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 20 0 26 0 32 0 36 0 41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_REyeBottomLid";
+	rename -uid "7E52F40B-4179-C697-8E33-F58196EA7883";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 20 0 26 0 32 0 36 0 41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_RBrowHigh";
+	rename -uid "5E5FC5C1-4341-7D4C-74AD-19B8CD7802CD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 20 0.85484800000000016 26 1 32 1 36 1
+		 41 1;
+createNode animCurveTU -n "Blend_Shape_ctrl_RBrowLow";
+	rename -uid "98168968-4C67-12A4-3ABD-F18112DF0F4D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 20 0 26 0 32 0 36 0 41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_REyeTopLid";
+	rename -uid "61BD2A9B-497B-2E50-D68D-64B1ADCD7738";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 20 0 26 0 32 0 36 0 41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_REyeWild";
+	rename -uid "1F747232-482D-3373-5A25-A0A5B1A160F8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 1 20 1 26 1 32 1 36 0 41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_RHardFrown";
+	rename -uid "F452C3BC-4FCF-D8E4-6796-5C8FBBE09BEA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 20 0 26 0 32 0 36 0 41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_RSoftFrown";
+	rename -uid "688F431E-40DA-738C-80CC-558EB57FCE11";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 20 0 26 0 32 0 36 0 41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_RSmile";
+	rename -uid "018D7C9A-4BEC-E2A2-7E81-9291ABC77E01";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 20 0 26 0 32 0 36 0 41 0.1;
+createNode animCurveTU -n "Blend_Shape_ctrl_visibility1";
+	rename -uid "D5474F77-49F3-521A-DDE6-19BFE7CEF73F";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 1;
+	setAttr ".kot[0]"  5;
+createNode animCurveTU -n "Blend_Shape_ctrl_BlendShapeAh1";
+	rename -uid "424A7AE4-4F00-1836-F2A4-5B904757406D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_BlendShapeDTS1";
+	rename -uid "A7E55DA9-4864-7B2D-3BD0-0BB4E15E5116";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_BlendShapeEe1";
+	rename -uid "D62EA887-4D25-9BBD-2181-478413A0619A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_BlendShapeEh1";
+	rename -uid "AFAF3137-4EA4-8C9C-2B24-4DB08D0BBE7D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_BlendShapeL1";
+	rename -uid "052DA3D5-44FF-B160-595F-4C9011E88780";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_BlendShapeOoo1";
+	rename -uid "FFA49443-4CFF-168D-62B8-72BDDA7455FE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_Breath1";
+	rename -uid "220E8614-491C-6A4B-1518-E2B50C807E4F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_BrowTurnOut1";
+	rename -uid "651E36FC-458D-D5D6-9E26-D294FA7F10B6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_BrowTurnIn1";
+	rename -uid "984F0610-4B44-47DA-3D13-04880A544563";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_EyeClunched1";
+	rename -uid "E23B6477-4843-DAA7-8840-29A8C94DAE59";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_LEyeBottomLid1";
+	rename -uid "04252C5C-43D4-1909-ABDD-029B5F092666";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_LBrowHigh1";
+	rename -uid "9804757D-4E80-BCB1-2961-2B91517A22B6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 1;
+createNode animCurveTU -n "Blend_Shape_ctrl_LBrowLow1";
+	rename -uid "EFF028B1-4C04-EC7C-FB1F-72BA176D907E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_LEyeTopLid1";
+	rename -uid "39E49FE7-48A6-02C8-731E-77808C44886F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_LEyeWild1";
+	rename -uid "BAEC3E61-4453-D820-4245-879D8794D9A9";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_LHardFrown1";
+	rename -uid "8FA4B2E8-423E-5E6F-C383-40A9613604BA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_LSmile1";
+	rename -uid "51298A13-41CE-5C81-0661-AC823C2396EC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0.1;
+createNode animCurveTU -n "Blend_Shape_ctrl_LSoftFrown1";
+	rename -uid "BF85137A-43BE-01AF-C709-6CBB15EF7411";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_MouthHOpen1";
+	rename -uid "C6FD0A8B-49DE-9C5A-FFCE-C0AE83AD80E8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0.2;
+createNode animCurveTU -n "Blend_Shape_ctrl_MouthVOpen1";
+	rename -uid "BC562C18-4923-4727-63A0-82B354E17B03";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_NoseFlare1";
+	rename -uid "AA03ABB0-4C45-8500-2095-E8A837CACD3F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_NoseScrunch1";
+	rename -uid "89FF72F3-4819-F96C-77DA-06857681DA1C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_REyeBottomLid1";
+	rename -uid "4F000502-4017-13B9-0B07-5A8A14DDEE34";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_RBrowHigh1";
+	rename -uid "7DC766CC-4AA1-E51B-3781-899DB6F1B9C7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 1;
+createNode animCurveTU -n "Blend_Shape_ctrl_RBrowLow1";
+	rename -uid "B96C083F-4293-7727-BDFC-0C96173BF1ED";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_REyeTopLid1";
+	rename -uid "CFCEA476-426B-65FA-902F-FFBBBEB1B2DC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_REyeWild1";
+	rename -uid "CE167754-4C79-ACA9-3E17-9090E52DFA1A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_RHardFrown1";
+	rename -uid "87903ADF-4ACF-D9D4-9DEC-57853C797BE4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_RSoftFrown1";
+	rename -uid "4D2004AD-49C9-327C-3A35-5BAA0A9F7008";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0;
+createNode animCurveTU -n "Blend_Shape_ctrl_RSmile1";
+	rename -uid "A8202C7A-4AC1-3FAF-0A70-D490170FE136";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  41 0.1;
 select -ne :time1;
-	setAttr ".o" 56;
-	setAttr ".unw" 56;
+	setAttr ".o" 74;
+	setAttr ".unw" 74;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -31630,22 +32107,22 @@ select -ne :hardwareRenderingGlobals;
 		 0 0 0 0 ;
 	setAttr ".fprt" yes;
 select -ne :renderPartition;
-	setAttr -s 31 ".st";
+	setAttr -s 35 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 34 ".s";
+	setAttr -s 38 ".s";
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 20 ".u";
+	setAttr -s 28 ".u";
 select -ne :defaultRenderingList1;
 	setAttr -s 3 ".r";
 select -ne :defaultTextureList1;
 	setAttr -s 4 ".tx";
 select -ne :initialShadingGroup;
-	setAttr -s 186 ".dsm";
+	setAttr -s 184 ".dsm";
 	setAttr ".ro" yes;
-	setAttr -s 108 ".gn";
+	setAttr -s 106 ".gn";
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :defaultRenderGlobals;
@@ -32679,7 +33156,31 @@ connectAttr "Blend_Shape_ctrl_BlendShapeEe.o" "Jeremy_Rig_06RN.phl[735]";
 connectAttr "Blend_Shape_ctrl_BlendShapeEh.o" "Jeremy_Rig_06RN.phl[736]";
 connectAttr "Blend_Shape_ctrl_BlendShapeL.o" "Jeremy_Rig_06RN.phl[737]";
 connectAttr "Blend_Shape_ctrl_BlendShapeOoo.o" "Jeremy_Rig_06RN.phl[738]";
-connectAttr "Blend_Shape_ctrl_visibility.o" "Jeremy_Rig_06RN.phl[739]";
+connectAttr "Blend_Shape_ctrl_Breath.o" "Jeremy_Rig_06RN.phl[739]";
+connectAttr "Blend_Shape_ctrl_BrowTurnOut.o" "Jeremy_Rig_06RN.phl[740]";
+connectAttr "Blend_Shape_ctrl_BrowTurnIn.o" "Jeremy_Rig_06RN.phl[741]";
+connectAttr "Blend_Shape_ctrl_EyeClunched.o" "Jeremy_Rig_06RN.phl[742]";
+connectAttr "Blend_Shape_ctrl_LEyeBottomLid.o" "Jeremy_Rig_06RN.phl[743]";
+connectAttr "Blend_Shape_ctrl_LBrowHigh.o" "Jeremy_Rig_06RN.phl[744]";
+connectAttr "Blend_Shape_ctrl_LBrowLow.o" "Jeremy_Rig_06RN.phl[745]";
+connectAttr "Blend_Shape_ctrl_LEyeTopLid.o" "Jeremy_Rig_06RN.phl[746]";
+connectAttr "Blend_Shape_ctrl_LEyeWild.o" "Jeremy_Rig_06RN.phl[747]";
+connectAttr "Blend_Shape_ctrl_LHardFrown.o" "Jeremy_Rig_06RN.phl[748]";
+connectAttr "Blend_Shape_ctrl_LSmile.o" "Jeremy_Rig_06RN.phl[749]";
+connectAttr "Blend_Shape_ctrl_LSoftFrown.o" "Jeremy_Rig_06RN.phl[750]";
+connectAttr "Blend_Shape_ctrl_MouthHOpen.o" "Jeremy_Rig_06RN.phl[751]";
+connectAttr "Blend_Shape_ctrl_MouthVOpen.o" "Jeremy_Rig_06RN.phl[752]";
+connectAttr "Blend_Shape_ctrl_NoseFlare.o" "Jeremy_Rig_06RN.phl[753]";
+connectAttr "Blend_Shape_ctrl_NoseScrunch.o" "Jeremy_Rig_06RN.phl[754]";
+connectAttr "Blend_Shape_ctrl_REyeBottomLid.o" "Jeremy_Rig_06RN.phl[755]";
+connectAttr "Blend_Shape_ctrl_RBrowHigh.o" "Jeremy_Rig_06RN.phl[756]";
+connectAttr "Blend_Shape_ctrl_RBrowLow.o" "Jeremy_Rig_06RN.phl[757]";
+connectAttr "Blend_Shape_ctrl_REyeTopLid.o" "Jeremy_Rig_06RN.phl[758]";
+connectAttr "Blend_Shape_ctrl_REyeWild.o" "Jeremy_Rig_06RN.phl[759]";
+connectAttr "Blend_Shape_ctrl_RHardFrown.o" "Jeremy_Rig_06RN.phl[760]";
+connectAttr "Blend_Shape_ctrl_RSoftFrown.o" "Jeremy_Rig_06RN.phl[761]";
+connectAttr "Blend_Shape_ctrl_RSmile.o" "Jeremy_Rig_06RN.phl[762]";
+connectAttr "Blend_Shape_ctrl_visibility.o" "Jeremy_Rig_06RN.phl[763]";
 connectAttr "TRANSFORM_Ctrl_LArmIKFK1.o" "Jeremy_Rig_06RN1.phl[1]";
 connectAttr "TRANSFORM_Ctrl_RArmIKFK1.o" "Jeremy_Rig_06RN1.phl[2]";
 connectAttr "TRANSFORM_Ctrl_LLegIKFK1.o" "Jeremy_Rig_06RN1.phl[3]";
@@ -33561,6 +34062,37 @@ connectAttr "R_Leg_001_IK_PV_Ctrlv_rotateZ1.o" "Jeremy_Rig_06RN1.phl[600]";
 connectAttr "R_Leg_001_IK_PV_Ctrlv_scaleX1.o" "Jeremy_Rig_06RN1.phl[601]";
 connectAttr "R_Leg_001_IK_PV_Ctrlv_scaleY1.o" "Jeremy_Rig_06RN1.phl[602]";
 connectAttr "R_Leg_001_IK_PV_Ctrlv_scaleZ1.o" "Jeremy_Rig_06RN1.phl[603]";
+connectAttr "Blend_Shape_ctrl_BlendShapeAh1.o" "Jeremy_Rig_06RN1.phl[604]";
+connectAttr "Blend_Shape_ctrl_BlendShapeDTS1.o" "Jeremy_Rig_06RN1.phl[605]";
+connectAttr "Blend_Shape_ctrl_BlendShapeEe1.o" "Jeremy_Rig_06RN1.phl[606]";
+connectAttr "Blend_Shape_ctrl_BlendShapeEh1.o" "Jeremy_Rig_06RN1.phl[607]";
+connectAttr "Blend_Shape_ctrl_BlendShapeL1.o" "Jeremy_Rig_06RN1.phl[608]";
+connectAttr "Blend_Shape_ctrl_BlendShapeOoo1.o" "Jeremy_Rig_06RN1.phl[609]";
+connectAttr "Blend_Shape_ctrl_Breath1.o" "Jeremy_Rig_06RN1.phl[610]";
+connectAttr "Blend_Shape_ctrl_BrowTurnOut1.o" "Jeremy_Rig_06RN1.phl[611]";
+connectAttr "Blend_Shape_ctrl_BrowTurnIn1.o" "Jeremy_Rig_06RN1.phl[612]";
+connectAttr "Blend_Shape_ctrl_EyeClunched1.o" "Jeremy_Rig_06RN1.phl[613]";
+connectAttr "Blend_Shape_ctrl_LEyeBottomLid1.o" "Jeremy_Rig_06RN1.phl[614]";
+connectAttr "Blend_Shape_ctrl_LBrowHigh1.o" "Jeremy_Rig_06RN1.phl[615]";
+connectAttr "Blend_Shape_ctrl_LBrowLow1.o" "Jeremy_Rig_06RN1.phl[616]";
+connectAttr "Blend_Shape_ctrl_LEyeTopLid1.o" "Jeremy_Rig_06RN1.phl[617]";
+connectAttr "Blend_Shape_ctrl_LEyeWild1.o" "Jeremy_Rig_06RN1.phl[618]";
+connectAttr "Blend_Shape_ctrl_LHardFrown1.o" "Jeremy_Rig_06RN1.phl[619]";
+connectAttr "Blend_Shape_ctrl_LSmile1.o" "Jeremy_Rig_06RN1.phl[620]";
+connectAttr "Blend_Shape_ctrl_LSoftFrown1.o" "Jeremy_Rig_06RN1.phl[621]";
+connectAttr "Blend_Shape_ctrl_MouthHOpen1.o" "Jeremy_Rig_06RN1.phl[622]";
+connectAttr "Blend_Shape_ctrl_MouthVOpen1.o" "Jeremy_Rig_06RN1.phl[623]";
+connectAttr "Blend_Shape_ctrl_NoseFlare1.o" "Jeremy_Rig_06RN1.phl[624]";
+connectAttr "Blend_Shape_ctrl_NoseScrunch1.o" "Jeremy_Rig_06RN1.phl[625]";
+connectAttr "Blend_Shape_ctrl_REyeBottomLid1.o" "Jeremy_Rig_06RN1.phl[626]";
+connectAttr "Blend_Shape_ctrl_RBrowHigh1.o" "Jeremy_Rig_06RN1.phl[627]";
+connectAttr "Blend_Shape_ctrl_RBrowLow1.o" "Jeremy_Rig_06RN1.phl[628]";
+connectAttr "Blend_Shape_ctrl_REyeTopLid1.o" "Jeremy_Rig_06RN1.phl[629]";
+connectAttr "Blend_Shape_ctrl_REyeWild1.o" "Jeremy_Rig_06RN1.phl[630]";
+connectAttr "Blend_Shape_ctrl_RHardFrown1.o" "Jeremy_Rig_06RN1.phl[631]";
+connectAttr "Blend_Shape_ctrl_RSoftFrown1.o" "Jeremy_Rig_06RN1.phl[632]";
+connectAttr "Blend_Shape_ctrl_RSmile1.o" "Jeremy_Rig_06RN1.phl[633]";
+connectAttr "Blend_Shape_ctrl_visibility1.o" "Jeremy_Rig_06RN1.phl[634]";
 connectAttr "Whitebox.di" "whiteboxGeo.do";
 connectAttr "Anim_rotateX.o" "Anim.rx";
 connectAttr "Anim_rotateY.o" "Anim.ry";
