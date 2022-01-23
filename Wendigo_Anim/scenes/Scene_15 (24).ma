@@ -1,11 +1,11 @@
 //Maya ASCII 2022 scene
-//Name: Scene_15 (24)_1120_03.ma
-//Last modified: Thu, Jan 20, 2022 10:13:59 AM
+//Name: Scene_15 (24).ma
+//Last modified: Sun, Jan 23, 2022 12:17:43 PM
 //Codeset: 1252
 file -rdi 1 -ns "Jeremy_Rig_06" -rfn "Jeremy_Rig_06RN" -op "v=0;" -typ "mayaAscii"
-		 "D:/UVU/WENDIGO/Wendigo_RIG_ANIMATION/Jeremy/Jeremy Rig 06.ma";
+		 "C:/Wendigo/Wendigo_RIG_ANIMATION/Jeremy/Jeremy Rig 06.ma";
 file -r -ns "Jeremy_Rig_06" -dr 1 -rfn "Jeremy_Rig_06RN" -op "v=0;" -typ "mayaAscii"
-		 "D:/UVU/WENDIGO/Wendigo_RIG_ANIMATION/Jeremy/Jeremy Rig 06.ma";
+		 "C:/Wendigo/Wendigo_RIG_ANIMATION/Jeremy/Jeremy Rig 06.ma";
 requires maya "2022";
 requires -nodeType "gameFbxExporter" "gameFbxExporter" "1.0";
 requires "stereoCamera" "10.0";
@@ -15,24 +15,24 @@ currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2022";
 fileInfo "version" "2022";
-fileInfo "cutIdentifier" "202106180615-26a94e7f8c";
-fileInfo "osv" "Windows 10 Pro v2004 (Build: 19041)";
-fileInfo "UUID" "D97089E1-415D-C98F-F28F-CCAD9FF0FAAC";
+fileInfo "cutIdentifier" "202102181415-29bfc1879c";
+fileInfo "osv" "Windows 10 Home v2009 (Build: 19042)";
+fileInfo "UUID" "6A929C42-43BB-09BA-3044-8190DBF8DD22";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "A006DCA6-405C-6D24-D463-3CB77B84EDB2";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 53.444041102747185 43.401725948505764 28.880879173862091 ;
-	setAttr ".r" -type "double3" -18.338352729190227 62.599999999978088 0 ;
+	setAttr ".t" -type "double3" -15.437244166950798 24.99155745137195 109.77418476610933 ;
+	setAttr ".r" -type "double3" -3.9383527292099085 -4.2000000000081918 -2.491499323070752e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "8FA38065-499B-15EB-77F7-7B942398BF94";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 63.417919663876219;
+	setAttr ".coi" 110.62888160355985;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 1.7763568394002505e-15 23.448678216852137 1.1781195402145386 ;
+	setAttr ".tp" -type "double3" -6.7597875275425627 14.752430969190204 -0.42399395592077815 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "36BE58FC-4212-990E-2FC1-7A8EC70BCE05";
@@ -7914,7 +7914,7 @@ createNode parentConstraint -n "GPS_Main_Body_parentConstraint1" -p "GPS_Main_Bo
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 0.81522798167867094 0.78165976980501917 1.5102243686186336 ;
 	setAttr ".tg[0].tor" -type "double3" 146.14479345945455 -35.041261557154378 70.748741046684529 ;
-	setAttr ".lr" -type "double3" 23.486572830597709 7.9737184557958241 22.296555464631229 ;
+	setAttr ".lr" -type "double3" 7.4433077016346649 4.222433292691119 15.598538187581497 ;
 	setAttr ".rst" -type "double3" -0.391268497260989 7.0090947804221173 1.1092029952074185 ;
 	setAttr ".rsrr" -type "double3" 1.2722218725854064e-14 3.180554681463516e-15 3.5311250384401251e-31 ;
 	setAttr -k on ".w0";
@@ -9028,23 +9028,23 @@ createNode mesh -n "L_med_Button1Shape" -p "L_med_Button1";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "673EED8B-48FC-F853-4F78-0E868089E589";
+	rename -uid "4D9F6FC9-403F-FCA8-8FD7-4DB6A8917078";
 	setAttr -s 26 ".lnk";
 	setAttr -s 26 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "56132754-4ADC-D6A6-A7EB-84843024D1FD";
+	rename -uid "F4A0AE70-49B1-9799-4193-BBACBF29CC3F";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 1 0 ;
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "D776694F-4C7B-2020-B1BC-F9BBE33830F0";
+	rename -uid "2D0F3A44-4DB3-56F3-C332-508FD0059D82";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "A443CBF1-4632-21C7-D57E-EB90F9E427A4";
+	rename -uid "6792944B-486A-20E0-BC16-BCA3F08E8368";
 	setAttr ".cdl" 2;
 	setAttr -s 3 ".dli[1:2]"  1 2;
 	setAttr -s 3 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "162920B9-4B1A-7070-F085-78ABC5A02925";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "52F90279-4501-E2D7-D21D-D584CCF8CFD4";
+	rename -uid "6FDC233E-4D80-79D6-7D7A-C28E99EF9EBE";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "3B541EF9-4D97-90A9-AE30-BBBAC8EDE552";
 	setAttr ".g" yes;
@@ -9052,21 +9052,21 @@ createNode script -n "uiConfigurationScriptNode";
 	rename -uid "1A23F2A8-4611-0DA6-BC87-64A5B99FB21D";
 	setAttr ".b" -type "string" (
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|top|topShape\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
+		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|side|sideShape\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 656\n            -height 308\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n"
 		+ "            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n"
-		+ "            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n"
-		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|Anim|AnimShape\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n"
+		+ "            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 655\n            -height 308\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n"
+		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"Anim\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n"
 		+ "            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n"
 		+ "            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n"
-		+ "            -width 656\n            -height 522\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|Anim|AnimShape\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n"
-		+ "            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n"
-		+ "            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n"
-		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1319\n            -height 521\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n"
-		+ "            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n"
-		+ "            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "            -width 1318\n            -height 660\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n"
+		+ "            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n"
+		+ "            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n"
+		+ "            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 655\n            -height 660\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n"
+		+ "            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n"
+		+ "            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n"
 		+ "            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n"
@@ -9086,13 +9086,12 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\n{ string $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"|persp|perspShape\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n"
-		+ "                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n"
-		+ "                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n"
-		+ "                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n"
-		+ "\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|Anim|AnimShape\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1319\\n    -height 521\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|Anim|AnimShape\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1319\\n    -height 521\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\n{ string $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n"
+		+ "                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n"
+		+ "                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n"
+		+ "                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Front View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Front View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"Anim\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1318\\n    -height 660\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Front View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"Anim\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1318\\n    -height 660\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -9169,7 +9168,7 @@ createNode displayLayer -n "Jeremy_Retopo:Geo_layer";
 	setAttr ".do" 1;
 createNode reference -n "Jeremy_Rig_06RN";
 	rename -uid "E614AAC0-45B9-A085-5605-5F9DC2DDDB7E";
-	setAttr -s 577 ".phl";
+	setAttr -s 582 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -9747,43 +9746,45 @@ createNode reference -n "Jeremy_Rig_06RN";
 	setAttr ".phl[575]" 0;
 	setAttr ".phl[576]" 0;
 	setAttr ".phl[577]" 0;
+	setAttr ".phl[578]" 0;
+	setAttr ".phl[579]" 0;
+	setAttr ".phl[580]" 0;
+	setAttr ".phl[581]" 0;
+	setAttr ".phl[582]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Jeremy_Rig_06RN"
 		"Jeremy_Rig_06RN" 0
-		"Jeremy_Rig_06RN" 596
+		"Jeremy_Rig_06RN" 602
 		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Skeleton|Jeremy_Rig_06:L_Arm_Jnt_Grp|Jeremy_Rig_06:L_Arm_001_IK_Jnt" 
-		"rotate" " -type \"double3\" -47.46557618317898175 -62.28005061290399169 79.95045394494623281"
+		"rotate" " -type \"double3\" 46.77010678435534885 -71.13722416811066296 -28.84681937152929265"
 		
 		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Skeleton|Jeremy_Rig_06:L_Arm_Jnt_Grp|Jeremy_Rig_06:L_Arm_001_IK_Jnt|Jeremy_Rig_06:L_Arm_002_IK_Jnt" 
-		"rotate" " -type \"double3\" 0 0 4.1016496530829441e-05"
+		"rotate" " -type \"double3\" 0 0 57.98611363585811063"
 		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Skeleton|Jeremy_Rig_06:R_Arm_Jnt_Grp|Jeremy_Rig_06:R_Arm_001_IK_Jnt" 
-		"rotate" " -type \"double3\" -32.97392073973891513 -51.24883966912911859 70.23168935180132166"
+		"rotate" " -type \"double3\" 98.75129548092914433 -44.83812281668335231 -75.47338447528848349"
 		
 		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Skeleton|Jeremy_Rig_06:L_Leg_Jnt_Grp|Jeremy_Rig_06:L_Leg_001_IK_Jnt" 
-		"rotate" " -type \"double3\" -6.73111154645400767 -1.06220764453377026 -30.83402724302695219"
+		"rotate" " -type \"double3\" -9.24520322988865573 -4.31974946992629594 4.48445790569722469"
 		
 		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Skeleton|Jeremy_Rig_06:L_Leg_Jnt_Grp|Jeremy_Rig_06:L_Leg_001_IK_Jnt|Jeremy_Rig_06:L_Leg_002_IK_Jnt" 
-		"rotate" " -type \"double3\" 0 0 27.81012760453856458"
+		"rotate" " -type \"double3\" 0 0 39.11626959638272893"
 		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Skeleton|Jeremy_Rig_06:R_Leg_Jnt_Grp|Jeremy_Rig_06:R_Leg_001_IK_Jnt" 
-		"rotate" " -type \"double3\" -10.80789156456240185 -0.54070942743438899 7.39643029084819137"
+		"rotate" " -type \"double3\" -1.28768819190608941 2.03595791780691515 -44.36041215339231059"
 		
 		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Skeleton|Jeremy_Rig_06:R_Leg_Jnt_Grp|Jeremy_Rig_06:R_Leg_001_IK_Jnt|Jeremy_Rig_06:R_Leg_002_IK_Jnt" 
-		"rotate" " -type \"double3\" -7.8639624734402879e-06 -3.0314672326601877e-05 39.59490355963197317"
+		"rotate" " -type \"double3\" -6.989846849267623e-06 -2.6945056968968446e-05 35.74952079994139353"
 		
 		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Skeleton|Jeremy_Rig_06:L_Foot_Jnt_Grp|Jeremy_Rig_06:L_Foot_001_IK_Jnt" 
-		"rotate" " -type \"double3\" 9.98680216284900979 13.24009732217165691 -4.37984230991750767"
+		"rotate" " -type \"double3\" 15.09334735365073499 4.338192784983951 32.95362164054582621"
 		
 		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Skeleton|Jeremy_Rig_06:L_Foot_Jnt_Grp|Jeremy_Rig_06:L_Foot_001_IK_Jnt|Jeremy_Rig_06:L_Foot_002_IK_Jnt" 
-		"rotate" " -type \"double3\" -0.049235690475502171 0.11471141653620608 0.94958559124570896"
+		"rotate" " -type \"double3\" -0.10665859722935664 0.064936355538835519 -34.46605584292854019"
 		
 		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Skeleton|Jeremy_Rig_06:R_Foot_Jnt_Grp|Jeremy_Rig_06:R_Foot_001_IK_Jnt" 
-		"rotate" " -type \"double3\" 16.49569021696607152 2.2523225291272766 48.23089445159628497"
+		"rotate" " -type \"double3\" 2.51681056242321866 8.65281128655903053 -24.75751979752000409"
 		
 		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Skeleton|Jeremy_Rig_06:R_Foot_Jnt_Grp|Jeremy_Rig_06:R_Foot_001_IK_Jnt|Jeremy_Rig_06:R_Foot_002_IK_Jnt" 
-		"rotate" " -type \"double3\" -0.084899159375089184 0.091473858356986168 -18.67309769926857754"
-		
-		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl" 
-		"rotate" " -type \"double3\" -62.00587771972824669 -69.59594881483668871 86.6368459874529151"
+		"rotate" " -type \"double3\" -0.048092709634713023 0.11514226963877693 1.50946492178934788"
 		
 		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Handle_Ctrl" 
 		"translate" " -type \"double3\" -12.24139407070672547 5.19033482459673401 13.64582498791813414"
@@ -9794,6 +9795,10 @@ createNode reference -n "Jeremy_Rig_06RN";
 		"scale" " -type \"double3\" 1 1 1"
 		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Handle_Ctrl" 
 		"Follow" " -k 1 1"
+		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl" 
+		"LShoulderCorrective" " -k 1"
+		2 "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl" 
+		"RShoulderCorrective" " -k 1"
 		2 "Jeremy_Rig_06:Geo_Layer" "displayType" " 2"
 		2 "Jeremy_Rig_06:Geo_Layer" "visibility" " 1"
 		2 "Jeremy_Rig_06:Controls_Layer" "visibility" " 0"
@@ -9941,1016 +9946,1026 @@ createNode reference -n "Jeremy_Rig_06RN";
 		"Jeremy_Rig_06RN.placeHolderList[71]" ""
 		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[72]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[73]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[74]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[75]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[76]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[77]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_FK_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[78]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[79]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[80]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[81]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[82]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[83]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[84]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[85]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[86]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_FK_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_002_FK_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[87]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[88]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[89]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[90]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[91]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[92]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[93]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[94]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[95]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Offset|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl.Follow" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_Base_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[96]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Offset|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Offset|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl.Follow" 
 		"Jeremy_Rig_06RN.placeHolderList[97]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Offset|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Offset|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[98]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Offset|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Offset|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[99]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Offset|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Offset|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[100]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Offset|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Offset|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[101]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Offset|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Offset|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[102]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Offset|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Offset|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[103]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Offset|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Offset|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[104]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Offset|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Offset|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[105]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl1.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:L_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Arm_001_IK_PV_Offset|Jeremy_Rig_06:L_Arm_001_IK_PV_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[106]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl1.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl1.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[107]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl1.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl1.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[108]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl1.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl1.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[109]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl1.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl1.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[110]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl1.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl1.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[111]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl1.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl1.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[112]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl1.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl1.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[113]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl1.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl1.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[114]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl1.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_FK_Ctrl1.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[115]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl1.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl1.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[116]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl1.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl1.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[117]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl1.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl1.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[118]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl1.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl1.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[119]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl1.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl1.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[120]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl1.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl1.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[121]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl1.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl1.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[122]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl1.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl1.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[123]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl1.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_002_FK_Ctrl1.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[124]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl1.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl1.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[125]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl1.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl1.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[126]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl1.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl1.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[127]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl1.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl1.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[128]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl1.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl1.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[129]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl1.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl1.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[130]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl1.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl1.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[131]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl1.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl1.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[132]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_FK_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_003_FK_Ctrl1.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[133]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[134]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[135]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[136]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[137]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[138]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[139]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[140]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[141]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl.Follow" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Base_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[142]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl.Follow" 
 		"Jeremy_Rig_06RN.placeHolderList[143]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[144]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[145]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[146]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[147]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[148]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[149]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[150]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[151]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Offset|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl.Follow" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_Handle_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[152]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Offset|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Offset|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl.Follow" 
 		"Jeremy_Rig_06RN.placeHolderList[153]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Offset|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Offset|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[154]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Offset|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Offset|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[155]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Offset|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Offset|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[156]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Offset|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Offset|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[157]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Offset|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Offset|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[158]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Offset|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Offset|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[159]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Offset|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Offset|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[160]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Offset|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Offset|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[161]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Arm_Main_Ctrl_Grp|Jeremy_Rig_06:R_Arm_IK_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Arm_001_IK_PV_Offset|Jeremy_Rig_06:R_Arm_001_IK_PV_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[162]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl.LElbowCorrective" 
 		"Jeremy_Rig_06RN.placeHolderList[163]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl.LShoulderCorrective" 
 		"Jeremy_Rig_06RN.placeHolderList[164]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[165]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[166]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[167]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[168]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[169]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[170]" ""
-		5 3 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.translate" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[171]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[172]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_001_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[173]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.translateZ" 
+		5 3 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.translate" 
 		"Jeremy_Rig_06RN.placeHolderList[174]" ""
-		5 3 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.rotatePivot" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[175]" ""
-		5 3 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.rotatePivotTranslate" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[176]" ""
-		5 3 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.rotate" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[177]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.rotateX" 
+		5 3 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.rotatePivot" 
 		"Jeremy_Rig_06RN.placeHolderList[178]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.rotateY" 
+		5 3 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.rotatePivotTranslate" 
 		"Jeremy_Rig_06RN.placeHolderList[179]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.rotateZ" 
+		5 3 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.rotate" 
 		"Jeremy_Rig_06RN.placeHolderList[180]" ""
-		5 3 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.rotateOrder" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[181]" ""
-		5 3 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.scale" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[182]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[183]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.scaleY" 
+		5 3 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.rotateOrder" 
 		"Jeremy_Rig_06RN.placeHolderList[184]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.scaleZ" 
+		5 3 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.scale" 
 		"Jeremy_Rig_06RN.placeHolderList[185]" ""
-		5 3 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.parentMatrix" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[186]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[187]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[188]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl.translateZ" 
+		5 3 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_001_Ctrl.parentMatrix" 
 		"Jeremy_Rig_06RN.placeHolderList[189]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[190]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[191]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[192]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[193]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[194]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[195]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[196]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[197]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_002_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[198]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[199]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[200]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[201]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[202]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[203]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[204]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[205]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[206]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_01_Knuckle_003_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[207]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[208]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[209]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[210]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[211]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[212]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[213]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[214]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[215]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_001_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[216]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[217]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[218]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[219]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[220]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[221]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[222]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[223]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[224]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_002_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[225]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[226]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[227]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[228]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[229]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[230]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[231]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[232]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[233]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_02_Knuckle_003_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[234]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[235]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[236]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[237]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[238]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[239]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[240]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[241]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[242]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_001_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[243]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[244]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[245]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[246]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[247]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[248]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[249]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[250]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[251]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_002_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[252]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[253]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[254]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[255]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[256]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[257]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[258]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[259]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[260]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_03_Knuckle_003_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[261]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[262]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[263]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[264]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[265]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[266]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[267]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[268]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[269]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_001_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[270]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[271]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[272]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[273]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[274]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[275]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[276]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[277]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[278]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_002_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[279]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[280]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[281]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[282]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[283]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[284]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[285]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[286]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[287]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_04_Knuckle_003_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[288]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[289]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[290]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[291]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[292]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[293]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[294]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[295]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[296]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_001_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[297]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[298]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[299]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[300]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[301]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[302]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[303]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[304]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[305]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_002_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[306]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[307]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[308]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[309]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[310]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[311]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[312]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[313]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[314]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Hand_FK_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:L_Hand_Finger_05_Knuckle_003_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[315]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl.RElbowCorrective" 
 		"Jeremy_Rig_06RN.placeHolderList[316]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl.RShoulderCorrective" 
 		"Jeremy_Rig_06RN.placeHolderList[317]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[318]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[319]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[320]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[321]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[322]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[323]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[324]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[325]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_001_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[326]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[327]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[328]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[329]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[330]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[331]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[332]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[333]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[334]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_001_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[335]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[336]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[337]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[338]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[339]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[340]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[341]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[342]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[343]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_002_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[344]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[345]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[346]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[347]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[348]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[349]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[350]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[351]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[352]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_01_Knuckle_003_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[353]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[354]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[355]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[356]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[357]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[358]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[359]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[360]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[361]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_001_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[362]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[363]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[364]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[365]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[366]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[367]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[368]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[369]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[370]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_002_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[371]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[372]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[373]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[374]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[375]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[376]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[377]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[378]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[379]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_02_Knuckle_003_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[380]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[381]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[382]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[383]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[384]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[385]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[386]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[387]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[388]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_001_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[389]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[390]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[391]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[392]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[393]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[394]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[395]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[396]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[397]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_002_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[398]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[399]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[400]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[401]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[402]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[403]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[404]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[405]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[406]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_03_Knuckle_003_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[407]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[408]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[409]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[410]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[411]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[412]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[413]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[414]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[415]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_001_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[416]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[417]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[418]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[419]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[420]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[421]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[422]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[423]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[424]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_002_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[425]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[426]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[427]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[428]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[429]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[430]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[431]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[432]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[433]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_04_Knuckle_003_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[434]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[435]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[436]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[437]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[438]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[439]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[440]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[441]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[442]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_001_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[443]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[444]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[445]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[446]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[447]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[448]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[449]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[450]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[451]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_002_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[452]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[453]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[454]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[455]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[456]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_001_Ctrl_Grp|Jeremy_Rig_06:Spine_001_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[457]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_001_Ctrl_Grp|Jeremy_Rig_06:Spine_001_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[458]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_001_Ctrl_Grp|Jeremy_Rig_06:Spine_001_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[459]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_001_Ctrl_Grp|Jeremy_Rig_06:Spine_001_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[460]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_001_Ctrl_Grp|Jeremy_Rig_06:Spine_001_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Hand_FK_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl_Grp|Jeremy_Rig_06:R_Hand_Finger_05_Knuckle_003_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[461]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_001_Ctrl_Grp|Jeremy_Rig_06:Spine_001_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_001_Ctrl_Grp|Jeremy_Rig_06:Spine_001_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[462]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_001_Ctrl_Grp|Jeremy_Rig_06:Spine_001_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_001_Ctrl_Grp|Jeremy_Rig_06:Spine_001_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[463]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_001_Ctrl_Grp|Jeremy_Rig_06:Spine_001_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_001_Ctrl_Grp|Jeremy_Rig_06:Spine_001_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[464]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_001_Ctrl_Grp|Jeremy_Rig_06:Spine_001_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_001_Ctrl_Grp|Jeremy_Rig_06:Spine_001_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[465]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_002_Ctrl_Grp|Jeremy_Rig_06:Spine_002_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_001_Ctrl_Grp|Jeremy_Rig_06:Spine_001_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[466]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_002_Ctrl_Grp|Jeremy_Rig_06:Spine_002_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_001_Ctrl_Grp|Jeremy_Rig_06:Spine_001_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[467]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_002_Ctrl_Grp|Jeremy_Rig_06:Spine_002_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_001_Ctrl_Grp|Jeremy_Rig_06:Spine_001_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[468]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_002_Ctrl_Grp|Jeremy_Rig_06:Spine_002_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_001_Ctrl_Grp|Jeremy_Rig_06:Spine_001_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[469]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_002_Ctrl_Grp|Jeremy_Rig_06:Spine_002_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_001_Ctrl_Grp|Jeremy_Rig_06:Spine_001_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[470]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_002_Ctrl_Grp|Jeremy_Rig_06:Spine_002_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_002_Ctrl_Grp|Jeremy_Rig_06:Spine_002_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[471]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_002_Ctrl_Grp|Jeremy_Rig_06:Spine_002_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_002_Ctrl_Grp|Jeremy_Rig_06:Spine_002_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[472]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_002_Ctrl_Grp|Jeremy_Rig_06:Spine_002_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_002_Ctrl_Grp|Jeremy_Rig_06:Spine_002_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[473]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_002_Ctrl_Grp|Jeremy_Rig_06:Spine_002_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_002_Ctrl_Grp|Jeremy_Rig_06:Spine_002_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[474]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_003_Ctrl_Grp|Jeremy_Rig_06:Spine_003_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_002_Ctrl_Grp|Jeremy_Rig_06:Spine_002_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[475]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_003_Ctrl_Grp|Jeremy_Rig_06:Spine_003_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_002_Ctrl_Grp|Jeremy_Rig_06:Spine_002_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[476]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_003_Ctrl_Grp|Jeremy_Rig_06:Spine_003_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_002_Ctrl_Grp|Jeremy_Rig_06:Spine_002_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[477]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_003_Ctrl_Grp|Jeremy_Rig_06:Spine_003_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_002_Ctrl_Grp|Jeremy_Rig_06:Spine_002_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[478]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_003_Ctrl_Grp|Jeremy_Rig_06:Spine_003_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_002_Ctrl_Grp|Jeremy_Rig_06:Spine_002_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[479]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_003_Ctrl_Grp|Jeremy_Rig_06:Spine_003_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_003_Ctrl_Grp|Jeremy_Rig_06:Spine_003_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[480]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_003_Ctrl_Grp|Jeremy_Rig_06:Spine_003_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_003_Ctrl_Grp|Jeremy_Rig_06:Spine_003_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[481]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_003_Ctrl_Grp|Jeremy_Rig_06:Spine_003_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_003_Ctrl_Grp|Jeremy_Rig_06:Spine_003_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[482]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_003_Ctrl_Grp|Jeremy_Rig_06:Spine_003_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_003_Ctrl_Grp|Jeremy_Rig_06:Spine_003_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[483]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Pelvis_FK_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_003_Ctrl_Grp|Jeremy_Rig_06:Spine_003_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[484]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Pelvis_FK_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_003_Ctrl_Grp|Jeremy_Rig_06:Spine_003_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[485]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Pelvis_FK_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_003_Ctrl_Grp|Jeremy_Rig_06:Spine_003_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[486]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Pelvis_FK_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_003_Ctrl_Grp|Jeremy_Rig_06:Spine_003_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[487]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Pelvis_FK_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Spine_FK_Grp|Jeremy_Rig_06:Spine_003_Ctrl_Grp|Jeremy_Rig_06:Spine_003_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[488]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Pelvis_FK_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Pelvis_FK_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[489]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Pelvis_FK_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Pelvis_FK_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[490]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Pelvis_FK_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Pelvis_FK_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[491]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Pelvis_FK_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Pelvis_FK_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[492]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Pelvis_FK_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[493]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Pelvis_FK_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[494]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Pelvis_FK_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[495]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Pelvis_FK_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[496]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:Pelvis_FK_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl_Grp|Jeremy_Rig_06:Pelvis_001_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[497]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[498]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[499]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[500]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[501]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl.Follow" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[502]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl.RevFootCtrlVis" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[503]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[504]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[505]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Base_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[506]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl.Follow" 
 		"Jeremy_Rig_06RN.placeHolderList[507]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl.RevFootCtrlVis" 
 		"Jeremy_Rig_06RN.placeHolderList[508]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[509]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[510]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[511]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[512]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[513]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[514]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[515]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[516]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[517]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[518]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Ball_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Ball_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[519]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Ball_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Ball_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[520]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Ball_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Ball_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[521]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Tip_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Tip_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[522]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Tip_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Tip_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[523]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Tip_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Tip_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Ball_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Ball_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[524]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Offset|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrlv.Follow" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Ball_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Ball_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[525]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Offset|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrlv.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Ball_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Ball_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[526]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Offset|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrlv.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Tip_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Tip_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[527]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Offset|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrlv.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Tip_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Tip_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[528]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Offset|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrlv.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Toe_Ctrl|Jeremy_Rig_06:L_Foot_Rev_IK_Tip_Ctrl_Grp|Jeremy_Rig_06:L_Foot_Rev_IK_Tip_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[529]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Offset|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrlv.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Offset|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrlv.Follow" 
 		"Jeremy_Rig_06RN.placeHolderList[530]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Offset|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrlv.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Offset|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrlv.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[531]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Offset|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrlv.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Offset|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrlv.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[532]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Offset|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrlv.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Offset|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrlv.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[533]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Offset|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrlv.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Offset|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrlv.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[534]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Offset|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrlv.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[535]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Offset|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrlv.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[536]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Offset|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrlv.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[537]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl.visibility" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Offset|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrlv.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[538]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:L_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:L_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrl_Grp|Jeremy_Rig_06:L_Leg_001_IK_PV_Offset|Jeremy_Rig_06:L_Leg_001_IK_PV_Ctrlv.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[539]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[540]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[541]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[542]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl.visibility" 
 		"Jeremy_Rig_06RN.placeHolderList[543]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[544]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl.Follow" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[545]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl.RevFootCtrlVis" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[546]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[547]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[548]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Base_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[549]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl.Follow" 
 		"Jeremy_Rig_06RN.placeHolderList[550]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl.RevFootCtrlVis" 
 		"Jeremy_Rig_06RN.placeHolderList[551]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[552]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[553]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[554]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl.scaleZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[555]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[556]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[557]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl.scaleX" 
 		"Jeremy_Rig_06RN.placeHolderList[558]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl.scaleY" 
 		"Jeremy_Rig_06RN.placeHolderList[559]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl.scaleZ" 
 		"Jeremy_Rig_06RN.placeHolderList[560]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[561]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Ball_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Ball_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[562]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Ball_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Ball_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[563]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Ball_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Ball_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[564]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Tip_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Tip_Ctrl.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[565]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Tip_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Tip_Ctrl.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[566]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Tip_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Tip_Ctrl.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Ball_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Ball_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[567]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_002_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_PV_Offset|Jeremy_Rig_06:R_Leg_001_IK_PV_Ctrlv.Follow" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Ball_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Ball_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[568]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_002_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_PV_Offset|Jeremy_Rig_06:R_Leg_001_IK_PV_Ctrlv.translateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Ball_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Ball_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[569]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_002_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_PV_Offset|Jeremy_Rig_06:R_Leg_001_IK_PV_Ctrlv.translateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Tip_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Tip_Ctrl.rotateX" 
 		"Jeremy_Rig_06RN.placeHolderList[570]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_002_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_PV_Offset|Jeremy_Rig_06:R_Leg_001_IK_PV_Ctrlv.translateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Tip_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Tip_Ctrl.rotateY" 
 		"Jeremy_Rig_06RN.placeHolderList[571]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_002_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_PV_Offset|Jeremy_Rig_06:R_Leg_001_IK_PV_Ctrlv.rotateX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_Handle_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Heel_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Toe_Ctrl|Jeremy_Rig_06:R_Foot_Rev_IK_Tip_Ctrl_Grp|Jeremy_Rig_06:R_Foot_Rev_IK_Tip_Ctrl.rotateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[572]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_002_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_PV_Offset|Jeremy_Rig_06:R_Leg_001_IK_PV_Ctrlv.rotateY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_002_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_PV_Offset|Jeremy_Rig_06:R_Leg_001_IK_PV_Ctrlv.Follow" 
 		"Jeremy_Rig_06RN.placeHolderList[573]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_002_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_PV_Offset|Jeremy_Rig_06:R_Leg_001_IK_PV_Ctrlv.rotateZ" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_002_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_PV_Offset|Jeremy_Rig_06:R_Leg_001_IK_PV_Ctrlv.translateX" 
 		"Jeremy_Rig_06RN.placeHolderList[574]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_002_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_PV_Offset|Jeremy_Rig_06:R_Leg_001_IK_PV_Ctrlv.scaleX" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_002_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_PV_Offset|Jeremy_Rig_06:R_Leg_001_IK_PV_Ctrlv.translateY" 
 		"Jeremy_Rig_06RN.placeHolderList[575]" ""
-		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_002_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_PV_Offset|Jeremy_Rig_06:R_Leg_001_IK_PV_Ctrlv.scaleY" 
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_002_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_PV_Offset|Jeremy_Rig_06:R_Leg_001_IK_PV_Ctrlv.translateZ" 
 		"Jeremy_Rig_06RN.placeHolderList[576]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_002_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_PV_Offset|Jeremy_Rig_06:R_Leg_001_IK_PV_Ctrlv.rotateX" 
+		"Jeremy_Rig_06RN.placeHolderList[577]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_002_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_PV_Offset|Jeremy_Rig_06:R_Leg_001_IK_PV_Ctrlv.rotateY" 
+		"Jeremy_Rig_06RN.placeHolderList[578]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_002_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_PV_Offset|Jeremy_Rig_06:R_Leg_001_IK_PV_Ctrlv.rotateZ" 
+		"Jeremy_Rig_06RN.placeHolderList[579]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_002_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_PV_Offset|Jeremy_Rig_06:R_Leg_001_IK_PV_Ctrlv.scaleX" 
+		"Jeremy_Rig_06RN.placeHolderList[580]" ""
+		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_002_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_PV_Offset|Jeremy_Rig_06:R_Leg_001_IK_PV_Ctrlv.scaleY" 
+		"Jeremy_Rig_06RN.placeHolderList[581]" ""
 		5 4 "Jeremy_Rig_06RN" "|Jeremy_Rig_06:Jeremy|Jeremy_Rig_06:Controls|Jeremy_Rig_06:R_Leg_Main_Ctrl_Grp|Jeremy_Rig_06:R_Leg_IK_Ctrl_Grp|Jeremy_Rig_06:R_Leg_002_IK_PV_Ctrl_Grp|Jeremy_Rig_06:R_Leg_001_IK_PV_Offset|Jeremy_Rig_06:R_Leg_001_IK_PV_Ctrlv.scaleZ" 
-		"Jeremy_Rig_06RN.placeHolderList[577]" "";
+		"Jeremy_Rig_06RN.placeHolderList[582]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode displayLayer -n "WhiteboxLayer";
@@ -11332,164 +11347,235 @@ createNode animCurveTU -n "COG_Ctrl_scaleZ";
 	setAttr ".wgt" no;
 	setAttr -s 18 ".ktv[0:17]"  0 1 1 1 4 1 7 1 10 1 13 1 16 1 19 1 22 1
 		 25 1 28 1 31 1 34 1 37 1 40 1 43 1 46 1 48 1;
+	setAttr -s 18 ".kit[5:17]"  1 10 10 10 1 1 10 10 
+		1 10 10 10 10;
+	setAttr -s 18 ".kot[5:17]"  1 10 10 10 1 1 10 10 
+		1 10 10 10 10;
+	setAttr -s 18 ".kix[5:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".kiy[5:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 18 ".kox[5:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".koy[5:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "COG_Ctrl_scaleY";
 	rename -uid "BCB90E43-4C92-D6CB-BB37-89A121881C72";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
 	setAttr -s 18 ".ktv[0:17]"  0 1 1 1 4 1 7 1 10 1 13 1 16 1 19 1 22 1
 		 25 1 28 1 31 1 34 1 37 1 40 1 43 1 46 1 48 1;
+	setAttr -s 18 ".kit[5:17]"  1 10 10 10 1 1 10 10 
+		1 10 10 10 10;
+	setAttr -s 18 ".kot[5:17]"  1 10 10 10 1 1 10 10 
+		1 10 10 10 10;
+	setAttr -s 18 ".kix[5:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".kiy[5:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 18 ".kox[5:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".koy[5:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "COG_Ctrl_scaleX";
 	rename -uid "59DA579B-48EC-4072-E2A7-889280E28A3C";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
 	setAttr -s 18 ".ktv[0:17]"  0 1 1 1 4 1 7 1 10 1 13 1 16 1 19 1 22 1
 		 25 1 28 1 31 1 34 1 37 1 40 1 43 1 46 1 48 1;
+	setAttr -s 18 ".kit[5:17]"  1 10 10 10 1 1 10 10 
+		1 10 10 10 10;
+	setAttr -s 18 ".kot[5:17]"  1 10 10 10 1 1 10 10 
+		1 10 10 10 10;
+	setAttr -s 18 ".kix[5:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".kiy[5:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 18 ".kox[5:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".koy[5:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "COG_Ctrl_rotateZ";
 	rename -uid "1FA8CF6F-47B4-FC9F-F6F7-FF98B7A69B22";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
 	setAttr -s 18 ".ktv[0:17]"  0 0 1 0 4 0 7 0 10 0 13 0 16 0 19 0 22 0
 		 25 0 28 0 31 0 34 0 37 0 40 0 43 0 46 0 48 0;
+	setAttr -s 18 ".kit[5:17]"  1 10 10 10 1 1 10 10 
+		1 10 10 10 10;
+	setAttr -s 18 ".kot[5:17]"  1 10 10 10 1 1 10 10 
+		1 10 10 10 10;
+	setAttr -s 18 ".kix[5:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".kiy[5:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 18 ".kox[5:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".koy[5:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "COG_Ctrl_rotateY";
 	rename -uid "45E61397-46D5-C2F6-72DD-EB88BB20DB16";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
 	setAttr -s 18 ".ktv[0:17]"  0 0 1 0 4 0 7 0 10 0 13 0 16 0 19 0 22 0
 		 25 0 28 0 31 0 34 0 37 0 40 0 43 0 46 0 48 0;
+	setAttr -s 18 ".kit[5:17]"  1 10 10 10 1 1 10 10 
+		1 10 10 10 10;
+	setAttr -s 18 ".kot[5:17]"  1 10 10 10 1 1 10 10 
+		1 10 10 10 10;
+	setAttr -s 18 ".kix[5:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".kiy[5:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 18 ".kox[5:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".koy[5:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "COG_Ctrl_rotateX";
 	rename -uid "C282FA28-49A1-4A88-1D41-BC9F974A6ADD";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
 	setAttr -s 18 ".ktv[0:17]"  0 0 1 0 4 0 7 0 10 0 13 0 16 0 19 0 22 0
 		 25 0 28 0 31 0 34 0 37 0 40 0 43 0 46 0 48 0;
+	setAttr -s 18 ".kit[5:17]"  1 10 10 10 1 1 10 10 
+		1 10 10 10 10;
+	setAttr -s 18 ".kot[5:17]"  1 10 10 10 1 1 10 10 
+		1 10 10 10 10;
+	setAttr -s 18 ".kix[5:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".kiy[5:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 18 ".kox[5:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".koy[5:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTL -n "COG_Ctrl_translateZ";
 	rename -uid "06C043A0-4D21-4B43-8AEA-C0B50F4FB2F5";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 18 ".ktv[0:17]"  0 0 1 0 4 -2.3727139153267691 7 0 10 0 13 0.59672482519662395
-		 16 -1.4167769514247865 19 0 22 1.4907248580767316 25 0 28 -2.4318620563553495 31 0
-		 34 0 37 0 40 0 43 0 46 0 48 0;
+	setAttr -s 18 ".ktv[0:17]"  0 0 1 0 4 -2.3727139153267691 7 0 10 0 13 0
+		 16 -1.4167769514247865 19 0 22 1.4907248580767316 25 0 28 0 31 0 34 0 37 0 40 0 43 0
+		 46 0 48 0;
+	setAttr -s 18 ".kit[5:17]"  1 10 10 10 1 1 10 10 
+		1 10 10 10 10;
+	setAttr -s 18 ".kot[5:17]"  1 10 10 10 1 1 10 10 
+		1 10 10 10 10;
+	setAttr -s 18 ".kix[5:17]"  1 1 0.085668365259452692 1 1 1 1 1 1 1 
+		1 1 1;
+	setAttr -s 18 ".kiy[5:17]"  0 0 0.99632370803558279 0 0 0 0 0 0 0 0 
+		0 0;
+	setAttr -s 18 ".kox[5:17]"  1 1 0.085668365259452692 1 1 1 1 1 1 1 
+		1 1 1;
+	setAttr -s 18 ".koy[5:17]"  0 0 0.99632370803558279 0 0 0 0 0 0 0 0 
+		0 0;
 createNode animCurveTL -n "COG_Ctrl_translateY";
 	rename -uid "E7DBB14C-40F4-03C8-FA90-48B65C9260EA";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 18 ".ktv[0:17]"  0 0 1 -1.8105110150350292 4 -1.8188554642897508
-		 7 -0.4029404833826149 10 -0.55556309977965412 13 -2.0480083950451053 16 -1.8428475713242136
-		 19 -0.403 22 -0.556 25 -1.8105110150350292 28 -1.6678474298744916 31 -0.4029404833826149
-		 34 -0.55556309977965412 37 -1.811 40 -1.9124215113408845 43 -0.403 46 -0.556 48 -0.556;
+	setAttr -s 18 ".ktv[0:17]"  0 0 1 -2.8339800760014846 4 -1.8188554642897508
+		 7 -0.4029404833826149 10 -0.55556309977965412 13 -2.8339800760014846 16 -1.8428475713242136
+		 19 -0.403 22 -0.556 25 -2.8339800760014846 28 -2.8339800760014846 31 -0.4029404833826149
+		 34 -0.55556309977965412 37 -2.8339800760014846 40 -1.9124215113408845 43 -0.403 46 -0.556
+		 48 -0.556;
+	setAttr -s 18 ".kit[5:17]"  1 10 10 10 1 1 10 10 
+		1 10 10 10 10;
+	setAttr -s 18 ".kot[5:17]"  1 10 10 10 1 1 10 10 
+		1 10 10 10 10;
+	setAttr -s 18 ".kix[5:17]"  0.09125042248299671 0.10229964846040766 
+		0.19070768231622034 0.1022996484604077 0.09125042248299671 0.09125042248299671 0.10907068445657596 
+		0.10229717017351113 0.09125042248299671 0.10229964846040766 0.18125560739229668 1 
+		1;
+	setAttr -s 18 ".kiy[5:17]"  -0.99582797731168127 0.99475362875682793 
+		0.98164687128599137 -0.99475362875682793 -0.99582797731168127 -0.99582797731168127 
+		0.99403399629598888 -0.99475388361870276 -0.99582797731168127 0.99475362875682793 
+		0.98343601967227612 0 0;
+	setAttr -s 18 ".kox[5:17]"  0.09125042248299671 0.10229964846040766 
+		0.19070768231622034 0.1022996484604077 0.09125042248299671 0.09125042248299671 0.10907068445657596 
+		0.10229717017351113 0.09125042248299671 0.10229964846040766 0.18125560739229668 1 
+		1;
+	setAttr -s 18 ".koy[5:17]"  -0.99582797731168127 0.99475362875682793 
+		0.98164687128599137 -0.99475362875682793 -0.99582797731168127 -0.99582797731168127 
+		0.99403399629598888 -0.99475388361870276 -0.99582797731168127 0.99475362875682793 
+		0.98343601967227612 0 0;
 createNode animCurveTL -n "COG_Ctrl_translateX";
 	rename -uid "971B5147-43B2-174D-D8DF-66B3C46CC6F2";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
 	setAttr -s 18 ".ktv[0:17]"  0 0 1 0 4 0 7 0 10 0 13 0 16 0 19 0 22 0
 		 25 0 28 0 31 0 34 0 37 0 40 0 43 0 46 0 48 0;
+	setAttr -s 18 ".kit[5:17]"  1 10 10 10 1 1 10 10 
+		1 10 10 10 10;
+	setAttr -s 18 ".kot[5:17]"  1 10 10 10 1 1 10 10 
+		1 10 10 10 10;
+	setAttr -s 18 ".kix[5:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".kiy[5:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 18 ".kox[5:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".koy[5:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "Anim_scaleZ";
 	rename -uid "DEFC090A-4BB6-3DEB-9CD9-63A94AD256C4";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 34 1;
-	setAttr -s 2 ".kit[1]"  18;
-	setAttr -s 2 ".kot[1]"  18;
-	setAttr -s 2 ".kix[0:1]"  1 1;
-	setAttr -s 2 ".kiy[0:1]"  0 0;
-	setAttr -s 2 ".kox[0:1]"  1 1;
-	setAttr -s 2 ".koy[0:1]"  0 0;
+	setAttr ".ktv[0]"  1 1;
+	setAttr ".kix[0]"  1;
+	setAttr ".kiy[0]"  0;
+	setAttr ".kox[0]"  1;
+	setAttr ".koy[0]"  0;
 createNode animCurveTU -n "Anim_scaleY";
 	rename -uid "CD4F4843-4A13-075F-2F2B-028814208829";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 34 1;
-	setAttr -s 2 ".kit[1]"  18;
-	setAttr -s 2 ".kot[1]"  18;
-	setAttr -s 2 ".kix[0:1]"  1 1;
-	setAttr -s 2 ".kiy[0:1]"  0 0;
-	setAttr -s 2 ".kox[0:1]"  1 1;
-	setAttr -s 2 ".koy[0:1]"  0 0;
+	setAttr ".ktv[0]"  1 1;
+	setAttr ".kix[0]"  1;
+	setAttr ".kiy[0]"  0;
+	setAttr ".kox[0]"  1;
+	setAttr ".koy[0]"  0;
 createNode animCurveTU -n "Anim_scaleX";
 	rename -uid "FB07A957-4A2F-A78C-8E3D-209A918E09BC";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 34 1;
-	setAttr -s 2 ".kit[1]"  18;
-	setAttr -s 2 ".kot[1]"  18;
-	setAttr -s 2 ".kix[0:1]"  1 1;
-	setAttr -s 2 ".kiy[0:1]"  0 0;
-	setAttr -s 2 ".kox[0:1]"  1 1;
-	setAttr -s 2 ".koy[0:1]"  0 0;
+	setAttr ".ktv[0]"  1 1;
+	setAttr ".kix[0]"  1;
+	setAttr ".kiy[0]"  0;
+	setAttr ".kox[0]"  1;
+	setAttr ".koy[0]"  0;
 createNode animCurveTA -n "Anim_rotateZ";
 	rename -uid "52961224-441F-BAFB-94AB-6BB8AC272FA0";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 34 0;
-	setAttr -s 2 ".kit[1]"  18;
-	setAttr -s 2 ".kot[1]"  18;
-	setAttr -s 2 ".kix[0:1]"  1 1;
-	setAttr -s 2 ".kiy[0:1]"  0 0;
-	setAttr -s 2 ".kox[0:1]"  1 1;
-	setAttr -s 2 ".koy[0:1]"  0 0;
+	setAttr ".ktv[0]"  1 -2.9583721817174493;
+	setAttr ".kix[0]"  1;
+	setAttr ".kiy[0]"  0;
+	setAttr ".kox[0]"  1;
+	setAttr ".koy[0]"  0;
 createNode animCurveTA -n "Anim_rotateY";
 	rename -uid "9BCF1F5E-4044-2C2B-444B-7BAD2E31E985";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 163.99999999999577 34 163.99999999999577;
-	setAttr -s 2 ".kit[1]"  18;
-	setAttr -s 2 ".kot[1]"  18;
-	setAttr -s 2 ".kix[0:1]"  1 1;
-	setAttr -s 2 ".kiy[0:1]"  0 0;
-	setAttr -s 2 ".kox[0:1]"  1 1;
-	setAttr -s 2 ".koy[0:1]"  0 0;
+	setAttr ".ktv[0]"  1 160.91461424126689;
+	setAttr ".kix[0]"  1;
+	setAttr ".kiy[0]"  0;
+	setAttr ".kox[0]"  1;
+	setAttr ".koy[0]"  0;
 createNode animCurveTA -n "Anim_rotateX";
 	rename -uid "2C3E3975-4AF4-BA01-E720-859C930918CD";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 -41.998518361735556 34 -41.998518361735556;
-	setAttr -s 2 ".kit[1]"  18;
-	setAttr -s 2 ".kot[1]"  18;
-	setAttr -s 2 ".kix[0:1]"  1 1;
-	setAttr -s 2 ".kiy[0:1]"  0 0;
-	setAttr -s 2 ".kox[0:1]"  1 1;
-	setAttr -s 2 ".koy[0:1]"  0 0;
+	setAttr ".ktv[0]"  1 -39.106830503084666;
+	setAttr ".kix[0]"  1;
+	setAttr ".kiy[0]"  0;
+	setAttr ".kox[0]"  1;
+	setAttr ".koy[0]"  0;
 createNode animCurveTL -n "Anim_translateZ";
 	rename -uid "6DF4E22C-473D-9567-A37E-6FBA7F398F23";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 -216.82039993653177 34 -216.82039993653177;
-	setAttr -s 2 ".kit[1]"  18;
-	setAttr -s 2 ".kot[1]"  18;
-	setAttr -s 2 ".kix[0:1]"  1 1;
-	setAttr -s 2 ".kiy[0:1]"  0 0;
-	setAttr -s 2 ".kox[0:1]"  1 1;
-	setAttr -s 2 ".koy[0:1]"  0 0;
+	setAttr ".ktv[0]"  1 -220.20065167074688;
+	setAttr ".kix[0]"  1;
+	setAttr ".kiy[0]"  0;
+	setAttr ".kox[0]"  1;
+	setAttr ".koy[0]"  0;
 createNode animCurveTL -n "Anim_translateY";
 	rename -uid "40463068-49DA-BFFD-716B-89AC0C94D723";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 279.3447634231859 34 279.3447634231859;
-	setAttr -s 2 ".kit[1]"  18;
-	setAttr -s 2 ".kot[1]"  18;
-	setAttr -s 2 ".kix[0:1]"  1 1;
-	setAttr -s 2 ".kiy[0:1]"  0 0;
-	setAttr -s 2 ".kox[0:1]"  1 1;
-	setAttr -s 2 ".koy[0:1]"  0 0;
+	setAttr ".ktv[0]"  1 262.50238332873988;
+	setAttr ".kix[0]"  1;
+	setAttr ".kiy[0]"  0;
+	setAttr ".kox[0]"  1;
+	setAttr ".koy[0]"  0;
 createNode animCurveTL -n "Anim_translateX";
 	rename -uid "B04E8FA3-44EA-6672-A366-8EB2E1B47B28";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 47.801110949125452 34 47.801110949125452;
-	setAttr -s 2 ".kit[1]"  18;
-	setAttr -s 2 ".kot[1]"  18;
-	setAttr -s 2 ".kix[0:1]"  1 1;
-	setAttr -s 2 ".kiy[0:1]"  0 0;
-	setAttr -s 2 ".kox[0:1]"  1 1;
-	setAttr -s 2 ".koy[0:1]"  0 0;
+	setAttr ".ktv[0]"  1 58.031770598476008;
+	setAttr ".kix[0]"  1;
+	setAttr ".kiy[0]"  0;
+	setAttr ".kox[0]"  1;
+	setAttr ".koy[0]"  0;
 createNode animCurveTU -n "Anim_visibility";
 	rename -uid "AF4CD653-4C63-CDD1-35A3-478A252C910D";
-	setAttr ".tan" 5;
+	setAttr ".tan" 1;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 34 1;
-	setAttr -s 2 ".kit[0:1]"  1 9;
-	setAttr -s 2 ".kix[0:1]"  1 1;
-	setAttr -s 2 ".kiy[0:1]"  0 0;
+	setAttr ".ktv[0]"  1 1;
+	setAttr ".kot[0]"  5;
+	setAttr ".kix[0]"  1;
+	setAttr ".kiy[0]"  0;
 createNode animCurveTA -n "L_Foot_Rev_IK_Ball_Ctrl_rotateX";
 	rename -uid "3C259A0C-4BD9-DE5B-93DB-159D1A1C497A";
 	setAttr ".tan" 9;
@@ -12947,56 +13033,59 @@ createNode animCurveTL -n "Neck_001_Ctrl_translateX";
 	rename -uid "C4572C33-441C-83D4-979E-D5A1339A08CC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 48 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 4 ".ktv[0:3]"  0 0 20 0 34 0 48 0;
+	setAttr -s 4 ".kot[0:3]"  5 18 18 5;
 createNode animCurveTL -n "Neck_001_Ctrl_translateY";
 	rename -uid "CAAD3D3B-4EC8-5755-7D4D-A986F3508544";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 48 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 4 ".ktv[0:3]"  0 0 20 0 34 0 48 0;
+	setAttr -s 4 ".kot[0:3]"  5 18 18 5;
 createNode animCurveTL -n "Neck_001_Ctrl_translateZ";
 	rename -uid "E3ECAD37-4527-B17C-9D59-01B3C450698C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 48 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 4 ".ktv[0:3]"  0 0 20 0 34 0 48 0;
+	setAttr -s 4 ".kot[0:3]"  5 18 18 5;
 createNode animCurveTA -n "Neck_001_Ctrl_rotateX";
 	rename -uid "5D5C2F9B-4816-66C3-162E-E9B1F5148A8A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 48 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 4 ".ktv[0:3]"  0 0 20 -0.54796915987976724 34 -9.0005123725853249
+		 48 0;
+	setAttr -s 4 ".kot[0:3]"  5 18 18 5;
 createNode animCurveTA -n "Neck_001_Ctrl_rotateY";
 	rename -uid "089297B8-41E0-937B-EC1B-B2827BBC2FA8";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 48 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 4 ".ktv[0:3]"  0 0 20 -0.010869957738134274 34 -2.3827323947329546
+		 48 0;
+	setAttr -s 4 ".kot[0:3]"  5 18 18 5;
 createNode animCurveTA -n "Neck_001_Ctrl_rotateZ";
 	rename -uid "80D6B2B7-47B6-58B7-66F1-3494460A7B4C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 48 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 4 ".ktv[0:3]"  0 0 20 -12.583553038625384 34 -7.0620425675136946
+		 48 0;
+	setAttr -s 4 ".kot[0:3]"  5 18 18 5;
 createNode animCurveTU -n "Neck_001_Ctrl_scaleX";
 	rename -uid "5E289562-4DB0-C573-106D-F8BE92A5A1E3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 1 48 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 4 ".ktv[0:3]"  0 1 20 1 34 1 48 1;
+	setAttr -s 4 ".kot[0:3]"  5 18 18 5;
 createNode animCurveTU -n "Neck_001_Ctrl_scaleY";
 	rename -uid "94578659-421B-401A-A074-B1AFF79D9599";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 1 48 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 4 ".ktv[0:3]"  0 1 20 1 34 1 48 1;
+	setAttr -s 4 ".kot[0:3]"  5 18 18 5;
 createNode animCurveTU -n "Neck_001_Ctrl_scaleZ";
 	rename -uid "7842A119-4FD1-41FE-C6F2-7CB020B3FF65";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 1 48 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 4 ".ktv[0:3]"  0 1 20 1 34 1 48 1;
+	setAttr -s 4 ".kot[0:3]"  5 18 18 5;
 createNode animCurveTA -n "R_Foot_Rev_IK_Tip_Ctrl_rotateX";
 	rename -uid "33C1E796-46EC-F99B-ED60-C0A721EA08E8";
 	setAttr ".tan" 18;
@@ -13460,57 +13549,58 @@ createNode animCurveTL -n "Spine_003_Ctrl_translateX";
 	rename -uid "882ADB13-4F61-CBDE-81E3-069D887375DA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 48 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 15 0 27 0 36 0 48 0;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTL -n "Spine_003_Ctrl_translateY";
 	rename -uid "C5AE0B9A-469A-7AC9-7038-C6AD3B22A187";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 48 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 15 0 27 0 36 0 48 0;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTL -n "Spine_003_Ctrl_translateZ";
 	rename -uid "FD0BC643-4AEB-39BD-9E6D-C19F01150317";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 48 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 15 0 27 0 36 0 48 0;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTA -n "Spine_003_Ctrl_rotateX";
 	rename -uid "7314F0CA-4054-A27E-8277-659937950AB8";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  0 0 1 1 15 -1 27 1 33 -2.2689610646815535
-		 48 0;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 3.0000000000000004 15 -2.7957709288929768
+		 27 6.1220711243872925 36 1.5937061994472013 48 0;
 	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTA -n "Spine_003_Ctrl_rotateY";
 	rename -uid "EB4C73C5-455C-B9C3-5393-049D7DAB0913";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  0 0 1 0.5 15 -0.5 27 0.5 48 -0.5;
-	setAttr -s 5 ".kot[0:4]"  5 18 18 18 5;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 0.50000000000000056 15 -0.50000000000000033
+		 27 0.50000000000000056 36 0.10641399416909661 48 -0.5;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTA -n "Spine_003_Ctrl_rotateZ";
 	rename -uid "15CF849A-4962-D5B3-F2B3-3AA686E84004";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 48 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 7 15 7 27 7 36 7 48 0;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTU -n "Spine_003_Ctrl_scaleX";
 	rename -uid "D70BF8E7-4411-9D41-A9D0-0AAA09004271";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 1 48 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 6 ".ktv[0:5]"  0 1 1 1 15 1 27 1 36 1 48 1;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTU -n "Spine_003_Ctrl_scaleY";
 	rename -uid "9A3CA137-421C-9AFD-B335-FEA57FB3BCC8";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 1 48 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 6 ".ktv[0:5]"  0 1 1 1 15 1 27 1 36 1 48 1;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTU -n "Spine_003_Ctrl_scaleZ";
 	rename -uid "F72D6AF4-4D54-F71E-1051-97AB770AF611";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 1 48 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 6 ".ktv[0:5]"  0 1 1 1 15 1 27 1 36 1 48 1;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTL -n "L_Hand_Finger_04_Knuckle_003_Ctrl_translateX";
 	rename -uid "3E51E8C4-4912-8A89-8A75-AF8E22819743";
 	setAttr ".tan" 9;
@@ -13641,56 +13731,58 @@ createNode animCurveTL -n "Spine_001_Ctrl_translateX";
 	rename -uid "8A824410-434C-A2AE-37FB-9CA6AE625FEE";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 48 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 15 0 27 0 36 0 48 0;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTL -n "Spine_001_Ctrl_translateY";
 	rename -uid "F50B830E-4CE2-4A0B-A734-E2A2D5CC8C2F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 48 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 15 0 27 0 36 0 48 0;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTL -n "Spine_001_Ctrl_translateZ";
 	rename -uid "28A5A429-4B21-A0D5-0219-DD8E0869F234";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 48 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 15 0 27 0 36 0 48 0;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTA -n "Spine_001_Ctrl_rotateX";
 	rename -uid "B48E9301-4A3A-FAFF-26AD-69BE8D662269";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 48 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 2.2327519176131774 15 -0.03931992216945434
+		 27 5.0945678580163207 36 6.9520845074739288 48 0;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTA -n "Spine_001_Ctrl_rotateY";
 	rename -uid "3C2427EF-4F53-940E-D14E-06B0C4A0A4D8";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 48 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 15 0 27 0 36 0 48 0;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTA -n "Spine_001_Ctrl_rotateZ";
 	rename -uid "0AE1FB52-480A-00EB-DA5C-DE831C26AECC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 48 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 3.0000000000000004 15 3.0000000000000004
+		 27 3.0000000000000004 36 3.0000000000000004 48 0;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTU -n "Spine_001_Ctrl_scaleX";
 	rename -uid "AE9D281A-4EF4-639A-D77F-15814EF08FCB";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 1 48 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 6 ".ktv[0:5]"  0 1 1 1 15 1 27 1 36 1 48 1;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTU -n "Spine_001_Ctrl_scaleY";
 	rename -uid "18D27B17-42E4-0248-D4D0-3481F8425021";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 1 48 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 6 ".ktv[0:5]"  0 1 1 1 15 1 27 1 36 1 48 1;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTU -n "Spine_001_Ctrl_scaleZ";
 	rename -uid "F8DC6282-4811-C883-F9DD-00A725E2E6CE";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 1 48 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 6 ".ktv[0:5]"  0 1 1 1 15 1 27 1 36 1 48 1;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTL -n "L_Hand_Finger_01_Knuckle_002_Ctrl_translateX";
 	rename -uid "FF48C8E7-47AC-9B8D-5F99-91A0EFB854DA";
 	setAttr ".tan" 18;
@@ -13749,56 +13841,57 @@ createNode animCurveTL -n "Spine_002_Ctrl_translateX";
 	rename -uid "E3EC7FB8-4F6E-5B9C-2D81-99ACCFF01855";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 48 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 15 0 27 0 36 0 48 0;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTL -n "Spine_002_Ctrl_translateY";
 	rename -uid "475CB3E6-4986-7FBC-C554-D6B1CB23ED45";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 48 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 15 0 27 0 36 0 48 0;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTL -n "Spine_002_Ctrl_translateZ";
 	rename -uid "7EFC3A62-42E0-155A-8120-07A7B2071077";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 48 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 15 0 27 0 36 0 48 0;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTA -n "Spine_002_Ctrl_rotateX";
 	rename -uid "CA2DEA1B-46BF-1941-8B20-578DF7D896F7";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 0 33 -4.9454085383791195 48 0;
-	setAttr -s 3 ".kot[0:2]"  5 18 5;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 2.2327519176131774 15 -2.4826516576868225
+		 27 0.51606509163241854 36 -1.0827412742503646 48 0;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTA -n "Spine_002_Ctrl_rotateY";
 	rename -uid "296A646A-4B0F-430F-72A9-67BFFFA7F17C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 48 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 15 0 27 0 36 0 48 0;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTA -n "Spine_002_Ctrl_rotateZ";
 	rename -uid "BEA18FA5-46F3-E89A-D876-E4B6F46FC106";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 48 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 5 15 5 27 5 36 5 48 0;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTU -n "Spine_002_Ctrl_scaleX";
 	rename -uid "BCCD4790-499C-20E7-3A10-A09F1BE51605";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 1 48 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 6 ".ktv[0:5]"  0 1 1 1 15 1 27 1 36 1 48 1;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTU -n "Spine_002_Ctrl_scaleY";
 	rename -uid "52863FB2-4C7E-75DD-E8AB-22A88695799E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 1 48 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 6 ".ktv[0:5]"  0 1 1 1 15 1 27 1 36 1 48 1;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTU -n "Spine_002_Ctrl_scaleZ";
 	rename -uid "4A4DC2B1-4B8A-067F-8A47-19ADF1E08472";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 1 48 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 6 ".ktv[0:5]"  0 1 1 1 15 1 27 1 36 1 48 1;
+	setAttr -s 6 ".kot[0:5]"  5 18 18 18 18 5;
 createNode animCurveTA -n "R_Foot_Rev_IK_Toe_Ctrl_rotateX";
 	rename -uid "3994BEE3-407E-6C81-998C-9D8A3EE78847";
 	setAttr ".tan" 18;
@@ -14064,56 +14157,104 @@ createNode animCurveTL -n "Neck_002_Ctrl_translateX";
 	rename -uid "7ADC65A6-4536-2564-ED84-B1AEBFA6A8BF";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 0 1 0 48 0;
-	setAttr -s 3 ".kot[0:2]"  5 18 5;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 5 0 20 0 34 0 48 0;
+	setAttr -s 6 ".kit[2:5]"  1 18 18 18;
+	setAttr -s 6 ".kot[0:5]"  5 18 1 18 18 5;
+	setAttr -s 6 ".kix[2:5]"  1 1 1 1;
+	setAttr -s 6 ".kiy[2:5]"  0 0 0 0;
+	setAttr -s 6 ".kox[2:5]"  1 1 1 0;
+	setAttr -s 6 ".koy[2:5]"  0 0 0 0;
 createNode animCurveTL -n "Neck_002_Ctrl_translateY";
 	rename -uid "1DF3C142-4AEB-0B6E-6D12-C8A9BA6351FB";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 0 1 0 48 0;
-	setAttr -s 3 ".kot[0:2]"  5 18 5;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 5 0 20 0 34 0 48 0;
+	setAttr -s 6 ".kit[2:5]"  1 18 18 18;
+	setAttr -s 6 ".kot[0:5]"  5 18 1 18 18 5;
+	setAttr -s 6 ".kix[2:5]"  1 1 1 1;
+	setAttr -s 6 ".kiy[2:5]"  0 0 0 0;
+	setAttr -s 6 ".kox[2:5]"  1 1 1 0;
+	setAttr -s 6 ".koy[2:5]"  0 0 0 0;
 createNode animCurveTL -n "Neck_002_Ctrl_translateZ";
 	rename -uid "C4A01D7D-4898-6628-8409-DFA11859B0EC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 0 1 0 48 0;
-	setAttr -s 3 ".kot[0:2]"  5 18 5;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 5 0 20 0 34 0 48 0;
+	setAttr -s 6 ".kit[2:5]"  1 18 18 18;
+	setAttr -s 6 ".kot[0:5]"  5 18 1 18 18 5;
+	setAttr -s 6 ".kix[2:5]"  1 1 1 1;
+	setAttr -s 6 ".kiy[2:5]"  0 0 0 0;
+	setAttr -s 6 ".kox[2:5]"  1 1 1 0;
+	setAttr -s 6 ".koy[2:5]"  0 0 0 0;
 createNode animCurveTA -n "Neck_002_Ctrl_rotateX";
 	rename -uid "7EA90327-43CD-8B63-B809-74AB092648AC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  0 0 1 0 34 -26.705142797380766 48 0;
-	setAttr -s 4 ".kot[0:3]"  5 18 18 5;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 5 0 20 -6.278497189454896 34 -35.718722092740691
+		 48 0;
+	setAttr -s 6 ".kit[2:5]"  1 18 18 18;
+	setAttr -s 6 ".kot[0:5]"  5 18 1 18 18 5;
+	setAttr -s 6 ".kix[2:5]"  1 0.88869456612185926 1 1;
+	setAttr -s 6 ".kiy[2:5]"  0 -0.45849969263400853 0 0;
+	setAttr -s 6 ".kox[2:5]"  1 0.88869456612185926 1 0;
+	setAttr -s 6 ".koy[2:5]"  0 -0.45849969263400853 0 0;
 createNode animCurveTA -n "Neck_002_Ctrl_rotateY";
 	rename -uid "46CB1C48-4083-295D-4169-E89A60DC8CD5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 0 1 0 48 0;
-	setAttr -s 3 ".kot[0:2]"  5 18 5;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 5 0 20 -1.2876649143801511 34 -3.6265672772369624
+		 48 0;
+	setAttr -s 6 ".kit[2:5]"  1 18 18 18;
+	setAttr -s 6 ".kot[0:5]"  5 18 1 18 18 5;
+	setAttr -s 6 ".kix[2:5]"  1 0.99863085302330146 1 1;
+	setAttr -s 6 ".kiy[2:5]"  0 -0.052310796112784323 0 0;
+	setAttr -s 6 ".kox[2:5]"  1 0.99863085302330146 1 0;
+	setAttr -s 6 ".koy[2:5]"  0 -0.052310796112784323 0 0;
 createNode animCurveTA -n "Neck_002_Ctrl_rotateZ";
 	rename -uid "4887B43B-41CE-3FFA-7C79-4CAAB92BED14";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 0 1 10.914310182321234 48 0;
-	setAttr -s 3 ".kot[0:2]"  5 18 5;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 10.914310182321234 5 10.914310182321234
+		 20 -2.8762513859365169 34 -2.6302008010378199 48 0;
+	setAttr -s 6 ".kit[2:5]"  1 18 18 18;
+	setAttr -s 6 ".kot[0:5]"  5 18 1 18 18 5;
+	setAttr -s 6 ".kix[2:5]"  1 1 0.99975620565694545 1;
+	setAttr -s 6 ".kiy[2:5]"  0 0 0.022080064547625813 0;
+	setAttr -s 6 ".kox[2:5]"  1 1 0.99975620565694556 0;
+	setAttr -s 6 ".koy[2:5]"  0 0 0.022080064547625816 0;
 createNode animCurveTU -n "Neck_002_Ctrl_scaleX";
 	rename -uid "10D42237-4B9B-01A1-788F-F18BB54448B5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 48 1;
-	setAttr -s 3 ".kot[0:2]"  5 18 5;
+	setAttr -s 6 ".ktv[0:5]"  0 1 1 1 5 1 20 1 34 1 48 1;
+	setAttr -s 6 ".kit[2:5]"  1 18 18 18;
+	setAttr -s 6 ".kot[0:5]"  5 18 1 18 18 5;
+	setAttr -s 6 ".kix[2:5]"  1 1 1 1;
+	setAttr -s 6 ".kiy[2:5]"  0 0 0 0;
+	setAttr -s 6 ".kox[2:5]"  1 1 1 0;
+	setAttr -s 6 ".koy[2:5]"  0 0 0 0;
 createNode animCurveTU -n "Neck_002_Ctrl_scaleY";
 	rename -uid "641CA056-41F0-2800-D8BB-73BE74DF3E56";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 48 1;
-	setAttr -s 3 ".kot[0:2]"  5 18 5;
+	setAttr -s 6 ".ktv[0:5]"  0 1 1 1 5 1 20 1 34 1 48 1;
+	setAttr -s 6 ".kit[2:5]"  1 18 18 18;
+	setAttr -s 6 ".kot[0:5]"  5 18 1 18 18 5;
+	setAttr -s 6 ".kix[2:5]"  1 1 1 1;
+	setAttr -s 6 ".kiy[2:5]"  0 0 0 0;
+	setAttr -s 6 ".kox[2:5]"  1 1 1 0;
+	setAttr -s 6 ".koy[2:5]"  0 0 0 0;
 createNode animCurveTU -n "Neck_002_Ctrl_scaleZ";
 	rename -uid "FBCAA8CB-4AB5-2FD9-E346-80955EDDBF0D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 48 1;
-	setAttr -s 3 ".kot[0:2]"  5 18 5;
+	setAttr -s 6 ".ktv[0:5]"  0 1 1 1 5 1 20 1 34 1 48 1;
+	setAttr -s 6 ".kit[2:5]"  1 18 18 18;
+	setAttr -s 6 ".kot[0:5]"  5 18 1 18 18 5;
+	setAttr -s 6 ".kix[2:5]"  1 1 1 1;
+	setAttr -s 6 ".kiy[2:5]"  0 0 0 0;
+	setAttr -s 6 ".kox[2:5]"  1 1 1 0;
+	setAttr -s 6 ".koy[2:5]"  0 0 0 0;
 createNode animCurveTL -n "L_Hand_Finger_05_Knuckle_003_Ctrl_translateX";
 	rename -uid "2B80F4E3-49EA-B572-B18A-0089108E8769";
 	setAttr ".tan" 9;
@@ -14307,47 +14448,65 @@ createNode animCurveTU -n "R_Hand_001_Ctrl_scaleZ";
 	rename -uid "605C591D-4C2E-1CF9-0DCB-0EAC67A48CF8";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
+	setAttr -s 2 ".ktv[0:1]"  0 1 1 1;
+	setAttr -s 2 ".kit[1]"  18;
+	setAttr -s 2 ".kot[1]"  18;
 createNode animCurveTU -n "R_Hand_001_Ctrl_scaleY";
 	rename -uid "0337BAEE-4578-9E35-5912-2F81F9012604";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
+	setAttr -s 2 ".ktv[0:1]"  0 1 1 1;
+	setAttr -s 2 ".kit[1]"  18;
+	setAttr -s 2 ".kot[1]"  18;
 createNode animCurveTU -n "R_Hand_001_Ctrl_scaleX";
 	rename -uid "879C8780-4E58-F339-4AE0-DA8A8380ED8A";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
+	setAttr -s 2 ".ktv[0:1]"  0 1 1 1;
+	setAttr -s 2 ".kit[1]"  18;
+	setAttr -s 2 ".kot[1]"  18;
 createNode animCurveTA -n "R_Hand_001_Ctrl_rotateZ";
 	rename -uid "81E95D6C-4157-8D85-5ADE-E89B841279AE";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 0;
+	setAttr -s 2 ".kit[1]"  18;
+	setAttr -s 2 ".kot[1]"  18;
 createNode animCurveTA -n "R_Hand_001_Ctrl_rotateY";
 	rename -uid "E0F984F6-4AA5-4684-FD3D-4C825EAD061D";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 0;
+	setAttr -s 2 ".kit[1]"  18;
+	setAttr -s 2 ".kot[1]"  18;
 createNode animCurveTA -n "R_Hand_001_Ctrl_rotateX";
 	rename -uid "F81A4A91-458A-E950-968F-249C0F317930";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 0;
+	setAttr -s 2 ".kit[1]"  18;
+	setAttr -s 2 ".kot[1]"  18;
 createNode animCurveTL -n "R_Hand_001_Ctrl_translateZ";
 	rename -uid "7AD79E82-47D9-56D6-BC14-1BAB6C362353";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 0;
+	setAttr -s 2 ".kit[1]"  18;
+	setAttr -s 2 ".kot[1]"  18;
 createNode animCurveTL -n "R_Hand_001_Ctrl_translateY";
 	rename -uid "0992F7EF-456F-9FAE-A0BD-46A022B9A2AD";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 0;
+	setAttr -s 2 ".kit[1]"  18;
+	setAttr -s 2 ".kot[1]"  18;
 createNode animCurveTL -n "R_Hand_001_Ctrl_translateX";
 	rename -uid "07913337-474A-893B-8112-98AE7CFE5510";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 0;
+	setAttr -s 2 ".kit[1]"  18;
+	setAttr -s 2 ".kot[1]"  18;
 createNode animCurveTU -n "R_Arm_001_IK_Base_Ctrl_scaleZ";
 	rename -uid "AFB7CBC1-4791-9BE7-084A-49BA00E60412";
 	setAttr ".tan" 18;
@@ -14494,58 +14653,73 @@ createNode animCurveTL -n "L_Arm_001_IK_Base_Ctrl_translateX";
 	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
 createNode animCurveTL -n "R_Arm_001_FK_Ctrl1_translateX";
 	rename -uid "BC7165FC-4719-67FC-427E-4BBDEDA345FB";
-	setAttr ".tan" 10;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 1 0;
+	setAttr -s 8 ".ktv[0:7]"  0 0 1 0 8 0 15 0 20 0 25 0 32 0 38 0;
+	setAttr -s 8 ".kit[2:7]"  18 2 18 2 18 2;
+	setAttr -s 8 ".kot[2:7]"  18 2 18 2 18 2;
 createNode animCurveTL -n "R_Arm_001_FK_Ctrl1_translateY";
 	rename -uid "FDADBA38-46CF-8FFD-AE0D-9F9847F761A7";
-	setAttr ".tan" 10;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 1 0;
+	setAttr -s 8 ".ktv[0:7]"  0 0 1 0 8 0 15 0 20 0 25 0 32 0 38 0;
+	setAttr -s 8 ".kit[2:7]"  18 2 18 2 18 2;
+	setAttr -s 8 ".kot[2:7]"  18 2 18 2 18 2;
 createNode animCurveTL -n "R_Arm_001_FK_Ctrl1_translateZ";
 	rename -uid "155124F9-461D-A3BC-3733-709A5D8FAFD6";
-	setAttr ".tan" 10;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 1 0;
+	setAttr -s 8 ".ktv[0:7]"  0 0 1 0 8 0 15 0 20 0 25 0 32 0 38 0;
+	setAttr -s 8 ".kit[2:7]"  18 2 18 2 18 2;
+	setAttr -s 8 ".kot[2:7]"  18 2 18 2 18 2;
 createNode animCurveTA -n "R_Arm_001_FK_Ctrl1_rotateX";
 	rename -uid "D2736FDF-44ED-8DCD-7FAB-A5B4E3E6FD79";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  0 0 1 64.004064277340291 15 -36.35475688722449
-		 25 22.037002935608946 38 -66.194410749989231 43 -64.390610502879397;
-	setAttr -s 6 ".kit[0:5]"  10 10 18 18 18 18;
-	setAttr -s 6 ".kot[0:5]"  10 10 18 18 18 18;
+	setAttr -s 9 ".ktv[0:8]"  0 0 1 67.632862607033488 8 3.2838541138094146
+		 15 -63.737343962692549 20 2.9386941292772981 25 67.632862607033488 32 -5.8738814041588343
+		 38 -63.737343962692549 43 -64.390610502879397;
+	setAttr -s 9 ".kit[2:8]"  18 2 18 2 18 2 2;
+	setAttr -s 9 ".kot[2:8]"  18 2 18 2 18 2 2;
 createNode animCurveTA -n "R_Arm_001_FK_Ctrl1_rotateY";
 	rename -uid "5995C690-4353-BEB4-5806-009FFDC122D6";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  0 0 1 -78.656600447358372 15 -83.854985436224652
-		 25 -84.66349560127729 38 -77.667488981029905 43 -78.49503838175039;
-	setAttr -s 6 ".kit[0:5]"  10 10 18 18 18 18;
-	setAttr -s 6 ".kot[0:5]"  10 10 18 18 18 18;
+	setAttr -s 9 ".ktv[0:8]"  0 0 1 -76.906138670351865 8 -82.817671169783324
+		 15 -78.76514329714405 20 -81.969692868839502 25 -76.906138670351865 32 -83.633945759054541
+		 38 -78.76514329714405 43 -78.49503838175039;
+	setAttr -s 9 ".kit[2:8]"  18 2 18 2 18 2 2;
+	setAttr -s 9 ".kot[2:8]"  18 2 18 2 18 2 2;
 createNode animCurveTA -n "R_Arm_001_FK_Ctrl1_rotateZ";
 	rename -uid "BE94E534-4297-73A5-334D-41B260036D27";
-	setAttr ".tan" 18;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  0 0 1 -62.810319132132491 15 38.148838768397084
-		 25 -20.487370417246805 38 68.320820397478172 43 66.477330952484024;
-	setAttr -s 6 ".kit[0:5]"  10 10 18 18 18 18;
-	setAttr -s 6 ".kot[0:5]"  10 10 18 18 18 18;
+	setAttr -s 9 ".ktv[0:8]"  0 0 1 -66.522734390767354 8 -1.7099557696259928
+		 15 65.810989458716023 20 -1.3617412976841301 25 -66.522734390767354 32 7.5356282077599257
+		 38 65.810989458716023 43 66.477330952484024;
+	setAttr -s 9 ".kit[2:8]"  18 2 18 2 18 2 2;
+	setAttr -s 9 ".kot[2:8]"  18 2 18 2 18 2 2;
 createNode animCurveTU -n "R_Arm_001_FK_Ctrl1_scaleX";
 	rename -uid "7968170E-44A1-652F-1E36-C99ACC6FA675";
-	setAttr ".tan" 10;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 1 1 1;
+	setAttr -s 8 ".ktv[0:7]"  0 1 1 1 8 1 15 1 20 1 25 1 32 1 38 1;
+	setAttr -s 8 ".kit[2:7]"  18 2 18 2 18 2;
+	setAttr -s 8 ".kot[2:7]"  18 2 18 2 18 2;
 createNode animCurveTU -n "R_Arm_001_FK_Ctrl1_scaleY";
 	rename -uid "B1EF9C9B-4DE1-3B38-3C7D-6DAA2EF3B445";
-	setAttr ".tan" 10;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 1 1 1;
+	setAttr -s 8 ".ktv[0:7]"  0 1 1 1 8 1 15 1 20 1 25 1 32 1 38 1;
+	setAttr -s 8 ".kit[2:7]"  18 2 18 2 18 2;
+	setAttr -s 8 ".kot[2:7]"  18 2 18 2 18 2;
 createNode animCurveTU -n "R_Arm_001_FK_Ctrl1_scaleZ";
 	rename -uid "810AA786-4646-BED1-F6C3-249D14982265";
-	setAttr ".tan" 10;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 1 1 1;
+	setAttr -s 8 ".ktv[0:7]"  0 1 1 1 8 1 15 1 20 1 25 1 32 1 38 1;
+	setAttr -s 8 ".kit[2:7]"  18 2 18 2 18 2;
+	setAttr -s 8 ".kot[2:7]"  18 2 18 2 18 2;
 createNode animCurveTA -n "L_Hand_001_Ctrl_rotateX";
 	rename -uid "7D2CF625-4DA6-419C-ACA3-DBA7B09D280E";
 	setAttr ".tan" 9;
@@ -14613,98 +14787,102 @@ createNode animCurveTA -n "L_Arm_001_FK_Ctrl_rotateY";
 	rename -uid "60325140-46C2-7BFF-DE92-1D8482485A58";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  0 0 1 -55.983524127030805 4 -55.983524127030805
-		 13 -71.650984865480254 23 -65.812814267061029 30 -78.281599748013889 37 -80.538996588610971
-		 43 -74.148063663505823;
+	setAttr -s 8 ".ktv[0:7]"  0 0 1 -52.511078522335758 4 -55.983524127030805
+		 13 -71.650984865480254 23 -69.268317807129748 30 -75.852954029812395 37 -78.567244627235112
+		 43 -76.425850462901224;
 	setAttr -s 8 ".kit[0:7]"  10 1 10 18 18 18 18 18;
 	setAttr -s 8 ".kot[0:7]"  10 1 10 18 18 18 18 18;
-	setAttr -s 8 ".kix[1:7]"  0.98847544843130275 1 1 1 0.92679039712182576 
-		1 1;
-	setAttr -s 8 ".kiy[1:7]"  -0.1513812665045943 0 0 0 -0.37557896613464459 
-		0 0;
-	setAttr -s 8 ".kox[1:7]"  0.98847544843130275 1 1 1 0.92679039712182576 
-		1 1;
-	setAttr -s 8 ".koy[1:7]"  -0.1513812665045943 0 0 0 -0.37557896613464459 
-		0 0;
+	setAttr -s 8 ".kix[1:7]"  0.98847544843130275 0.83149644829529601 
+		1 1 0.96340715527490584 1 1;
+	setAttr -s 8 ".kiy[1:7]"  -0.1513812665045943 -0.55553006801820193 
+		0 0 -0.26804226003582643 0 0;
+	setAttr -s 8 ".kox[1:7]"  0.98847544843130275 0.83149644829529601 
+		1 1 0.96340715527490572 1 1;
+	setAttr -s 8 ".koy[1:7]"  -0.1513812665045943 -0.55553006801820193 
+		0 0 -0.26804226003582637 0 0;
 createNode animCurveTA -n "L_Arm_001_FK_Ctrl_rotateZ";
 	rename -uid "1957F4E2-46B6-DE31-0E27-A0A72B11BBC6";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  0 0 1 86.937951670610957 4 86.937951670610957
-		 13 86.570285672531895 23 86.759377476284811 30 86.137236471145769 37 85.854290813143677
-		 43 86.448796368521627;
+	setAttr -s 8 ".ktv[0:7]"  0 0 1 77.401862711833402 4 86.937951670610957
+		 13 86.570285672531895 23 79.127743371284467 30 72.317968018286379 37 76.530756993021953
+		 43 80.080692084724632;
 	setAttr -s 8 ".kit[0:7]"  10 1 10 18 18 18 18 18;
 	setAttr -s 8 ".kot[0:7]"  10 1 10 18 18 18 18 18;
-	setAttr -s 8 ".kix[1:7]"  1 1 1 1 0.99963353483300033 1 1;
-	setAttr -s 8 ".kiy[1:7]"  0 0 0 0 -0.027070205711830553 0 0;
-	setAttr -s 8 ".kox[1:7]"  1 1 1 1 0.99963353483300033 1 1;
-	setAttr -s 8 ".koy[1:7]"  0 0 0 0 -0.027070205711830553 0 0;
+	setAttr -s 8 ".kix[1:7]"  1 1 0.99868491359108313 0.94351178609799646 
+		1 0.97011365759171841 1;
+	setAttr -s 8 ".kiy[1:7]"  0 0 -0.051268346624118985 -0.33133896464824142 
+		0 0.24265096610979772 0;
+	setAttr -s 8 ".kox[1:7]"  1 1 0.99868491359108313 0.94351178609799657 
+		1 0.97011365759171841 1;
+	setAttr -s 8 ".koy[1:7]"  0 0 -0.051268346624118978 -0.33133896464824147 
+		0 0.24265096610979769 0;
 createNode animCurveTL -n "L_Arm_001_FK_Ctrl_translateX";
 	rename -uid "4EF264F3-4587-F897-E5DF-C99D4D8D8F87";
-	setAttr ".tan" 10;
+	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 0 1 0 4 0;
-	setAttr -s 3 ".kit[1:2]"  1 10;
-	setAttr -s 3 ".kot[1:2]"  1 10;
-	setAttr -s 3 ".kix[1:2]"  1 1;
-	setAttr -s 3 ".kiy[1:2]"  0 0;
-	setAttr -s 3 ".kox[1:2]"  1 1;
-	setAttr -s 3 ".koy[1:2]"  0 0;
+	setAttr -s 7 ".ktv[0:6]"  0 0 1 0 4 0 23 0 30 0 37 0 43 0;
+	setAttr -s 7 ".kit[0:6]"  10 1 10 18 18 18 18;
+	setAttr -s 7 ".kot[0:6]"  10 1 10 18 18 18 18;
+	setAttr -s 7 ".kix[1:6]"  1 1 1 1 1 1;
+	setAttr -s 7 ".kiy[1:6]"  0 0 0 0 0 0;
+	setAttr -s 7 ".kox[1:6]"  1 1 1 1 1 1;
+	setAttr -s 7 ".koy[1:6]"  0 0 0 0 0 0;
 createNode animCurveTL -n "L_Arm_001_FK_Ctrl_translateY";
 	rename -uid "E29F6B53-4CF9-A09F-81E3-2AAA8B521FB1";
-	setAttr ".tan" 10;
+	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 0 1 0 4 0;
-	setAttr -s 3 ".kit[1:2]"  1 10;
-	setAttr -s 3 ".kot[1:2]"  1 10;
-	setAttr -s 3 ".kix[1:2]"  1 1;
-	setAttr -s 3 ".kiy[1:2]"  0 0;
-	setAttr -s 3 ".kox[1:2]"  1 1;
-	setAttr -s 3 ".koy[1:2]"  0 0;
+	setAttr -s 7 ".ktv[0:6]"  0 0 1 0 4 0 23 0 30 0 37 0 43 0;
+	setAttr -s 7 ".kit[0:6]"  10 1 10 18 18 18 18;
+	setAttr -s 7 ".kot[0:6]"  10 1 10 18 18 18 18;
+	setAttr -s 7 ".kix[1:6]"  1 1 1 1 1 1;
+	setAttr -s 7 ".kiy[1:6]"  0 0 0 0 0 0;
+	setAttr -s 7 ".kox[1:6]"  1 1 1 1 1 1;
+	setAttr -s 7 ".koy[1:6]"  0 0 0 0 0 0;
 createNode animCurveTL -n "L_Arm_001_FK_Ctrl_translateZ";
 	rename -uid "DA3F6AA0-466E-DFD8-A0AD-25A81E76202A";
-	setAttr ".tan" 10;
+	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 0 1 0 4 0;
-	setAttr -s 3 ".kit[1:2]"  1 10;
-	setAttr -s 3 ".kot[1:2]"  1 10;
-	setAttr -s 3 ".kix[1:2]"  1 1;
-	setAttr -s 3 ".kiy[1:2]"  0 0;
-	setAttr -s 3 ".kox[1:2]"  1 1;
-	setAttr -s 3 ".koy[1:2]"  0 0;
+	setAttr -s 7 ".ktv[0:6]"  0 0 1 0 4 0 23 0 30 0 37 0 43 0;
+	setAttr -s 7 ".kit[0:6]"  10 1 10 18 18 18 18;
+	setAttr -s 7 ".kot[0:6]"  10 1 10 18 18 18 18;
+	setAttr -s 7 ".kix[1:6]"  1 1 1 1 1 1;
+	setAttr -s 7 ".kiy[1:6]"  0 0 0 0 0 0;
+	setAttr -s 7 ".kox[1:6]"  1 1 1 1 1 1;
+	setAttr -s 7 ".koy[1:6]"  0 0 0 0 0 0;
 createNode animCurveTU -n "L_Arm_001_FK_Ctrl_scaleX";
 	rename -uid "6CA634F8-4880-B16F-216D-EAB65A5847D6";
-	setAttr ".tan" 10;
+	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 4 1;
-	setAttr -s 3 ".kit[1:2]"  1 10;
-	setAttr -s 3 ".kot[1:2]"  1 10;
-	setAttr -s 3 ".kix[1:2]"  1 1;
-	setAttr -s 3 ".kiy[1:2]"  0 0;
-	setAttr -s 3 ".kox[1:2]"  1 1;
-	setAttr -s 3 ".koy[1:2]"  0 0;
+	setAttr -s 7 ".ktv[0:6]"  0 1 1 1 4 1 23 1 30 1 37 1 43 1;
+	setAttr -s 7 ".kit[0:6]"  10 1 10 18 18 18 18;
+	setAttr -s 7 ".kot[0:6]"  10 1 10 18 18 18 18;
+	setAttr -s 7 ".kix[1:6]"  1 1 1 1 1 1;
+	setAttr -s 7 ".kiy[1:6]"  0 0 0 0 0 0;
+	setAttr -s 7 ".kox[1:6]"  1 1 1 1 1 1;
+	setAttr -s 7 ".koy[1:6]"  0 0 0 0 0 0;
 createNode animCurveTU -n "L_Arm_001_FK_Ctrl_scaleY";
 	rename -uid "19EB9D3E-4233-AD36-A614-FDB96AD5A100";
-	setAttr ".tan" 10;
+	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 4 1;
-	setAttr -s 3 ".kit[1:2]"  1 10;
-	setAttr -s 3 ".kot[1:2]"  1 10;
-	setAttr -s 3 ".kix[1:2]"  1 1;
-	setAttr -s 3 ".kiy[1:2]"  0 0;
-	setAttr -s 3 ".kox[1:2]"  1 1;
-	setAttr -s 3 ".koy[1:2]"  0 0;
+	setAttr -s 7 ".ktv[0:6]"  0 1 1 1 4 1 23 1 30 1 37 1 43 1;
+	setAttr -s 7 ".kit[0:6]"  10 1 10 18 18 18 18;
+	setAttr -s 7 ".kot[0:6]"  10 1 10 18 18 18 18;
+	setAttr -s 7 ".kix[1:6]"  1 1 1 1 1 1;
+	setAttr -s 7 ".kiy[1:6]"  0 0 0 0 0 0;
+	setAttr -s 7 ".kox[1:6]"  1 1 1 1 1 1;
+	setAttr -s 7 ".koy[1:6]"  0 0 0 0 0 0;
 createNode animCurveTU -n "L_Arm_001_FK_Ctrl_scaleZ";
 	rename -uid "A3DFDD00-4749-97DA-9873-F896245F44E8";
-	setAttr ".tan" 10;
+	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 4 1;
-	setAttr -s 3 ".kit[1:2]"  1 10;
-	setAttr -s 3 ".kot[1:2]"  1 10;
-	setAttr -s 3 ".kix[1:2]"  1 1;
-	setAttr -s 3 ".kiy[1:2]"  0 0;
-	setAttr -s 3 ".kox[1:2]"  1 1;
-	setAttr -s 3 ".koy[1:2]"  0 0;
+	setAttr -s 7 ".ktv[0:6]"  0 1 1 1 4 1 23 1 30 1 37 1 43 1;
+	setAttr -s 7 ".kit[0:6]"  10 1 10 18 18 18 18;
+	setAttr -s 7 ".kot[0:6]"  10 1 10 18 18 18 18;
+	setAttr -s 7 ".kix[1:6]"  1 1 1 1 1 1;
+	setAttr -s 7 ".kiy[1:6]"  0 0 0 0 0 0;
+	setAttr -s 7 ".kox[1:6]"  1 1 1 1 1 1;
+	setAttr -s 7 ".koy[1:6]"  0 0 0 0 0 0;
 createNode gameFbxExporter -n "gameExporterPreset1";
 	rename -uid "6EA7846E-4508-45F2-213D-16B20E25453E";
 	setAttr ".pn" -type "string" "Model Default";
@@ -14739,51 +14917,49 @@ createNode gameFbxExporter -n "gameExporterPreset3";
 	setAttr ".fv" -type "string" "FBX201800";
 createNode animCurveTA -n "R_Arm_002_FK_Ctrl1_rotateX";
 	rename -uid "DEAF1790-4FA1-AFD7-2EBC-0FBE90003BE9";
-	setAttr ".tan" 10;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 15 0 25 0 38 0 43 0;
 createNode animCurveTA -n "R_Arm_002_FK_Ctrl1_rotateY";
 	rename -uid "1B1DEF07-4F1A-FEEE-9E76-2FAC821219D2";
-	setAttr ".tan" 10;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 15 0 25 0 38 0 43 0;
 createNode animCurveTA -n "R_Arm_002_FK_Ctrl1_rotateZ";
 	rename -uid "6C20CCD7-4586-0DCF-C5A7-C594DA58D575";
-	setAttr ".tan" 10;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 1 21.01320619461498;
-	setAttr -s 2 ".kit[1]"  18;
-	setAttr -s 2 ".kot[1]"  18;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 25 15 35 25 25 38 35 43 29.999999999999996;
 createNode animCurveTL -n "R_Arm_002_FK_Ctrl1_translateX";
 	rename -uid "2ABA501C-458E-F24A-1380-1685AA4FD96D";
-	setAttr ".tan" 10;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 15 0 25 0 38 0 43 0;
 createNode animCurveTL -n "R_Arm_002_FK_Ctrl1_translateY";
 	rename -uid "04968074-4701-7DB5-D929-A08402E3850C";
-	setAttr ".tan" 10;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 15 0 25 0 38 0 43 0;
 createNode animCurveTL -n "R_Arm_002_FK_Ctrl1_translateZ";
 	rename -uid "649F60F2-464C-4BED-4671-AFAAE8E111B4";
-	setAttr ".tan" 10;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 15 0 25 0 38 0 43 0;
 createNode animCurveTU -n "R_Arm_002_FK_Ctrl1_scaleX";
 	rename -uid "5D520B64-4B09-571C-4AA3-FBA62E7F8AFA";
-	setAttr ".tan" 10;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
+	setAttr -s 6 ".ktv[0:5]"  0 1 1 1 15 1 25 1 38 1 43 1;
 createNode animCurveTU -n "R_Arm_002_FK_Ctrl1_scaleY";
 	rename -uid "D8381CB6-48EA-DDA7-C554-B88565B844F8";
-	setAttr ".tan" 10;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
+	setAttr -s 6 ".ktv[0:5]"  0 1 1 1 15 1 25 1 38 1 43 1;
 createNode animCurveTU -n "R_Arm_002_FK_Ctrl1_scaleZ";
 	rename -uid "7E164BAC-4092-15EC-D3AE-7BAE2EF21D6D";
-	setAttr ".tan" 10;
+	setAttr ".tan" 2;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
+	setAttr -s 6 ".ktv[0:5]"  0 1 1 1 15 1 25 1 38 1 43 1;
 createNode animCurveTL -n "L_Arm_002_FK_Ctrl_translateX";
 	rename -uid "E5DF5880-4278-5427-6DDF-15A0DF57365E";
 	setAttr ".tan" 10;
@@ -14932,9 +15108,35 @@ createNode shadingEngine -n "R_Small_ButtonSG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo11";
 	rename -uid "3919D9F7-4A9A-2836-F502-ACA2E5618D00";
+createNode animCurveTA -n "L_Arm_001_FK_Ctrl_rotateX";
+	rename -uid "8A623039-4F52-104C-BC2C-DD99B1B65D7D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 5 ".ktv[0:4]"  1 -54.257252836098708 23 -46.269887146247036
+		 30 -39.976821982586507 37 -45.152401728011938 43 -51.512956522623675;
+createNode animCurveTU -n "R_Hand_001_Ctrl_RElbowCorrective";
+	rename -uid "EEE21664-4806-B805-7846-578BB7C64B23";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "R_Hand_001_Ctrl_RShoulderCorrective";
+	rename -uid "A67FE118-4A21-50D5-DDE7-7388EABACA9E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+createNode animCurveTU -n "L_Hand_001_Ctrl_LElbowCorrective";
+	rename -uid "CB7052EF-4B93-DF82-B012-BDBCFB842450";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "L_Hand_001_Ctrl_LShoulderCorrective";
+	rename -uid "F0656747-4DB8-70D7-56F9-9591A480DE17";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
 select -ne :time1;
-	setAttr ".o" 17;
-	setAttr ".unw" 17;
+	setAttr ".o" 1;
+	setAttr ".unw" 1;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -15058,790 +15260,795 @@ connectAttr "R_Clav_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[69]";
 connectAttr "L_Arm_001_FK_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[70]";
 connectAttr "L_Arm_001_FK_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[71]";
 connectAttr "L_Arm_001_FK_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[72]";
-connectAttr "L_Arm_001_FK_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[73]";
-connectAttr "L_Arm_001_FK_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[74]";
-connectAttr "L_Arm_001_FK_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[75]";
-connectAttr "L_Arm_001_FK_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[76]";
-connectAttr "L_Arm_001_FK_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[77]";
-connectAttr "L_Arm_002_FK_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[78]";
-connectAttr "L_Arm_002_FK_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[79]";
-connectAttr "L_Arm_002_FK_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[80]";
-connectAttr "L_Arm_002_FK_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[81]";
-connectAttr "L_Arm_002_FK_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[82]";
-connectAttr "L_Arm_002_FK_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[83]";
-connectAttr "L_Arm_002_FK_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[84]";
-connectAttr "L_Arm_002_FK_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[85]";
-connectAttr "L_Arm_002_FK_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[86]";
-connectAttr "L_Arm_001_IK_Base_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[87]";
-connectAttr "L_Arm_001_IK_Base_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[88]";
-connectAttr "L_Arm_001_IK_Base_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[89]";
-connectAttr "L_Arm_001_IK_Base_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[90]";
-connectAttr "L_Arm_001_IK_Base_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[91]";
-connectAttr "L_Arm_001_IK_Base_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[92]";
-connectAttr "L_Arm_001_IK_Base_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[93]";
-connectAttr "L_Arm_001_IK_Base_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[94]";
-connectAttr "L_Arm_001_IK_Base_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[95]";
-connectAttr "L_Arm_001_IK_PV_Ctrl_Follow.o" "Jeremy_Rig_06RN.phl[96]";
-connectAttr "L_Arm_001_IK_PV_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[97]";
-connectAttr "L_Arm_001_IK_PV_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[98]";
-connectAttr "L_Arm_001_IK_PV_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[99]";
-connectAttr "L_Arm_001_IK_PV_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[100]";
-connectAttr "L_Arm_001_IK_PV_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[101]";
-connectAttr "L_Arm_001_IK_PV_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[102]";
-connectAttr "L_Arm_001_IK_PV_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[103]";
-connectAttr "L_Arm_001_IK_PV_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[104]";
-connectAttr "L_Arm_001_IK_PV_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[105]";
-connectAttr "R_Arm_001_FK_Ctrl1_translateX.o" "Jeremy_Rig_06RN.phl[106]";
-connectAttr "R_Arm_001_FK_Ctrl1_translateY.o" "Jeremy_Rig_06RN.phl[107]";
-connectAttr "R_Arm_001_FK_Ctrl1_translateZ.o" "Jeremy_Rig_06RN.phl[108]";
-connectAttr "R_Arm_001_FK_Ctrl1_rotateY.o" "Jeremy_Rig_06RN.phl[109]";
-connectAttr "R_Arm_001_FK_Ctrl1_rotateX.o" "Jeremy_Rig_06RN.phl[110]";
-connectAttr "R_Arm_001_FK_Ctrl1_rotateZ.o" "Jeremy_Rig_06RN.phl[111]";
-connectAttr "R_Arm_001_FK_Ctrl1_scaleX.o" "Jeremy_Rig_06RN.phl[112]";
-connectAttr "R_Arm_001_FK_Ctrl1_scaleY.o" "Jeremy_Rig_06RN.phl[113]";
-connectAttr "R_Arm_001_FK_Ctrl1_scaleZ.o" "Jeremy_Rig_06RN.phl[114]";
-connectAttr "R_Arm_002_FK_Ctrl1_translateX.o" "Jeremy_Rig_06RN.phl[115]";
-connectAttr "R_Arm_002_FK_Ctrl1_translateY.o" "Jeremy_Rig_06RN.phl[116]";
-connectAttr "R_Arm_002_FK_Ctrl1_translateZ.o" "Jeremy_Rig_06RN.phl[117]";
-connectAttr "R_Arm_002_FK_Ctrl1_rotateX.o" "Jeremy_Rig_06RN.phl[118]";
-connectAttr "R_Arm_002_FK_Ctrl1_rotateY.o" "Jeremy_Rig_06RN.phl[119]";
-connectAttr "R_Arm_002_FK_Ctrl1_rotateZ.o" "Jeremy_Rig_06RN.phl[120]";
-connectAttr "R_Arm_002_FK_Ctrl1_scaleX.o" "Jeremy_Rig_06RN.phl[121]";
-connectAttr "R_Arm_002_FK_Ctrl1_scaleY.o" "Jeremy_Rig_06RN.phl[122]";
-connectAttr "R_Arm_002_FK_Ctrl1_scaleZ.o" "Jeremy_Rig_06RN.phl[123]";
-connectAttr "R_Arm_003_FK_Ctrl1_translateX.o" "Jeremy_Rig_06RN.phl[124]";
-connectAttr "R_Arm_003_FK_Ctrl1_translateY.o" "Jeremy_Rig_06RN.phl[125]";
-connectAttr "R_Arm_003_FK_Ctrl1_translateZ.o" "Jeremy_Rig_06RN.phl[126]";
-connectAttr "R_Arm_003_FK_Ctrl1_rotateX.o" "Jeremy_Rig_06RN.phl[127]";
-connectAttr "R_Arm_003_FK_Ctrl1_rotateY.o" "Jeremy_Rig_06RN.phl[128]";
-connectAttr "R_Arm_003_FK_Ctrl1_rotateZ.o" "Jeremy_Rig_06RN.phl[129]";
-connectAttr "R_Arm_003_FK_Ctrl1_scaleX.o" "Jeremy_Rig_06RN.phl[130]";
-connectAttr "R_Arm_003_FK_Ctrl1_scaleY.o" "Jeremy_Rig_06RN.phl[131]";
-connectAttr "R_Arm_003_FK_Ctrl1_scaleZ.o" "Jeremy_Rig_06RN.phl[132]";
-connectAttr "R_Arm_001_IK_Base_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[133]";
-connectAttr "R_Arm_001_IK_Base_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[134]";
-connectAttr "R_Arm_001_IK_Base_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[135]";
-connectAttr "R_Arm_001_IK_Base_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[136]";
-connectAttr "R_Arm_001_IK_Base_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[137]";
-connectAttr "R_Arm_001_IK_Base_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[138]";
-connectAttr "R_Arm_001_IK_Base_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[139]";
-connectAttr "R_Arm_001_IK_Base_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[140]";
-connectAttr "R_Arm_001_IK_Base_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[141]";
-connectAttr "R_Arm_001_IK_Handle_Ctrl_Follow.o" "Jeremy_Rig_06RN.phl[142]";
-connectAttr "R_Arm_001_IK_Handle_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[143]";
-connectAttr "R_Arm_001_IK_Handle_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[144]";
-connectAttr "R_Arm_001_IK_Handle_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[145]";
-connectAttr "R_Arm_001_IK_Handle_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[146]";
-connectAttr "R_Arm_001_IK_Handle_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[147]";
-connectAttr "R_Arm_001_IK_Handle_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[148]";
-connectAttr "R_Arm_001_IK_Handle_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[149]";
-connectAttr "R_Arm_001_IK_Handle_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[150]";
-connectAttr "R_Arm_001_IK_Handle_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[151]";
-connectAttr "R_Arm_001_IK_PV_Ctrl_Follow.o" "Jeremy_Rig_06RN.phl[152]";
-connectAttr "R_Arm_001_IK_PV_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[153]";
-connectAttr "R_Arm_001_IK_PV_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[154]";
-connectAttr "R_Arm_001_IK_PV_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[155]";
-connectAttr "R_Arm_001_IK_PV_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[156]";
-connectAttr "R_Arm_001_IK_PV_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[157]";
-connectAttr "R_Arm_001_IK_PV_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[158]";
-connectAttr "R_Arm_001_IK_PV_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[159]";
-connectAttr "R_Arm_001_IK_PV_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[160]";
-connectAttr "R_Arm_001_IK_PV_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[161]";
-connectAttr "L_Hand_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[162]";
-connectAttr "L_Hand_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[163]";
-connectAttr "L_Hand_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[164]";
-connectAttr "L_Hand_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[165]";
-connectAttr "L_Hand_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[166]";
-connectAttr "L_Hand_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[167]";
-connectAttr "L_Hand_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[168]";
-connectAttr "L_Hand_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[169]";
-connectAttr "L_Hand_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[170]";
-connectAttr "Jeremy_Rig_06RN.phl[171]" "GPS_Main_Body_parentConstraint1.tg[0].tt"
+connectAttr "L_Arm_001_FK_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[73]";
+connectAttr "L_Arm_001_FK_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[74]";
+connectAttr "L_Arm_001_FK_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[75]";
+connectAttr "L_Arm_001_FK_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[76]";
+connectAttr "L_Arm_001_FK_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[77]";
+connectAttr "L_Arm_001_FK_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[78]";
+connectAttr "L_Arm_002_FK_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[79]";
+connectAttr "L_Arm_002_FK_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[80]";
+connectAttr "L_Arm_002_FK_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[81]";
+connectAttr "L_Arm_002_FK_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[82]";
+connectAttr "L_Arm_002_FK_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[83]";
+connectAttr "L_Arm_002_FK_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[84]";
+connectAttr "L_Arm_002_FK_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[85]";
+connectAttr "L_Arm_002_FK_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[86]";
+connectAttr "L_Arm_002_FK_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[87]";
+connectAttr "L_Arm_001_IK_Base_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[88]";
+connectAttr "L_Arm_001_IK_Base_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[89]";
+connectAttr "L_Arm_001_IK_Base_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[90]";
+connectAttr "L_Arm_001_IK_Base_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[91]";
+connectAttr "L_Arm_001_IK_Base_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[92]";
+connectAttr "L_Arm_001_IK_Base_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[93]";
+connectAttr "L_Arm_001_IK_Base_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[94]";
+connectAttr "L_Arm_001_IK_Base_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[95]";
+connectAttr "L_Arm_001_IK_Base_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[96]";
+connectAttr "L_Arm_001_IK_PV_Ctrl_Follow.o" "Jeremy_Rig_06RN.phl[97]";
+connectAttr "L_Arm_001_IK_PV_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[98]";
+connectAttr "L_Arm_001_IK_PV_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[99]";
+connectAttr "L_Arm_001_IK_PV_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[100]";
+connectAttr "L_Arm_001_IK_PV_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[101]";
+connectAttr "L_Arm_001_IK_PV_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[102]";
+connectAttr "L_Arm_001_IK_PV_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[103]";
+connectAttr "L_Arm_001_IK_PV_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[104]";
+connectAttr "L_Arm_001_IK_PV_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[105]";
+connectAttr "L_Arm_001_IK_PV_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[106]";
+connectAttr "R_Arm_001_FK_Ctrl1_translateX.o" "Jeremy_Rig_06RN.phl[107]";
+connectAttr "R_Arm_001_FK_Ctrl1_translateY.o" "Jeremy_Rig_06RN.phl[108]";
+connectAttr "R_Arm_001_FK_Ctrl1_translateZ.o" "Jeremy_Rig_06RN.phl[109]";
+connectAttr "R_Arm_001_FK_Ctrl1_rotateY.o" "Jeremy_Rig_06RN.phl[110]";
+connectAttr "R_Arm_001_FK_Ctrl1_rotateX.o" "Jeremy_Rig_06RN.phl[111]";
+connectAttr "R_Arm_001_FK_Ctrl1_rotateZ.o" "Jeremy_Rig_06RN.phl[112]";
+connectAttr "R_Arm_001_FK_Ctrl1_scaleX.o" "Jeremy_Rig_06RN.phl[113]";
+connectAttr "R_Arm_001_FK_Ctrl1_scaleY.o" "Jeremy_Rig_06RN.phl[114]";
+connectAttr "R_Arm_001_FK_Ctrl1_scaleZ.o" "Jeremy_Rig_06RN.phl[115]";
+connectAttr "R_Arm_002_FK_Ctrl1_translateX.o" "Jeremy_Rig_06RN.phl[116]";
+connectAttr "R_Arm_002_FK_Ctrl1_translateY.o" "Jeremy_Rig_06RN.phl[117]";
+connectAttr "R_Arm_002_FK_Ctrl1_translateZ.o" "Jeremy_Rig_06RN.phl[118]";
+connectAttr "R_Arm_002_FK_Ctrl1_rotateX.o" "Jeremy_Rig_06RN.phl[119]";
+connectAttr "R_Arm_002_FK_Ctrl1_rotateY.o" "Jeremy_Rig_06RN.phl[120]";
+connectAttr "R_Arm_002_FK_Ctrl1_rotateZ.o" "Jeremy_Rig_06RN.phl[121]";
+connectAttr "R_Arm_002_FK_Ctrl1_scaleX.o" "Jeremy_Rig_06RN.phl[122]";
+connectAttr "R_Arm_002_FK_Ctrl1_scaleY.o" "Jeremy_Rig_06RN.phl[123]";
+connectAttr "R_Arm_002_FK_Ctrl1_scaleZ.o" "Jeremy_Rig_06RN.phl[124]";
+connectAttr "R_Arm_003_FK_Ctrl1_translateX.o" "Jeremy_Rig_06RN.phl[125]";
+connectAttr "R_Arm_003_FK_Ctrl1_translateY.o" "Jeremy_Rig_06RN.phl[126]";
+connectAttr "R_Arm_003_FK_Ctrl1_translateZ.o" "Jeremy_Rig_06RN.phl[127]";
+connectAttr "R_Arm_003_FK_Ctrl1_rotateX.o" "Jeremy_Rig_06RN.phl[128]";
+connectAttr "R_Arm_003_FK_Ctrl1_rotateY.o" "Jeremy_Rig_06RN.phl[129]";
+connectAttr "R_Arm_003_FK_Ctrl1_rotateZ.o" "Jeremy_Rig_06RN.phl[130]";
+connectAttr "R_Arm_003_FK_Ctrl1_scaleX.o" "Jeremy_Rig_06RN.phl[131]";
+connectAttr "R_Arm_003_FK_Ctrl1_scaleY.o" "Jeremy_Rig_06RN.phl[132]";
+connectAttr "R_Arm_003_FK_Ctrl1_scaleZ.o" "Jeremy_Rig_06RN.phl[133]";
+connectAttr "R_Arm_001_IK_Base_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[134]";
+connectAttr "R_Arm_001_IK_Base_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[135]";
+connectAttr "R_Arm_001_IK_Base_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[136]";
+connectAttr "R_Arm_001_IK_Base_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[137]";
+connectAttr "R_Arm_001_IK_Base_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[138]";
+connectAttr "R_Arm_001_IK_Base_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[139]";
+connectAttr "R_Arm_001_IK_Base_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[140]";
+connectAttr "R_Arm_001_IK_Base_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[141]";
+connectAttr "R_Arm_001_IK_Base_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[142]";
+connectAttr "R_Arm_001_IK_Handle_Ctrl_Follow.o" "Jeremy_Rig_06RN.phl[143]";
+connectAttr "R_Arm_001_IK_Handle_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[144]";
+connectAttr "R_Arm_001_IK_Handle_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[145]";
+connectAttr "R_Arm_001_IK_Handle_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[146]";
+connectAttr "R_Arm_001_IK_Handle_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[147]";
+connectAttr "R_Arm_001_IK_Handle_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[148]";
+connectAttr "R_Arm_001_IK_Handle_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[149]";
+connectAttr "R_Arm_001_IK_Handle_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[150]";
+connectAttr "R_Arm_001_IK_Handle_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[151]";
+connectAttr "R_Arm_001_IK_Handle_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[152]";
+connectAttr "R_Arm_001_IK_PV_Ctrl_Follow.o" "Jeremy_Rig_06RN.phl[153]";
+connectAttr "R_Arm_001_IK_PV_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[154]";
+connectAttr "R_Arm_001_IK_PV_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[155]";
+connectAttr "R_Arm_001_IK_PV_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[156]";
+connectAttr "R_Arm_001_IK_PV_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[157]";
+connectAttr "R_Arm_001_IK_PV_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[158]";
+connectAttr "R_Arm_001_IK_PV_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[159]";
+connectAttr "R_Arm_001_IK_PV_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[160]";
+connectAttr "R_Arm_001_IK_PV_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[161]";
+connectAttr "R_Arm_001_IK_PV_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[162]";
+connectAttr "L_Hand_001_Ctrl_LElbowCorrective.o" "Jeremy_Rig_06RN.phl[163]";
+connectAttr "L_Hand_001_Ctrl_LShoulderCorrective.o" "Jeremy_Rig_06RN.phl[164]";
+connectAttr "L_Hand_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[165]";
+connectAttr "L_Hand_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[166]";
+connectAttr "L_Hand_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[167]";
+connectAttr "L_Hand_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[168]";
+connectAttr "L_Hand_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[169]";
+connectAttr "L_Hand_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[170]";
+connectAttr "L_Hand_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[171]";
+connectAttr "L_Hand_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[172]";
+connectAttr "L_Hand_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[173]";
+connectAttr "Jeremy_Rig_06RN.phl[174]" "GPS_Main_Body_parentConstraint1.tg[0].tt"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[172]"
+connectAttr "L_Hand_Finger_01_Knuckle_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[175]"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[173]"
+connectAttr "L_Hand_Finger_01_Knuckle_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[176]"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[174]"
+connectAttr "L_Hand_Finger_01_Knuckle_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[177]"
 		;
-connectAttr "Jeremy_Rig_06RN.phl[175]" "GPS_Main_Body_parentConstraint1.tg[0].trp"
+connectAttr "Jeremy_Rig_06RN.phl[178]" "GPS_Main_Body_parentConstraint1.tg[0].trp"
 		;
-connectAttr "Jeremy_Rig_06RN.phl[176]" "GPS_Main_Body_parentConstraint1.tg[0].trt"
+connectAttr "Jeremy_Rig_06RN.phl[179]" "GPS_Main_Body_parentConstraint1.tg[0].trt"
 		;
-connectAttr "Jeremy_Rig_06RN.phl[177]" "GPS_Main_Body_parentConstraint1.tg[0].tr"
+connectAttr "Jeremy_Rig_06RN.phl[180]" "GPS_Main_Body_parentConstraint1.tg[0].tr"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[178]"
+connectAttr "L_Hand_Finger_01_Knuckle_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[181]"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[179]"
+connectAttr "L_Hand_Finger_01_Knuckle_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[182]"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[180]"
+connectAttr "L_Hand_Finger_01_Knuckle_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[183]"
 		;
-connectAttr "Jeremy_Rig_06RN.phl[181]" "GPS_Main_Body_parentConstraint1.tg[0].tro"
+connectAttr "Jeremy_Rig_06RN.phl[184]" "GPS_Main_Body_parentConstraint1.tg[0].tro"
 		;
-connectAttr "Jeremy_Rig_06RN.phl[182]" "GPS_Main_Body_parentConstraint1.tg[0].ts"
+connectAttr "Jeremy_Rig_06RN.phl[185]" "GPS_Main_Body_parentConstraint1.tg[0].ts"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[183]"
+connectAttr "L_Hand_Finger_01_Knuckle_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[186]"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[184]"
+connectAttr "L_Hand_Finger_01_Knuckle_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[187]"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[185]"
+connectAttr "L_Hand_Finger_01_Knuckle_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[188]"
 		;
-connectAttr "Jeremy_Rig_06RN.phl[186]" "GPS_Main_Body_parentConstraint1.tg[0].tpm"
+connectAttr "Jeremy_Rig_06RN.phl[189]" "GPS_Main_Body_parentConstraint1.tg[0].tpm"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_002_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[187]"
+connectAttr "L_Hand_Finger_01_Knuckle_002_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[190]"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_002_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[188]"
+connectAttr "L_Hand_Finger_01_Knuckle_002_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[191]"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_002_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[189]"
+connectAttr "L_Hand_Finger_01_Knuckle_002_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[192]"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_002_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[190]"
+connectAttr "L_Hand_Finger_01_Knuckle_002_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[193]"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_002_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[191]"
+connectAttr "L_Hand_Finger_01_Knuckle_002_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[194]"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_002_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[192]"
+connectAttr "L_Hand_Finger_01_Knuckle_002_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[195]"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_002_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[193]"
+connectAttr "L_Hand_Finger_01_Knuckle_002_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[196]"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_002_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[194]"
+connectAttr "L_Hand_Finger_01_Knuckle_002_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[197]"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_002_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[195]"
+connectAttr "L_Hand_Finger_01_Knuckle_002_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[198]"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_003_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[196]"
+connectAttr "L_Hand_Finger_01_Knuckle_003_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[199]"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_003_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[197]"
+connectAttr "L_Hand_Finger_01_Knuckle_003_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[200]"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_003_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[198]"
+connectAttr "L_Hand_Finger_01_Knuckle_003_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[201]"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_003_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[199]"
+connectAttr "L_Hand_Finger_01_Knuckle_003_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[202]"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_003_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[200]"
+connectAttr "L_Hand_Finger_01_Knuckle_003_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[203]"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_003_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[201]"
+connectAttr "L_Hand_Finger_01_Knuckle_003_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[204]"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_003_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[202]"
+connectAttr "L_Hand_Finger_01_Knuckle_003_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[205]"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_003_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[203]"
+connectAttr "L_Hand_Finger_01_Knuckle_003_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[206]"
 		;
-connectAttr "L_Hand_Finger_01_Knuckle_003_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[204]"
+connectAttr "L_Hand_Finger_01_Knuckle_003_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[207]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[205]"
+connectAttr "L_Hand_Finger_02_Knuckle_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[208]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[206]"
+connectAttr "L_Hand_Finger_02_Knuckle_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[209]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[207]"
+connectAttr "L_Hand_Finger_02_Knuckle_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[210]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[208]"
+connectAttr "L_Hand_Finger_02_Knuckle_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[211]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[209]"
+connectAttr "L_Hand_Finger_02_Knuckle_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[212]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[210]"
+connectAttr "L_Hand_Finger_02_Knuckle_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[213]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[211]"
+connectAttr "L_Hand_Finger_02_Knuckle_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[214]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[212]"
+connectAttr "L_Hand_Finger_02_Knuckle_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[215]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[213]"
+connectAttr "L_Hand_Finger_02_Knuckle_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[216]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_002_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[214]"
+connectAttr "L_Hand_Finger_02_Knuckle_002_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[217]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_002_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[215]"
+connectAttr "L_Hand_Finger_02_Knuckle_002_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[218]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_002_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[216]"
+connectAttr "L_Hand_Finger_02_Knuckle_002_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[219]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_002_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[217]"
+connectAttr "L_Hand_Finger_02_Knuckle_002_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[220]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_002_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[218]"
+connectAttr "L_Hand_Finger_02_Knuckle_002_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[221]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_002_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[219]"
+connectAttr "L_Hand_Finger_02_Knuckle_002_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[222]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_002_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[220]"
+connectAttr "L_Hand_Finger_02_Knuckle_002_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[223]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_002_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[221]"
+connectAttr "L_Hand_Finger_02_Knuckle_002_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[224]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_002_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[222]"
+connectAttr "L_Hand_Finger_02_Knuckle_002_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[225]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_003_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[223]"
+connectAttr "L_Hand_Finger_02_Knuckle_003_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[226]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_003_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[224]"
+connectAttr "L_Hand_Finger_02_Knuckle_003_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[227]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_003_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[225]"
+connectAttr "L_Hand_Finger_02_Knuckle_003_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[228]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_003_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[226]"
+connectAttr "L_Hand_Finger_02_Knuckle_003_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[229]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_003_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[227]"
+connectAttr "L_Hand_Finger_02_Knuckle_003_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[230]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_003_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[228]"
+connectAttr "L_Hand_Finger_02_Knuckle_003_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[231]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_003_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[229]"
+connectAttr "L_Hand_Finger_02_Knuckle_003_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[232]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_003_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[230]"
+connectAttr "L_Hand_Finger_02_Knuckle_003_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[233]"
 		;
-connectAttr "L_Hand_Finger_02_Knuckle_003_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[231]"
+connectAttr "L_Hand_Finger_02_Knuckle_003_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[234]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[232]"
+connectAttr "L_Hand_Finger_03_Knuckle_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[235]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[233]"
+connectAttr "L_Hand_Finger_03_Knuckle_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[236]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[234]"
+connectAttr "L_Hand_Finger_03_Knuckle_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[237]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[235]"
+connectAttr "L_Hand_Finger_03_Knuckle_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[238]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[236]"
+connectAttr "L_Hand_Finger_03_Knuckle_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[239]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[237]"
+connectAttr "L_Hand_Finger_03_Knuckle_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[240]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[238]"
+connectAttr "L_Hand_Finger_03_Knuckle_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[241]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[239]"
+connectAttr "L_Hand_Finger_03_Knuckle_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[242]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[240]"
+connectAttr "L_Hand_Finger_03_Knuckle_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[243]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_002_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[241]"
+connectAttr "L_Hand_Finger_03_Knuckle_002_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[244]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_002_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[242]"
+connectAttr "L_Hand_Finger_03_Knuckle_002_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[245]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_002_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[243]"
+connectAttr "L_Hand_Finger_03_Knuckle_002_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[246]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_002_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[244]"
+connectAttr "L_Hand_Finger_03_Knuckle_002_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[247]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_002_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[245]"
+connectAttr "L_Hand_Finger_03_Knuckle_002_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[248]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_002_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[246]"
+connectAttr "L_Hand_Finger_03_Knuckle_002_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[249]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_002_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[247]"
+connectAttr "L_Hand_Finger_03_Knuckle_002_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[250]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_002_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[248]"
+connectAttr "L_Hand_Finger_03_Knuckle_002_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[251]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_002_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[249]"
+connectAttr "L_Hand_Finger_03_Knuckle_002_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[252]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_003_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[250]"
+connectAttr "L_Hand_Finger_03_Knuckle_003_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[253]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_003_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[251]"
+connectAttr "L_Hand_Finger_03_Knuckle_003_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[254]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_003_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[252]"
+connectAttr "L_Hand_Finger_03_Knuckle_003_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[255]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_003_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[253]"
+connectAttr "L_Hand_Finger_03_Knuckle_003_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[256]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_003_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[254]"
+connectAttr "L_Hand_Finger_03_Knuckle_003_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[257]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_003_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[255]"
+connectAttr "L_Hand_Finger_03_Knuckle_003_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[258]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_003_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[256]"
+connectAttr "L_Hand_Finger_03_Knuckle_003_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[259]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_003_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[257]"
+connectAttr "L_Hand_Finger_03_Knuckle_003_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[260]"
 		;
-connectAttr "L_Hand_Finger_03_Knuckle_003_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[258]"
+connectAttr "L_Hand_Finger_03_Knuckle_003_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[261]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[259]"
+connectAttr "L_Hand_Finger_04_Knuckle_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[262]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[260]"
+connectAttr "L_Hand_Finger_04_Knuckle_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[263]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[261]"
+connectAttr "L_Hand_Finger_04_Knuckle_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[264]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[262]"
+connectAttr "L_Hand_Finger_04_Knuckle_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[265]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[263]"
+connectAttr "L_Hand_Finger_04_Knuckle_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[266]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[264]"
+connectAttr "L_Hand_Finger_04_Knuckle_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[267]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[265]"
+connectAttr "L_Hand_Finger_04_Knuckle_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[268]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[266]"
+connectAttr "L_Hand_Finger_04_Knuckle_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[269]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[267]"
+connectAttr "L_Hand_Finger_04_Knuckle_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[270]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_002_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[268]"
+connectAttr "L_Hand_Finger_04_Knuckle_002_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[271]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_002_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[269]"
+connectAttr "L_Hand_Finger_04_Knuckle_002_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[272]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_002_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[270]"
+connectAttr "L_Hand_Finger_04_Knuckle_002_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[273]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_002_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[271]"
+connectAttr "L_Hand_Finger_04_Knuckle_002_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[274]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_002_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[272]"
+connectAttr "L_Hand_Finger_04_Knuckle_002_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[275]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_002_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[273]"
+connectAttr "L_Hand_Finger_04_Knuckle_002_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[276]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_002_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[274]"
+connectAttr "L_Hand_Finger_04_Knuckle_002_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[277]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_002_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[275]"
+connectAttr "L_Hand_Finger_04_Knuckle_002_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[278]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_002_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[276]"
+connectAttr "L_Hand_Finger_04_Knuckle_002_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[279]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_003_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[277]"
+connectAttr "L_Hand_Finger_04_Knuckle_003_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[280]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_003_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[278]"
+connectAttr "L_Hand_Finger_04_Knuckle_003_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[281]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_003_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[279]"
+connectAttr "L_Hand_Finger_04_Knuckle_003_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[282]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_003_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[280]"
+connectAttr "L_Hand_Finger_04_Knuckle_003_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[283]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_003_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[281]"
+connectAttr "L_Hand_Finger_04_Knuckle_003_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[284]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_003_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[282]"
+connectAttr "L_Hand_Finger_04_Knuckle_003_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[285]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_003_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[283]"
+connectAttr "L_Hand_Finger_04_Knuckle_003_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[286]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_003_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[284]"
+connectAttr "L_Hand_Finger_04_Knuckle_003_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[287]"
 		;
-connectAttr "L_Hand_Finger_04_Knuckle_003_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[285]"
+connectAttr "L_Hand_Finger_04_Knuckle_003_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[288]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[286]"
+connectAttr "L_Hand_Finger_05_Knuckle_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[289]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[287]"
+connectAttr "L_Hand_Finger_05_Knuckle_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[290]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[288]"
+connectAttr "L_Hand_Finger_05_Knuckle_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[291]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[289]"
+connectAttr "L_Hand_Finger_05_Knuckle_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[292]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[290]"
+connectAttr "L_Hand_Finger_05_Knuckle_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[293]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[291]"
+connectAttr "L_Hand_Finger_05_Knuckle_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[294]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[292]"
+connectAttr "L_Hand_Finger_05_Knuckle_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[295]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[293]"
+connectAttr "L_Hand_Finger_05_Knuckle_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[296]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[294]"
+connectAttr "L_Hand_Finger_05_Knuckle_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[297]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_002_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[295]"
+connectAttr "L_Hand_Finger_05_Knuckle_002_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[298]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_002_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[296]"
+connectAttr "L_Hand_Finger_05_Knuckle_002_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[299]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_002_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[297]"
+connectAttr "L_Hand_Finger_05_Knuckle_002_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[300]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_002_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[298]"
+connectAttr "L_Hand_Finger_05_Knuckle_002_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[301]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_002_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[299]"
+connectAttr "L_Hand_Finger_05_Knuckle_002_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[302]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_002_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[300]"
+connectAttr "L_Hand_Finger_05_Knuckle_002_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[303]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_002_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[301]"
+connectAttr "L_Hand_Finger_05_Knuckle_002_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[304]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_002_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[302]"
+connectAttr "L_Hand_Finger_05_Knuckle_002_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[305]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_002_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[303]"
+connectAttr "L_Hand_Finger_05_Knuckle_002_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[306]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_003_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[304]"
+connectAttr "L_Hand_Finger_05_Knuckle_003_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[307]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_003_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[305]"
+connectAttr "L_Hand_Finger_05_Knuckle_003_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[308]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_003_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[306]"
+connectAttr "L_Hand_Finger_05_Knuckle_003_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[309]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_003_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[307]"
+connectAttr "L_Hand_Finger_05_Knuckle_003_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[310]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_003_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[308]"
+connectAttr "L_Hand_Finger_05_Knuckle_003_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[311]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_003_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[309]"
+connectAttr "L_Hand_Finger_05_Knuckle_003_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[312]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_003_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[310]"
+connectAttr "L_Hand_Finger_05_Knuckle_003_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[313]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_003_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[311]"
+connectAttr "L_Hand_Finger_05_Knuckle_003_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[314]"
 		;
-connectAttr "L_Hand_Finger_05_Knuckle_003_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[312]"
+connectAttr "L_Hand_Finger_05_Knuckle_003_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[315]"
 		;
-connectAttr "R_Hand_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[313]";
-connectAttr "R_Hand_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[314]";
-connectAttr "R_Hand_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[315]";
-connectAttr "R_Hand_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[316]";
-connectAttr "R_Hand_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[317]";
-connectAttr "R_Hand_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[318]";
-connectAttr "R_Hand_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[319]";
-connectAttr "R_Hand_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[320]";
-connectAttr "R_Hand_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[321]";
-connectAttr "R_Hand_Finger_01_Knuckle_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[322]"
+connectAttr "R_Hand_001_Ctrl_RElbowCorrective.o" "Jeremy_Rig_06RN.phl[316]";
+connectAttr "R_Hand_001_Ctrl_RShoulderCorrective.o" "Jeremy_Rig_06RN.phl[317]";
+connectAttr "R_Hand_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[318]";
+connectAttr "R_Hand_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[319]";
+connectAttr "R_Hand_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[320]";
+connectAttr "R_Hand_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[321]";
+connectAttr "R_Hand_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[322]";
+connectAttr "R_Hand_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[323]";
+connectAttr "R_Hand_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[324]";
+connectAttr "R_Hand_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[325]";
+connectAttr "R_Hand_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[326]";
+connectAttr "R_Hand_Finger_01_Knuckle_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[327]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[323]"
+connectAttr "R_Hand_Finger_01_Knuckle_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[328]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[324]"
+connectAttr "R_Hand_Finger_01_Knuckle_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[329]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[325]"
+connectAttr "R_Hand_Finger_01_Knuckle_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[330]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[326]"
+connectAttr "R_Hand_Finger_01_Knuckle_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[331]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[327]"
+connectAttr "R_Hand_Finger_01_Knuckle_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[332]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[328]"
+connectAttr "R_Hand_Finger_01_Knuckle_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[333]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[329]"
+connectAttr "R_Hand_Finger_01_Knuckle_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[334]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[330]"
+connectAttr "R_Hand_Finger_01_Knuckle_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[335]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_002_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[331]"
+connectAttr "R_Hand_Finger_01_Knuckle_002_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[336]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_002_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[332]"
+connectAttr "R_Hand_Finger_01_Knuckle_002_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[337]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_002_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[333]"
+connectAttr "R_Hand_Finger_01_Knuckle_002_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[338]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_002_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[334]"
+connectAttr "R_Hand_Finger_01_Knuckle_002_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[339]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_002_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[335]"
+connectAttr "R_Hand_Finger_01_Knuckle_002_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[340]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_002_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[336]"
+connectAttr "R_Hand_Finger_01_Knuckle_002_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[341]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_002_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[337]"
+connectAttr "R_Hand_Finger_01_Knuckle_002_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[342]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_002_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[338]"
+connectAttr "R_Hand_Finger_01_Knuckle_002_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[343]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_002_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[339]"
+connectAttr "R_Hand_Finger_01_Knuckle_002_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[344]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_003_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[340]"
+connectAttr "R_Hand_Finger_01_Knuckle_003_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[345]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_003_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[341]"
+connectAttr "R_Hand_Finger_01_Knuckle_003_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[346]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_003_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[342]"
+connectAttr "R_Hand_Finger_01_Knuckle_003_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[347]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_003_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[343]"
+connectAttr "R_Hand_Finger_01_Knuckle_003_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[348]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_003_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[344]"
+connectAttr "R_Hand_Finger_01_Knuckle_003_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[349]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_003_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[345]"
+connectAttr "R_Hand_Finger_01_Knuckle_003_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[350]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_003_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[346]"
+connectAttr "R_Hand_Finger_01_Knuckle_003_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[351]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_003_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[347]"
+connectAttr "R_Hand_Finger_01_Knuckle_003_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[352]"
 		;
-connectAttr "R_Hand_Finger_01_Knuckle_003_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[348]"
+connectAttr "R_Hand_Finger_01_Knuckle_003_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[353]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[349]"
+connectAttr "R_Hand_Finger_02_Knuckle_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[354]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[350]"
+connectAttr "R_Hand_Finger_02_Knuckle_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[355]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[351]"
+connectAttr "R_Hand_Finger_02_Knuckle_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[356]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[352]"
+connectAttr "R_Hand_Finger_02_Knuckle_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[357]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[353]"
+connectAttr "R_Hand_Finger_02_Knuckle_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[358]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[354]"
+connectAttr "R_Hand_Finger_02_Knuckle_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[359]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[355]"
+connectAttr "R_Hand_Finger_02_Knuckle_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[360]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[356]"
+connectAttr "R_Hand_Finger_02_Knuckle_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[361]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[357]"
+connectAttr "R_Hand_Finger_02_Knuckle_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[362]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_002_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[358]"
+connectAttr "R_Hand_Finger_02_Knuckle_002_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[363]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_002_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[359]"
+connectAttr "R_Hand_Finger_02_Knuckle_002_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[364]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_002_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[360]"
+connectAttr "R_Hand_Finger_02_Knuckle_002_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[365]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_002_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[361]"
+connectAttr "R_Hand_Finger_02_Knuckle_002_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[366]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_002_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[362]"
+connectAttr "R_Hand_Finger_02_Knuckle_002_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[367]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_002_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[363]"
+connectAttr "R_Hand_Finger_02_Knuckle_002_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[368]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_002_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[364]"
+connectAttr "R_Hand_Finger_02_Knuckle_002_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[369]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_002_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[365]"
+connectAttr "R_Hand_Finger_02_Knuckle_002_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[370]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_002_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[366]"
+connectAttr "R_Hand_Finger_02_Knuckle_002_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[371]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_003_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[367]"
+connectAttr "R_Hand_Finger_02_Knuckle_003_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[372]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_003_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[368]"
+connectAttr "R_Hand_Finger_02_Knuckle_003_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[373]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_003_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[369]"
+connectAttr "R_Hand_Finger_02_Knuckle_003_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[374]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_003_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[370]"
+connectAttr "R_Hand_Finger_02_Knuckle_003_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[375]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_003_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[371]"
+connectAttr "R_Hand_Finger_02_Knuckle_003_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[376]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_003_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[372]"
+connectAttr "R_Hand_Finger_02_Knuckle_003_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[377]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_003_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[373]"
+connectAttr "R_Hand_Finger_02_Knuckle_003_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[378]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_003_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[374]"
+connectAttr "R_Hand_Finger_02_Knuckle_003_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[379]"
 		;
-connectAttr "R_Hand_Finger_02_Knuckle_003_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[375]"
+connectAttr "R_Hand_Finger_02_Knuckle_003_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[380]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[376]"
+connectAttr "R_Hand_Finger_03_Knuckle_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[381]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[377]"
+connectAttr "R_Hand_Finger_03_Knuckle_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[382]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[378]"
+connectAttr "R_Hand_Finger_03_Knuckle_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[383]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[379]"
+connectAttr "R_Hand_Finger_03_Knuckle_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[384]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[380]"
+connectAttr "R_Hand_Finger_03_Knuckle_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[385]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[381]"
+connectAttr "R_Hand_Finger_03_Knuckle_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[386]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[382]"
+connectAttr "R_Hand_Finger_03_Knuckle_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[387]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[383]"
+connectAttr "R_Hand_Finger_03_Knuckle_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[388]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[384]"
+connectAttr "R_Hand_Finger_03_Knuckle_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[389]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_002_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[385]"
+connectAttr "R_Hand_Finger_03_Knuckle_002_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[390]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_002_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[386]"
+connectAttr "R_Hand_Finger_03_Knuckle_002_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[391]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_002_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[387]"
+connectAttr "R_Hand_Finger_03_Knuckle_002_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[392]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_002_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[388]"
+connectAttr "R_Hand_Finger_03_Knuckle_002_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[393]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_002_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[389]"
+connectAttr "R_Hand_Finger_03_Knuckle_002_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[394]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_002_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[390]"
+connectAttr "R_Hand_Finger_03_Knuckle_002_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[395]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_002_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[391]"
+connectAttr "R_Hand_Finger_03_Knuckle_002_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[396]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_002_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[392]"
+connectAttr "R_Hand_Finger_03_Knuckle_002_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[397]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_002_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[393]"
+connectAttr "R_Hand_Finger_03_Knuckle_002_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[398]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_003_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[394]"
+connectAttr "R_Hand_Finger_03_Knuckle_003_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[399]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_003_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[395]"
+connectAttr "R_Hand_Finger_03_Knuckle_003_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[400]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_003_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[396]"
+connectAttr "R_Hand_Finger_03_Knuckle_003_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[401]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_003_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[397]"
+connectAttr "R_Hand_Finger_03_Knuckle_003_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[402]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_003_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[398]"
+connectAttr "R_Hand_Finger_03_Knuckle_003_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[403]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_003_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[399]"
+connectAttr "R_Hand_Finger_03_Knuckle_003_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[404]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_003_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[400]"
+connectAttr "R_Hand_Finger_03_Knuckle_003_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[405]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_003_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[401]"
+connectAttr "R_Hand_Finger_03_Knuckle_003_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[406]"
 		;
-connectAttr "R_Hand_Finger_03_Knuckle_003_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[402]"
+connectAttr "R_Hand_Finger_03_Knuckle_003_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[407]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[403]"
+connectAttr "R_Hand_Finger_04_Knuckle_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[408]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[404]"
+connectAttr "R_Hand_Finger_04_Knuckle_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[409]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[405]"
+connectAttr "R_Hand_Finger_04_Knuckle_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[410]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[406]"
+connectAttr "R_Hand_Finger_04_Knuckle_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[411]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[407]"
+connectAttr "R_Hand_Finger_04_Knuckle_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[412]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[408]"
+connectAttr "R_Hand_Finger_04_Knuckle_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[413]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[409]"
+connectAttr "R_Hand_Finger_04_Knuckle_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[414]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[410]"
+connectAttr "R_Hand_Finger_04_Knuckle_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[415]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[411]"
+connectAttr "R_Hand_Finger_04_Knuckle_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[416]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_002_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[412]"
+connectAttr "R_Hand_Finger_04_Knuckle_002_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[417]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_002_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[413]"
+connectAttr "R_Hand_Finger_04_Knuckle_002_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[418]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_002_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[414]"
+connectAttr "R_Hand_Finger_04_Knuckle_002_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[419]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_002_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[415]"
+connectAttr "R_Hand_Finger_04_Knuckle_002_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[420]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_002_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[416]"
+connectAttr "R_Hand_Finger_04_Knuckle_002_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[421]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_002_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[417]"
+connectAttr "R_Hand_Finger_04_Knuckle_002_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[422]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_002_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[418]"
+connectAttr "R_Hand_Finger_04_Knuckle_002_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[423]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_002_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[419]"
+connectAttr "R_Hand_Finger_04_Knuckle_002_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[424]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_002_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[420]"
+connectAttr "R_Hand_Finger_04_Knuckle_002_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[425]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_003_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[421]"
+connectAttr "R_Hand_Finger_04_Knuckle_003_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[426]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_003_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[422]"
+connectAttr "R_Hand_Finger_04_Knuckle_003_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[427]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_003_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[423]"
+connectAttr "R_Hand_Finger_04_Knuckle_003_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[428]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_003_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[424]"
+connectAttr "R_Hand_Finger_04_Knuckle_003_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[429]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_003_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[425]"
+connectAttr "R_Hand_Finger_04_Knuckle_003_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[430]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_003_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[426]"
+connectAttr "R_Hand_Finger_04_Knuckle_003_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[431]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_003_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[427]"
+connectAttr "R_Hand_Finger_04_Knuckle_003_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[432]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_003_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[428]"
+connectAttr "R_Hand_Finger_04_Knuckle_003_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[433]"
 		;
-connectAttr "R_Hand_Finger_04_Knuckle_003_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[429]"
+connectAttr "R_Hand_Finger_04_Knuckle_003_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[434]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[430]"
+connectAttr "R_Hand_Finger_05_Knuckle_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[435]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[431]"
+connectAttr "R_Hand_Finger_05_Knuckle_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[436]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[432]"
+connectAttr "R_Hand_Finger_05_Knuckle_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[437]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[433]"
+connectAttr "R_Hand_Finger_05_Knuckle_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[438]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[434]"
+connectAttr "R_Hand_Finger_05_Knuckle_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[439]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[435]"
+connectAttr "R_Hand_Finger_05_Knuckle_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[440]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[436]"
+connectAttr "R_Hand_Finger_05_Knuckle_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[441]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[437]"
+connectAttr "R_Hand_Finger_05_Knuckle_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[442]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[438]"
+connectAttr "R_Hand_Finger_05_Knuckle_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[443]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_002_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[439]"
+connectAttr "R_Hand_Finger_05_Knuckle_002_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[444]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_002_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[440]"
+connectAttr "R_Hand_Finger_05_Knuckle_002_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[445]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_002_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[441]"
+connectAttr "R_Hand_Finger_05_Knuckle_002_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[446]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_002_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[442]"
+connectAttr "R_Hand_Finger_05_Knuckle_002_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[447]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_002_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[443]"
+connectAttr "R_Hand_Finger_05_Knuckle_002_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[448]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_002_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[444]"
+connectAttr "R_Hand_Finger_05_Knuckle_002_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[449]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_002_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[445]"
+connectAttr "R_Hand_Finger_05_Knuckle_002_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[450]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_002_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[446]"
+connectAttr "R_Hand_Finger_05_Knuckle_002_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[451]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_002_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[447]"
+connectAttr "R_Hand_Finger_05_Knuckle_002_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[452]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_003_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[448]"
+connectAttr "R_Hand_Finger_05_Knuckle_003_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[453]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_003_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[449]"
+connectAttr "R_Hand_Finger_05_Knuckle_003_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[454]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_003_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[450]"
+connectAttr "R_Hand_Finger_05_Knuckle_003_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[455]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_003_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[451]"
+connectAttr "R_Hand_Finger_05_Knuckle_003_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[456]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_003_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[452]"
+connectAttr "R_Hand_Finger_05_Knuckle_003_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[457]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_003_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[453]"
+connectAttr "R_Hand_Finger_05_Knuckle_003_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[458]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_003_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[454]"
+connectAttr "R_Hand_Finger_05_Knuckle_003_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[459]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_003_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[455]"
+connectAttr "R_Hand_Finger_05_Knuckle_003_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[460]"
 		;
-connectAttr "R_Hand_Finger_05_Knuckle_003_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[456]"
+connectAttr "R_Hand_Finger_05_Knuckle_003_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[461]"
 		;
-connectAttr "Spine_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[457]";
-connectAttr "Spine_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[458]";
-connectAttr "Spine_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[459]";
-connectAttr "Spine_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[460]";
-connectAttr "Spine_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[461]";
-connectAttr "Spine_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[462]";
-connectAttr "Spine_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[463]";
-connectAttr "Spine_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[464]";
-connectAttr "Spine_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[465]";
-connectAttr "Spine_002_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[466]";
-connectAttr "Spine_002_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[467]";
-connectAttr "Spine_002_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[468]";
-connectAttr "Spine_002_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[469]";
-connectAttr "Spine_002_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[470]";
-connectAttr "Spine_002_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[471]";
-connectAttr "Spine_002_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[472]";
-connectAttr "Spine_002_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[473]";
-connectAttr "Spine_002_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[474]";
-connectAttr "Spine_003_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[475]";
-connectAttr "Spine_003_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[476]";
-connectAttr "Spine_003_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[477]";
-connectAttr "Spine_003_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[478]";
-connectAttr "Spine_003_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[479]";
-connectAttr "Spine_003_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[480]";
-connectAttr "Spine_003_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[481]";
-connectAttr "Spine_003_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[482]";
-connectAttr "Spine_003_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[483]";
-connectAttr "Pelvis_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[484]";
-connectAttr "Pelvis_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[485]";
-connectAttr "Pelvis_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[486]";
-connectAttr "Pelvis_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[487]";
-connectAttr "Pelvis_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[488]";
-connectAttr "Pelvis_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[489]";
-connectAttr "Pelvis_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[490]";
-connectAttr "Pelvis_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[491]";
-connectAttr "Pelvis_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[492]";
-connectAttr "L_Leg_001_IK_Base_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[493]";
-connectAttr "L_Leg_001_IK_Base_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[494]";
-connectAttr "L_Leg_001_IK_Base_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[495]";
-connectAttr "L_Leg_001_IK_Base_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[496]";
-connectAttr "L_Leg_001_IK_Base_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[497]";
-connectAttr "L_Leg_001_IK_Base_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[498]";
-connectAttr "L_Leg_001_IK_Base_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[499]";
-connectAttr "L_Leg_001_IK_Base_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[500]";
-connectAttr "L_Leg_001_IK_Base_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[501]";
-connectAttr "L_Leg_001_IK_Handle_Ctrl_Follow.o" "Jeremy_Rig_06RN.phl[502]";
-connectAttr "L_Leg_001_IK_Handle_Ctrl_RevFootCtrlVis.o" "Jeremy_Rig_06RN.phl[503]"
+connectAttr "Spine_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[462]";
+connectAttr "Spine_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[463]";
+connectAttr "Spine_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[464]";
+connectAttr "Spine_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[465]";
+connectAttr "Spine_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[466]";
+connectAttr "Spine_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[467]";
+connectAttr "Spine_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[468]";
+connectAttr "Spine_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[469]";
+connectAttr "Spine_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[470]";
+connectAttr "Spine_002_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[471]";
+connectAttr "Spine_002_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[472]";
+connectAttr "Spine_002_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[473]";
+connectAttr "Spine_002_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[474]";
+connectAttr "Spine_002_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[475]";
+connectAttr "Spine_002_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[476]";
+connectAttr "Spine_002_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[477]";
+connectAttr "Spine_002_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[478]";
+connectAttr "Spine_002_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[479]";
+connectAttr "Spine_003_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[480]";
+connectAttr "Spine_003_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[481]";
+connectAttr "Spine_003_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[482]";
+connectAttr "Spine_003_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[483]";
+connectAttr "Spine_003_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[484]";
+connectAttr "Spine_003_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[485]";
+connectAttr "Spine_003_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[486]";
+connectAttr "Spine_003_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[487]";
+connectAttr "Spine_003_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[488]";
+connectAttr "Pelvis_001_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[489]";
+connectAttr "Pelvis_001_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[490]";
+connectAttr "Pelvis_001_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[491]";
+connectAttr "Pelvis_001_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[492]";
+connectAttr "Pelvis_001_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[493]";
+connectAttr "Pelvis_001_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[494]";
+connectAttr "Pelvis_001_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[495]";
+connectAttr "Pelvis_001_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[496]";
+connectAttr "Pelvis_001_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[497]";
+connectAttr "L_Leg_001_IK_Base_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[498]";
+connectAttr "L_Leg_001_IK_Base_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[499]";
+connectAttr "L_Leg_001_IK_Base_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[500]";
+connectAttr "L_Leg_001_IK_Base_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[501]";
+connectAttr "L_Leg_001_IK_Base_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[502]";
+connectAttr "L_Leg_001_IK_Base_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[503]";
+connectAttr "L_Leg_001_IK_Base_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[504]";
+connectAttr "L_Leg_001_IK_Base_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[505]";
+connectAttr "L_Leg_001_IK_Base_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[506]";
+connectAttr "L_Leg_001_IK_Handle_Ctrl_Follow.o" "Jeremy_Rig_06RN.phl[507]";
+connectAttr "L_Leg_001_IK_Handle_Ctrl_RevFootCtrlVis.o" "Jeremy_Rig_06RN.phl[508]"
 		;
-connectAttr "L_Leg_001_IK_Handle_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[504]";
-connectAttr "L_Leg_001_IK_Handle_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[505]";
-connectAttr "L_Leg_001_IK_Handle_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[506]";
-connectAttr "L_Leg_001_IK_Handle_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[507]";
-connectAttr "L_Leg_001_IK_Handle_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[508]";
-connectAttr "L_Leg_001_IK_Handle_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[509]";
-connectAttr "L_Leg_001_IK_Handle_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[510]";
-connectAttr "L_Leg_001_IK_Handle_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[511]";
-connectAttr "L_Leg_001_IK_Handle_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[512]";
-connectAttr "L_Foot_Rev_IK_Heel_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[513]";
-connectAttr "L_Foot_Rev_IK_Heel_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[514]";
-connectAttr "L_Foot_Rev_IK_Heel_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[515]";
-connectAttr "L_Foot_Rev_IK_Toe_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[516]";
-connectAttr "L_Foot_Rev_IK_Toe_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[517]";
-connectAttr "L_Foot_Rev_IK_Toe_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[518]";
-connectAttr "L_Foot_Rev_IK_Ball_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[519]";
-connectAttr "L_Foot_Rev_IK_Ball_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[520]";
-connectAttr "L_Foot_Rev_IK_Ball_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[521]";
-connectAttr "L_Foot_Rev_IK_Tip_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[522]";
-connectAttr "L_Foot_Rev_IK_Tip_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[523]";
-connectAttr "L_Foot_Rev_IK_Tip_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[524]";
-connectAttr "L_Leg_001_IK_PV_Ctrlv_Follow.o" "Jeremy_Rig_06RN.phl[525]";
-connectAttr "L_Leg_001_IK_PV_Ctrlv_translateX.o" "Jeremy_Rig_06RN.phl[526]";
-connectAttr "L_Leg_001_IK_PV_Ctrlv_translateY.o" "Jeremy_Rig_06RN.phl[527]";
-connectAttr "L_Leg_001_IK_PV_Ctrlv_translateZ.o" "Jeremy_Rig_06RN.phl[528]";
-connectAttr "L_Leg_001_IK_PV_Ctrlv_rotateX.o" "Jeremy_Rig_06RN.phl[529]";
-connectAttr "L_Leg_001_IK_PV_Ctrlv_rotateY.o" "Jeremy_Rig_06RN.phl[530]";
-connectAttr "L_Leg_001_IK_PV_Ctrlv_rotateZ.o" "Jeremy_Rig_06RN.phl[531]";
-connectAttr "L_Leg_001_IK_PV_Ctrlv_scaleX.o" "Jeremy_Rig_06RN.phl[532]";
-connectAttr "L_Leg_001_IK_PV_Ctrlv_scaleY.o" "Jeremy_Rig_06RN.phl[533]";
-connectAttr "L_Leg_001_IK_PV_Ctrlv_scaleZ.o" "Jeremy_Rig_06RN.phl[534]";
-connectAttr "R_Leg_001_IK_Base_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[535]";
-connectAttr "R_Leg_001_IK_Base_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[536]";
-connectAttr "R_Leg_001_IK_Base_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[537]";
-connectAttr "R_Leg_001_IK_Base_Ctrl_visibility.o" "Jeremy_Rig_06RN.phl[538]";
-connectAttr "R_Leg_001_IK_Base_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[539]";
-connectAttr "R_Leg_001_IK_Base_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[540]";
-connectAttr "R_Leg_001_IK_Base_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[541]";
-connectAttr "R_Leg_001_IK_Base_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[542]";
-connectAttr "R_Leg_001_IK_Base_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[543]";
-connectAttr "R_Leg_001_IK_Base_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[544]";
-connectAttr "R_Leg_001_IK_Handle_Ctrl_Follow.o" "Jeremy_Rig_06RN.phl[545]";
-connectAttr "R_Leg_001_IK_Handle_Ctrl_RevFootCtrlVis.o" "Jeremy_Rig_06RN.phl[546]"
+connectAttr "L_Leg_001_IK_Handle_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[509]";
+connectAttr "L_Leg_001_IK_Handle_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[510]";
+connectAttr "L_Leg_001_IK_Handle_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[511]";
+connectAttr "L_Leg_001_IK_Handle_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[512]";
+connectAttr "L_Leg_001_IK_Handle_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[513]";
+connectAttr "L_Leg_001_IK_Handle_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[514]";
+connectAttr "L_Leg_001_IK_Handle_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[515]";
+connectAttr "L_Leg_001_IK_Handle_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[516]";
+connectAttr "L_Leg_001_IK_Handle_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[517]";
+connectAttr "L_Foot_Rev_IK_Heel_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[518]";
+connectAttr "L_Foot_Rev_IK_Heel_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[519]";
+connectAttr "L_Foot_Rev_IK_Heel_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[520]";
+connectAttr "L_Foot_Rev_IK_Toe_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[521]";
+connectAttr "L_Foot_Rev_IK_Toe_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[522]";
+connectAttr "L_Foot_Rev_IK_Toe_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[523]";
+connectAttr "L_Foot_Rev_IK_Ball_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[524]";
+connectAttr "L_Foot_Rev_IK_Ball_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[525]";
+connectAttr "L_Foot_Rev_IK_Ball_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[526]";
+connectAttr "L_Foot_Rev_IK_Tip_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[527]";
+connectAttr "L_Foot_Rev_IK_Tip_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[528]";
+connectAttr "L_Foot_Rev_IK_Tip_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[529]";
+connectAttr "L_Leg_001_IK_PV_Ctrlv_Follow.o" "Jeremy_Rig_06RN.phl[530]";
+connectAttr "L_Leg_001_IK_PV_Ctrlv_translateX.o" "Jeremy_Rig_06RN.phl[531]";
+connectAttr "L_Leg_001_IK_PV_Ctrlv_translateY.o" "Jeremy_Rig_06RN.phl[532]";
+connectAttr "L_Leg_001_IK_PV_Ctrlv_translateZ.o" "Jeremy_Rig_06RN.phl[533]";
+connectAttr "L_Leg_001_IK_PV_Ctrlv_rotateX.o" "Jeremy_Rig_06RN.phl[534]";
+connectAttr "L_Leg_001_IK_PV_Ctrlv_rotateY.o" "Jeremy_Rig_06RN.phl[535]";
+connectAttr "L_Leg_001_IK_PV_Ctrlv_rotateZ.o" "Jeremy_Rig_06RN.phl[536]";
+connectAttr "L_Leg_001_IK_PV_Ctrlv_scaleX.o" "Jeremy_Rig_06RN.phl[537]";
+connectAttr "L_Leg_001_IK_PV_Ctrlv_scaleY.o" "Jeremy_Rig_06RN.phl[538]";
+connectAttr "L_Leg_001_IK_PV_Ctrlv_scaleZ.o" "Jeremy_Rig_06RN.phl[539]";
+connectAttr "R_Leg_001_IK_Base_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[540]";
+connectAttr "R_Leg_001_IK_Base_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[541]";
+connectAttr "R_Leg_001_IK_Base_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[542]";
+connectAttr "R_Leg_001_IK_Base_Ctrl_visibility.o" "Jeremy_Rig_06RN.phl[543]";
+connectAttr "R_Leg_001_IK_Base_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[544]";
+connectAttr "R_Leg_001_IK_Base_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[545]";
+connectAttr "R_Leg_001_IK_Base_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[546]";
+connectAttr "R_Leg_001_IK_Base_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[547]";
+connectAttr "R_Leg_001_IK_Base_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[548]";
+connectAttr "R_Leg_001_IK_Base_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[549]";
+connectAttr "R_Leg_001_IK_Handle_Ctrl_Follow.o" "Jeremy_Rig_06RN.phl[550]";
+connectAttr "R_Leg_001_IK_Handle_Ctrl_RevFootCtrlVis.o" "Jeremy_Rig_06RN.phl[551]"
 		;
-connectAttr "R_Leg_001_IK_Handle_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[547]";
-connectAttr "R_Leg_001_IK_Handle_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[548]";
-connectAttr "R_Leg_001_IK_Handle_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[549]";
-connectAttr "R_Leg_001_IK_Handle_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[550]";
-connectAttr "R_Leg_001_IK_Handle_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[551]";
-connectAttr "R_Leg_001_IK_Handle_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[552]";
-connectAttr "R_Leg_001_IK_Handle_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[553]";
-connectAttr "R_Leg_001_IK_Handle_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[554]";
-connectAttr "R_Leg_001_IK_Handle_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[555]";
-connectAttr "R_Foot_Rev_IK_Heel_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[556]";
-connectAttr "R_Foot_Rev_IK_Heel_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[557]";
-connectAttr "R_Foot_Rev_IK_Heel_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[558]";
-connectAttr "R_Foot_Rev_IK_Toe_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[559]";
-connectAttr "R_Foot_Rev_IK_Toe_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[560]";
-connectAttr "R_Foot_Rev_IK_Toe_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[561]";
-connectAttr "R_Foot_Rev_IK_Ball_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[562]";
-connectAttr "R_Foot_Rev_IK_Ball_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[563]";
-connectAttr "R_Foot_Rev_IK_Ball_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[564]";
-connectAttr "R_Foot_Rev_IK_Tip_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[565]";
-connectAttr "R_Foot_Rev_IK_Tip_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[566]";
-connectAttr "R_Foot_Rev_IK_Tip_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[567]";
-connectAttr "R_Leg_001_IK_PV_Ctrlv_Follow.o" "Jeremy_Rig_06RN.phl[568]";
-connectAttr "R_Leg_001_IK_PV_Ctrlv_translateX.o" "Jeremy_Rig_06RN.phl[569]";
-connectAttr "R_Leg_001_IK_PV_Ctrlv_translateY.o" "Jeremy_Rig_06RN.phl[570]";
-connectAttr "R_Leg_001_IK_PV_Ctrlv_translateZ.o" "Jeremy_Rig_06RN.phl[571]";
-connectAttr "R_Leg_001_IK_PV_Ctrlv_rotateX.o" "Jeremy_Rig_06RN.phl[572]";
-connectAttr "R_Leg_001_IK_PV_Ctrlv_rotateY.o" "Jeremy_Rig_06RN.phl[573]";
-connectAttr "R_Leg_001_IK_PV_Ctrlv_rotateZ.o" "Jeremy_Rig_06RN.phl[574]";
-connectAttr "R_Leg_001_IK_PV_Ctrlv_scaleX.o" "Jeremy_Rig_06RN.phl[575]";
-connectAttr "R_Leg_001_IK_PV_Ctrlv_scaleY.o" "Jeremy_Rig_06RN.phl[576]";
-connectAttr "R_Leg_001_IK_PV_Ctrlv_scaleZ.o" "Jeremy_Rig_06RN.phl[577]";
+connectAttr "R_Leg_001_IK_Handle_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[552]";
+connectAttr "R_Leg_001_IK_Handle_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[553]";
+connectAttr "R_Leg_001_IK_Handle_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[554]";
+connectAttr "R_Leg_001_IK_Handle_Ctrl_translateX.o" "Jeremy_Rig_06RN.phl[555]";
+connectAttr "R_Leg_001_IK_Handle_Ctrl_translateY.o" "Jeremy_Rig_06RN.phl[556]";
+connectAttr "R_Leg_001_IK_Handle_Ctrl_translateZ.o" "Jeremy_Rig_06RN.phl[557]";
+connectAttr "R_Leg_001_IK_Handle_Ctrl_scaleX.o" "Jeremy_Rig_06RN.phl[558]";
+connectAttr "R_Leg_001_IK_Handle_Ctrl_scaleY.o" "Jeremy_Rig_06RN.phl[559]";
+connectAttr "R_Leg_001_IK_Handle_Ctrl_scaleZ.o" "Jeremy_Rig_06RN.phl[560]";
+connectAttr "R_Foot_Rev_IK_Heel_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[561]";
+connectAttr "R_Foot_Rev_IK_Heel_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[562]";
+connectAttr "R_Foot_Rev_IK_Heel_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[563]";
+connectAttr "R_Foot_Rev_IK_Toe_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[564]";
+connectAttr "R_Foot_Rev_IK_Toe_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[565]";
+connectAttr "R_Foot_Rev_IK_Toe_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[566]";
+connectAttr "R_Foot_Rev_IK_Ball_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[567]";
+connectAttr "R_Foot_Rev_IK_Ball_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[568]";
+connectAttr "R_Foot_Rev_IK_Ball_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[569]";
+connectAttr "R_Foot_Rev_IK_Tip_Ctrl_rotateX.o" "Jeremy_Rig_06RN.phl[570]";
+connectAttr "R_Foot_Rev_IK_Tip_Ctrl_rotateY.o" "Jeremy_Rig_06RN.phl[571]";
+connectAttr "R_Foot_Rev_IK_Tip_Ctrl_rotateZ.o" "Jeremy_Rig_06RN.phl[572]";
+connectAttr "R_Leg_001_IK_PV_Ctrlv_Follow.o" "Jeremy_Rig_06RN.phl[573]";
+connectAttr "R_Leg_001_IK_PV_Ctrlv_translateX.o" "Jeremy_Rig_06RN.phl[574]";
+connectAttr "R_Leg_001_IK_PV_Ctrlv_translateY.o" "Jeremy_Rig_06RN.phl[575]";
+connectAttr "R_Leg_001_IK_PV_Ctrlv_translateZ.o" "Jeremy_Rig_06RN.phl[576]";
+connectAttr "R_Leg_001_IK_PV_Ctrlv_rotateX.o" "Jeremy_Rig_06RN.phl[577]";
+connectAttr "R_Leg_001_IK_PV_Ctrlv_rotateY.o" "Jeremy_Rig_06RN.phl[578]";
+connectAttr "R_Leg_001_IK_PV_Ctrlv_rotateZ.o" "Jeremy_Rig_06RN.phl[579]";
+connectAttr "R_Leg_001_IK_PV_Ctrlv_scaleX.o" "Jeremy_Rig_06RN.phl[580]";
+connectAttr "R_Leg_001_IK_PV_Ctrlv_scaleY.o" "Jeremy_Rig_06RN.phl[581]";
+connectAttr "R_Leg_001_IK_PV_Ctrlv_scaleZ.o" "Jeremy_Rig_06RN.phl[582]";
 connectAttr "WhiteboxLayer.di" "mountains2.do";
 connectAttr "WhiteboxLayer.di" "mountains1.do";
 connectAttr "WhiteboxLayer.di" "ground.do";
@@ -15871,12 +16078,12 @@ connectAttr "groupId2.id" "GPS_Main_BodyShape.iog.og[1].gid";
 connectAttr "GPS_Main_BodySG1.mwc" "GPS_Main_BodyShape.iog.og[1].gco";
 connectAttr "groupId3.id" "GPS_Main_BodyShape.iog.og[2].gid";
 connectAttr "GPS_Main_BodySG2.mwc" "GPS_Main_BodyShape.iog.og[2].gco";
+connectAttr "GPS_Main_Body_parentConstraint1.w0" "GPS_Main_Body_parentConstraint1.tg[0].tw"
+		;
 connectAttr "GPS_Main_Body.ro" "GPS_Main_Body_parentConstraint1.cro";
 connectAttr "GPS_Main_Body.pim" "GPS_Main_Body_parentConstraint1.cpim";
 connectAttr "GPS_Main_Body.rp" "GPS_Main_Body_parentConstraint1.crp";
 connectAttr "GPS_Main_Body.rpt" "GPS_Main_Body_parentConstraint1.crt";
-connectAttr "GPS_Main_Body_parentConstraint1.w0" "GPS_Main_Body_parentConstraint1.tg[0].tw"
-		;
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "mountains2SG.message" ":defaultLightSet.message";
@@ -15987,4 +16194,4 @@ connectAttr "lambert4.msg" ":defaultShaderList1.s" -na;
 connectAttr "lambert6.msg" ":defaultShaderList1.s" -na;
 connectAttr "lambert7.msg" ":defaultShaderList1.s" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-// End of Scene_15 (24)_1120_03.ma
+// End of Scene_15 (24).ma
